@@ -57,6 +57,15 @@ if (!customElements.get('product-info')) {
         this.postProcessHtmlCallbacks.push((newNode) => {
           window?.Shopify?.PaymentButton?.init();
           window?.ProductModel?.loadShopifyXR();
+          publish(PUB_SUB_EVENTS.sectionRefreshed, {
+            data: {
+              sectionId: this.sectionId,
+              resource: {
+                type: SECTION_REFRESH_RESOURCE_TYPE.product,
+                id: newNode.dataset.productId,
+              },
+            },
+          });
         });
       }
 
@@ -66,16 +75,13 @@ if (!customElements.get('product-info')) {
         this.resetProductFormState();
 
         const productUrl = target.dataset.productUrl || this.pendingRequestUrl || this.dataset.url;
-        this.pendingRequestUrl = productUrl;
         const shouldSwapProduct = this.dataset.url !== productUrl;
-        const shouldFetchFullPage = this.dataset.updateUrl === 'true' && shouldSwapProduct;
+        const shouldFetchFullPage = !this.isFeaturedProduct && shouldSwapProduct;
 
         this.renderProductInfo({
           requestUrl: this.buildRequestUrlWithParams(productUrl, selectedOptionValues, shouldFetchFullPage),
           targetId: target.id,
-          callback: shouldSwapProduct
-            ? this.handleSwapProduct(productUrl, shouldFetchFullPage)
-            : this.handleUpdateProductInfo(productUrl),
+          callback: shouldSwapProduct ? this.handleSwapProduct(productUrl) : this.handleUpdateProductInfo(productUrl),
         });
       }
 
@@ -85,27 +91,33 @@ if (!customElements.get('product-info')) {
         productForm?.handleErrorMessage();
       }
 
-      handleSwapProduct(productUrl, updateFullPage) {
+      get isFeaturedProduct() {
+        return this.dataset.section.includes('featured_product');
+      }
+
+      handleSwapProduct(productUrl) {
         return (html) => {
           this.productModal?.remove();
 
-          const selector = updateFullPage ? "product-info[id^='MainProduct']" : 'product-info';
-          const variant = this.getSelectedVariant(html.querySelector(selector));
+          // Grab the selected variant from the new product info
+          const variant = this.getSelectedVariant(html.querySelector(`product-info[data-section=${this.sectionId}]`));
           this.updateURL(productUrl, variant?.id);
 
-          if (updateFullPage) {
+          // If we are in an embedded context (quick add, featured product, etc), only swap product info.
+          // Otherwise, refresh the entire page content and sibling sections.
+          if (this.dataset.updateUrl === 'false') {
+            HTMLUpdateUtility.viewTransition(
+              this,
+              html.querySelector('product-info'),
+              this.preProcessHtmlCallbacks,
+              this.postProcessHtmlCallbacks
+            );
+          } else {
             document.querySelector('head title').innerHTML = html.querySelector('head title').innerHTML;
 
             HTMLUpdateUtility.viewTransition(
               document.querySelector('main'),
               html.querySelector('main'),
-              this.preProcessHtmlCallbacks,
-              this.postProcessHtmlCallbacks
-            );
-          } else {
-            HTMLUpdateUtility.viewTransition(
-              this,
-              html.querySelector('product-info'),
               this.preProcessHtmlCallbacks,
               this.postProcessHtmlCallbacks
             );
@@ -117,6 +129,7 @@ if (!customElements.get('product-info')) {
         this.abortController?.abort();
         this.abortController = new AbortController();
 
+        this.pendingRequestUrl = requestUrl;
         fetch(requestUrl, { signal: this.abortController.signal })
           .then((response) => response.text())
           .then((responseText) => {
@@ -157,7 +170,11 @@ if (!customElements.get('product-info')) {
       updateOptionValues(html) {
         const variantSelects = html.querySelector('variant-selects');
         if (variantSelects) {
-          HTMLUpdateUtility.viewTransition(this.variantSelectors, variantSelects, this.preProcessHtmlCallbacks);
+          HTMLUpdateUtility.viewTransition(
+            this.variantSelectors,
+            variantSelects,
+            this.preProcessHtmlCallbacks,
+          );
         }
       }
 
@@ -240,13 +257,10 @@ if (!customElements.get('product-info')) {
       }
 
       updateMedia(html, variantFeaturedMediaId) {
-        if (!variantFeaturedMediaId) return;
-
         const mediaGallerySource = this.querySelector('media-gallery ul');
         const mediaGalleryDestination = html.querySelector(`media-gallery ul`);
 
         const refreshSourceData = () => {
-          if (this.hasAttribute('data-zoom-on-hover')) enableZoomOnHover(2);
           const mediaGallerySourceItems = Array.from(mediaGallerySource.querySelectorAll('li[data-media-id]'));
           const sourceSet = new Set(mediaGallerySourceItems.map((item) => item.dataset.mediaId));
           const sourceMap = new Map(
@@ -298,16 +312,18 @@ if (!customElements.get('product-info')) {
           });
         }
 
-        // set featured media as active in the media gallery
-        this.querySelector(`media-gallery`)?.setActiveMedia?.(
-          `${this.dataset.section}-${variantFeaturedMediaId}`,
-          true
-        );
+        if (variantFeaturedMediaId) {
+          // set featured media as active in the media gallery
+          this.querySelector(`media-gallery`)?.setActiveMedia?.(
+            `${this.dataset.section}-${variantFeaturedMediaId}`,
+            true
+          );
 
-        // update media modal
-        const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
-        const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
-        if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+          // update media modal
+          const modalContent = this.productModal?.querySelector(`.product-media-modal__content`);
+          const newModalContent = html.querySelector(`product-modal .product-media-modal__content`);
+          if (modalContent && newModalContent) modalContent.innerHTML = newModalContent.innerHTML;
+        }
       }
 
       setQuantityBoundries() {
@@ -351,7 +367,6 @@ if (!customElements.get('product-info')) {
       }
 
       updateQuantityRules(sectionId, html) {
-        if (!this.quantityInput) return;
         this.setQuantityBoundries();
 
         const quantityFormUpdated = html.getElementById(`Quantity-Form-${sectionId}`);

@@ -6,4 +6,9 @@ const PUB_SUB_EVENTS = {
   optionValueSelectionChange: 'option-value-selection-change',
   variantChange: 'variant-change',
   cartError: 'cart-error',
+  sectionRefreshed: 'section-refreshed',
+};
+
+const SECTION_REFRESH_RESOURCE_TYPE = {
+  product: 'product',
 };
