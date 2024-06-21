@@ -1,7 +1,7 @@
 /* Two column Gallary CSS */
 
 .box{
-    height: 90vh;
+    height: 500px;
     border: 2px solid #000;
     display: flex;
     flex-direction:row;
@@ -10,18 +10,12 @@
     align-items:center;
 }
 .item{
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: auto;
 }
 .item1{
     background-color: rgb(67, 83, 96);
 }
 .item2{
-    background-color: rgb(49, 159, 55);
-}
-.item3{
-    background-color: rgb(204, 51, 21);
-}
-.item4{
     background-color: rgb(49, 159, 55);
 }
