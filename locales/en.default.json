@@ -273,8 +273,9 @@
       "announcement_bar": "Announcement bar"
     },
     "two-column-gallary": {
+      "name" : "Two Column Gallary",
       "presets": {
-        "name" : "Two Column Gallery"
+        "name" : "Two Column Gallary"
       }
     },
 
