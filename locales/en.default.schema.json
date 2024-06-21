@@ -448,6 +448,7 @@
       }
     },
     "two-column-gallary": {
+      "name" : "Two Column Gallary",
       "presets" : {
         "name" : "Two Column Gallary"
       }
