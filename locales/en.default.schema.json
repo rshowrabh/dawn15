@@ -448,7 +448,10 @@
       }
     },
     "two-column-gallery" :{
-      "name" : "Two Column gallery"
+      "name" : "Two Column gallery",
+      "presets": {
+        "name" : "Two Column gallery"
+      }
     },
     "announcement-bar": {
       "name": "Announcement bar",
