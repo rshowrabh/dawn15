@@ -447,12 +447,6 @@
         "info": "Standard-styled cards have no borders when an image shape is active."
       }
     },
-    "two-column-gallery" :{
-      "name" : "Two Column gallery",
-      "presets": {
-        "name": "Two Column gallery"
-      }
-    },
     "announcement-bar": {
       "name": "Announcement bar",
       "settings": {
