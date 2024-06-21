@@ -12,6 +12,9 @@
 .item{
     width: 47%;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .item1{
     background-color: rgb(67, 83, 96);
