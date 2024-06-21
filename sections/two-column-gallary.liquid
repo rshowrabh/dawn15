@@ -13,7 +13,6 @@
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
-    {{ section.settings.custom_liquid }}
   </div>
 </div>
 
@@ -23,12 +22,6 @@
   "tag": "section",
   "class": "section",
   "settings": [
-    {
-      "type": "liquid",
-      "id": "custom_liquid",
-      "label": "t:sections.two-column-gallary.settings.custom_liquid.label",
-      "info": "t:sections.two-column-gallary.settings.custom_liquid.info"
-    },
     {
       "type": "color_scheme",
       "id": "color_scheme",
