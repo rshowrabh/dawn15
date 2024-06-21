@@ -83,11 +83,59 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "image_with_text_PRtiLJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HbF6X9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_Ap4XG4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_HWYaNr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HbF6X9",
+        "text_Ap4XG4",
+        "button_HWYaNr"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/sale_slider_livpure2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "two_column_gallary_Utqmjp"
+    "two_column_gallary_Utqmjp",
+    "image_with_text_PRtiLJ"
   ]
 }
