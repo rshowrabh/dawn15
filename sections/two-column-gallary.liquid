@@ -1,3 +1,5 @@
+{{ 'two-column-gallary.css' | asset_url | stylesheet_tag }
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -13,6 +15,33 @@
 {%- endstyle -%}
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
+    <div class="box">
+      <div class="item item1">
+          <p>1</p>
+      </div>
+      <div class="item item2">
+          <p>2</p>
+      </div>
+      <div class="item item3">
+          <p>3</p>
+      </div>
+      <div class="item item4">
+          <p>4</p>
+      </div>
+      <div class="item item1">
+          <p>1</p>
+      </div>
+      <div class="item item2">
+          <p>2</p>
+      </div>
+      <div class="item item3">
+          <p>3</p>
+      </div>
+      <div class="item item4">
+          <p>4</p>
+      </div>
+      </div>
+
   </div>
 </div>
 
