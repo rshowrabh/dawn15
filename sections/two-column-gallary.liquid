@@ -25,7 +25,11 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           <a class="btn btn-primary" href="#">Explore More</a>
         </div>
         <div class="image overlay-hover">
+          {% if block.settings.image = null %}
           <img src="{{'banner.jpg '| asset_url}}" alt="">
+          {% else %}
+          {{ block.settings.image | image_url }}
+          {% endif %}
         </div>
       </div>
       {% endfor %}
