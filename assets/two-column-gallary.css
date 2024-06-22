@@ -64,8 +64,8 @@
     overflow: hidden;
     transition: .1s all linear;    
 }
-.item:hover img{
-    transform: scale(1.1);
+.item:hover .image{
+    transform: scale(1.3);
     transition: .1s all linear; 
 }
 .item .text h2{
