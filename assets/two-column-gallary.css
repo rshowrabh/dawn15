@@ -40,3 +40,17 @@
     font-size: 34px;
     width: 60%;
 }
+.btn{
+    box-shadow: 0 4px 9px rgba(0,0,0,.05);
+    cursor: pointer;
+    padding: 0 1.87rem;
+    border-radius: 4px;
+}
+.btn-primary{
+    background-color: wheat;
+    color: black;
+}
+.btn-primary:hover{
+    background-color: black;
+    color: wheat;
+}
