@@ -44,7 +44,7 @@
     background-color: rgb(0, 0, 0);
     opacity: 0;
 }
-.overlay-hover::after:hover{
+.overlay-hover:hover::after{
     opacity: .1;
 }
 
