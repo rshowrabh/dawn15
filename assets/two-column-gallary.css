@@ -116,11 +116,7 @@
 
 @media only screen and (max-width: 767px) {
     .box{
-        display: flex;
-        flex-direction:column;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        align-items:center;
+        display: block
     }
     .item{
         width: 100%;
