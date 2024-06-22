@@ -40,7 +40,7 @@
 }
 .item:hover img{
     transform: scale(1.1);
-    transition: opacity .4s cubic-bezier(.25,.46,.45,.94); 
+    transition: .1s all linear; 
 }
 .item .text h2{
     font-size: 34px;
