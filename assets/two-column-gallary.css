@@ -80,6 +80,7 @@
 
 .item{
     width: 47%;
+    height: 300px;
     position: relative;
     overflow: hidden;
     transition: 0.5s all ease-in-out;    
@@ -120,5 +121,8 @@
         flex-wrap: wrap;
         justify-content:space-between;
         align-items:center;
+    }
+    .item{
+        width: 100%;
     }
   }
