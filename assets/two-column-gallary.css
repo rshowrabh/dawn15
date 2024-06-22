@@ -17,10 +17,12 @@
     left: 0;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+.image img{
     object-fit: cover;
     object-position: center center;
     transition: opacity .4s cubic-bezier(.25,.46,.45,.94);
-
 }
 .text{
     font-weight: 600;
@@ -29,7 +31,8 @@
 }
 .item{
     width: 47%;
-    height: 500px; 
+    height: 500px;
+    position: relative;
 }
 .item .text h2{
     font-size: 34px;
