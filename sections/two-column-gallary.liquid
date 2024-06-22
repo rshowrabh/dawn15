@@ -24,12 +24,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           <h2>Intensive Glow C+ Serum</h2>
           <a class="btn btn-primary" href="#">Explore More</a>
         </div>
-        <div class="image overlay-hover">
-          {% if block.settings.image == blank %}
-          <img src="{{'banner.jpg '| asset_url}}" alt="">
-          {% else %}
+        <div class="image overlay-hover">        
           {{ block.settings.image | image_url }}
-          {% endif %}
         </div>
       </div>
       {% endfor %}
