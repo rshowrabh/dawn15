@@ -36,10 +36,10 @@
     width: 47%;
     position: relative;
     overflow: hidden;
+    transition: opacity .4s cubic-bezier(.25,.46,.45,.94);    
 }
 .item:hover img{
-    transform: scale(1.5);
-    background: red;
+    transform: scale(1.1);
 }
 .item .text h2{
     font-size: 34px;
