@@ -78,6 +78,34 @@
     },
     "two_column_gallary_Utqmjp": {
       "type": "two-column-gallary",
+      "blocks": {
+        "column_BNepDb": {
+          "type": "column",
+          "settings": {
+          }
+        },
+        "column_4ALeGF": {
+          "type": "column",
+          "settings": {
+          }
+        },
+        "column_9MVjR4": {
+          "type": "column",
+          "settings": {
+          }
+        },
+        "column_wgefjt": {
+          "type": "column",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "column_BNepDb",
+        "column_4ALeGF",
+        "column_9MVjR4",
+        "column_wgefjt"
+      ],
       "settings": {
         "color_scheme": "",
         "padding_top": 40,
