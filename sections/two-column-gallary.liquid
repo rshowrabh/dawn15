@@ -28,7 +28,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
           {% if block.settings.image == blank %}
           <img src="{{'banner.jpg '| asset_url}}" alt="">
           {% else %}
-          {{ block.settings.image | image_url | img_tag }}
+          <img src="{{ block.settings.image | image_url }}" alt="">
           {% endif %}
         </div>
       </div>
