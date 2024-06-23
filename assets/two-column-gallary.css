@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     justify-content:space-between;
     align-items:center;
+    gap: 40px;
 }
 
 .image{
@@ -81,7 +82,7 @@
 }
 
 .item{
-    width: 47%;
+    width: calc(50% - 20px);
     height: 420px;
     position: relative;
     overflow: hidden;
