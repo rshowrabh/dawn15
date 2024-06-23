@@ -117,10 +117,7 @@
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
-    .box{
-        display: block
-    }
-    .item{
+    #two-column-gallary .item{
         width: 100%;
     }
   }
