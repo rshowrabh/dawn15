@@ -86,7 +86,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.5s all ease-in-out; 
-    height: 450px; 
+    height: 420px; 
 }
 .item:hover .image{
     transform: scale(1.3);
