@@ -97,11 +97,21 @@
             "button_label": "Explore More",
             "button_link": ""
           }
+        },
+        "column_K89aYY": {
+          "type": "column",
+          "settings": {
+            "collection_name": "Summer Collection",
+            "heading": "Intensive Glow C# Serum",
+            "button_label": "Explore Moree",
+            "button_link": "shopify:\/\/collections\/all"
+          }
         }
       },
       "block_order": [
         "column_zWhWf8",
-        "column_akdr6U"
+        "column_akdr6U",
+        "column_K89aYY"
       ],
       "settings": {
         "color_scheme": "",
