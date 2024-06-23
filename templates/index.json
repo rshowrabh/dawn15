@@ -107,49 +107,11 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "three_column_gallary_T69GcU": {
-      "type": "three-column-gallary",
-      "blocks": {
-        "column_PRfyiq": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column_3cRKfH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/woodash_media_1.webp"
-          }
-        },
-        "column_BQYYTx": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column_gbb499": {
-          "type": "column",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "column_PRfyiq",
-        "column_3cRKfH",
-        "column_BQYYTx",
-        "column_gbb499"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "two_column_gallary_axWGc6",
-    "three_column_gallary_T69GcU"
+    "two_column_gallary_axWGc6"
   ]
 }
