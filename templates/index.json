@@ -95,12 +95,18 @@
           "type": "column",
           "settings": {
           }
+        },
+        "column_9BMjBz": {
+          "type": "column",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "column_jgwh8x",
         "column_Ewbwhm",
-        "column_LzRBGf"
+        "column_LzRBGf",
+        "column_9BMjBz"
       ],
       "settings": {
         "color_scheme": "",
