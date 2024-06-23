@@ -77,30 +77,31 @@
         "padding_bottom": 36
       }
     },
-    "two_column_gallary_axWGc6": {
+    "two_column_gallary_tKwQzF": {
       "type": "two-column-gallary",
       "blocks": {
-        "column_jgwh8x": {
+        "column_zWhWf8": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/01_hero_interior_new.jpg"
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
           }
         },
-        "column_LzRBGf": {
+        "column_akdr6U": {
           "type": "column",
           "settings": {
-          }
-        },
-        "column_9BMjBz": {
-          "type": "column",
-          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "column_jgwh8x",
-        "column_LzRBGf",
-        "column_9BMjBz"
+        "column_zWhWf8",
+        "column_akdr6U"
       ],
       "settings": {
         "color_scheme": "",
@@ -112,6 +113,6 @@
   "order": [
     "image_banner",
     "featured_collection",
-    "two_column_gallary_axWGc6"
+    "two_column_gallary_tKwQzF"
   ]
 }
