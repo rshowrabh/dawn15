@@ -98,7 +98,7 @@
 .btn{
     box-shadow: 0 4px 9px rgba(0,0,0,.05);
     cursor: pointer;
-    padding: 2% 5%;
+    padding: 10px 20px;
     border-radius: 4px;
     text-decoration: none;
 }
