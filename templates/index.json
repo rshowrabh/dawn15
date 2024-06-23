@@ -91,23 +91,11 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/woodash_media_1.webp"
           }
-        },
-        "column_9MVjR4": {
-          "type": "column",
-          "settings": {
-          }
-        },
-        "column_wgefjt": {
-          "type": "column",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "column_BNepDb",
-        "column_4ALeGF",
-        "column_9MVjR4",
-        "column_wgefjt"
+        "column_4ALeGF"
       ],
       "settings": {
         "color_scheme": "",
@@ -128,11 +116,17 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/woodash_sale.jpg"
           }
+        },
+        "column_nFEMc8": {
+          "type": "column",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "column_e33NVC",
-        "column_3mHiGm"
+        "column_3mHiGm",
+        "column_nFEMc8"
       ],
       "settings": {
         "color_scheme": "",
