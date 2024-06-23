@@ -81,7 +81,7 @@
     color: rgb(var(--color-foreground));
 }
 
-.item{
+#two-column-gallary .item{
     flex: 1 1 calc(50% - 40px);
     position: relative;
     overflow: hidden;
