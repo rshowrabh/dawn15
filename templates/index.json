@@ -86,11 +86,6 @@
             "image": "shopify:\/\/shop_images\/01_hero_interior_new.jpg"
           }
         },
-        "column_Ewbwhm": {
-          "type": "column",
-          "settings": {
-          }
-        },
         "column_LzRBGf": {
           "type": "column",
           "settings": {
@@ -104,7 +99,6 @@
       },
       "block_order": [
         "column_jgwh8x",
-        "column_Ewbwhm",
         "column_LzRBGf",
         "column_9BMjBz"
       ],
