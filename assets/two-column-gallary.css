@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content:space-between;
     align-items:center;
-    gap: 40px;
+    gap: 50px;
 }
 
 .image{
@@ -82,7 +82,7 @@
 }
 
 #two-column-gallary .item{
-    width: calc(50% - 20px);
+    width: calc(50% - 25px);
     position: relative;
     overflow: hidden;
     transition: 0.5s all ease-in-out;  
