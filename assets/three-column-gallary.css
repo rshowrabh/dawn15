@@ -62,7 +62,8 @@
     margin-left: 10px;
     position: absolute;
     bottom: -7px;
-    transition: 0.3s all ease-in-out; 
+    transition: 0.1s all ease-in-out;
+    box-shadow: 1px 1px 1px #000;
 }
 
 
