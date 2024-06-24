@@ -69,10 +69,8 @@
     border-radius: 4px;
     text-decoration: none;
 }
-.btn-primary{
-    background-color: rgb(var(--color-button));
-    color: rgb(var(--color-button-text))!important;
-    transition: .2s all linear;
+.btn-outline{
+
 }
 .btn-primary:hover{
     color: rgb(var(--color-button));
