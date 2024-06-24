@@ -54,6 +54,8 @@
 }
 #three-column-gallary .arrow svg{
     margin-left: 5px;
+    position: absolute;
+    bottom: -7px;
 }
 
 
