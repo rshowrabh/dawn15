@@ -134,10 +134,11 @@
         "column_gcBtRd": {
           "type": "column",
           "settings": {
-            "collection_name": "Starting at $31.2",
-            "heading": "Summer Collection",
-            "button_label": "Explore More",
-            "button_link": ""
+            "image": "shopify:\/\/shop_images\/woodash_media_1.webp",
+            "collection_name": "Starting at $3",
+            "heading": "Winter Collection",
+            "button_label": "Show More",
+            "button_link": "shopify:\/\/collections\/alkaline"
           }
         },
         "column_AUyYht": {
