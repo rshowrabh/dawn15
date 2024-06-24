@@ -118,11 +118,64 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "three_column_gallary_jWTJgE": {
+      "type": "three-column-gallary",
+      "blocks": {
+        "column_byCHMd": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_7rCT7Q": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_RYgFm8": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_X8MCei": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_byCHMd",
+        "column_7rCT7Q",
+        "column_RYgFm8",
+        "column_X8MCei"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "two_column_gallary_tKwQzF"
+    "two_column_gallary_tKwQzF",
+    "three_column_gallary_jWTJgE"
   ]
 }
