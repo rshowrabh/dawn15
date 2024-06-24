@@ -72,10 +72,10 @@
 }
 
 
-.text{
+#two-column-gallary .text{
     padding: 10px 30px 100px;
 }
-.text > *{
+#two-column-gallary .text > *{
     font-weight: 600;
     line-height: 1.3;
     color: rgb(var(--color-foreground));
