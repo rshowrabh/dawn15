@@ -58,7 +58,7 @@
     bottom: -7px;
     transition: 0.5s all ease-in-out; 
 }
-#three-column-gallary .arrow:hover{
+#three-column-gallary ..btn-outline:hover .arrow{
     margin-left: 10px;
     position: absolute;
     bottom: -7px;
