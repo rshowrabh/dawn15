@@ -50,6 +50,10 @@
 #three-column-gallary .btn-outline{
     position: absolute;
     bottom: 10px;
+    text-decoration: none;
+}
+#three-column-gallary .arrow{
+    margin-left: 5px;
 }
 
 
