@@ -1,6 +1,6 @@
 /* three column Gallary CSS */
 
-.box{
+#three-column-gallary .box{
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -38,10 +38,10 @@
     opacity: .1;
 }
 
-.text{
+#three-column-gallary .text{
     padding: 10px 30px 100px;
 }
-.text > *{
+#three-column-gallary .text > *{
     font-weight: 600;
     line-height: 1.3;
     color: rgb(var(--color-foreground));
@@ -54,11 +54,11 @@
     transition: 0.5s all ease-in-out; 
     height: 400px; 
 }
-.item:hover .image{
+#three-column-gallary .item:hover .image{
     transform: scale(1.3);
     transition: 0.5s all ease-in-out; 
 }
-.item .text h2{
+#three-column-gallary .item .text h2{
     font-size: 34px;
     width: 60%;
 }
