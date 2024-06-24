@@ -53,6 +53,7 @@
     text-decoration: none;
 }
 #three-column-gallary .arrow{
+    margin-left: 5px;
     position: absolute;
     bottom: -7px;
 }
