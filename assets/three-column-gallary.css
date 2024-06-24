@@ -28,7 +28,8 @@
     transition: 0.5s all ease-in-out; 
 }
 #three-column-gallary .text{
-    padding: 10px 30px 100px;
+    padding-top: 10px;
+    padding-left: 30px;
 }
 #three-column-gallary .text > *{
     font-weight: 600;
@@ -45,6 +46,11 @@
 }
 #three-column-gallary .item .text h2{
     font-size: 25px;
+}
+#three-column-gallary .btn-outline{
+    font-size: 25px;
+    position: absolute;
+    bottom: 10px;
 }
 
 
