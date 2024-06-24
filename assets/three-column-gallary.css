@@ -51,12 +51,18 @@
     position: absolute;
     bottom: 10px;
     text-decoration: none;
-    
 }
 #three-column-gallary .arrow{
     margin-left: 5px;
     position: absolute;
     bottom: -7px;
+    transition: 0.5s all ease-in-out; 
+}
+#three-column-gallary .arrow:hover{
+    margin-left: 10px;
+    position: absolute;
+    bottom: -7px;
+    transition: 0.5s all ease-in-out; 
 }
 
 
