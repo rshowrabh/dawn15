@@ -52,8 +52,7 @@
     bottom: 10px;
     text-decoration: none;
 }
-#three-column-gallary .arrow svg{
-    margin-left: 5px;
+#three-column-gallary .arrow{
     position: absolute;
     bottom: -7px;
 }
