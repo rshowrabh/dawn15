@@ -61,7 +61,7 @@
 #three-column-gallary .btn-outline:hover .arrow{
     margin-left: 10px;
     position: absolute;
-    bottom: -7px;
+    bottom: -7px; 
     transition: 0.1s all ease-in-out;
 }
 
