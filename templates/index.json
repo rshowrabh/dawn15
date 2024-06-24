@@ -119,51 +119,51 @@
         "padding_bottom": 52
       }
     },
-    "three_column_gallary_jWTJgE": {
+    "three_column_gallary_Fg6cW3": {
       "type": "three-column-gallary",
       "blocks": {
-        "column_byCHMd": {
+        "column_RCHkAy": {
           "type": "column",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
+            "collection_name": "Starting at $31.2",
+            "heading": "Summer Collection",
             "button_label": "Explore More",
             "button_link": ""
           }
         },
-        "column_7rCT7Q": {
+        "column_gcBtRd": {
           "type": "column",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
+            "collection_name": "Starting at $31.2",
+            "heading": "Summer Collection",
             "button_label": "Explore More",
             "button_link": ""
           }
         },
-        "column_RYgFm8": {
+        "column_AUyYht": {
           "type": "column",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
+            "collection_name": "Starting at $31.2",
+            "heading": "Summer Collection",
             "button_label": "Explore More",
             "button_link": ""
           }
         },
-        "column_X8MCei": {
+        "column_8e9RJF": {
           "type": "column",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
+            "collection_name": "Starting at $31.2",
+            "heading": "Summer Collection",
             "button_label": "Explore More",
             "button_link": ""
           }
         }
       },
       "block_order": [
-        "column_byCHMd",
-        "column_7rCT7Q",
-        "column_RYgFm8",
-        "column_X8MCei"
+        "column_RCHkAy",
+        "column_gcBtRd",
+        "column_AUyYht",
+        "column_8e9RJF"
       ],
       "settings": {
         "color_scheme": "",
@@ -176,6 +176,6 @@
     "image_banner",
     "featured_collection",
     "two_column_gallary_tKwQzF",
-    "three_column_gallary_jWTJgE"
+    "three_column_gallary_Fg6cW3"
   ]
 }
