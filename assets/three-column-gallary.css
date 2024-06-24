@@ -56,13 +56,13 @@
     margin-left: 5px;
     position: absolute;
     bottom: -7px;
-    transition: 0.5s all ease-in-out; 
+    transition: 0.1s all linear; 
 }
 #three-column-gallary .btn-outline:hover .arrow{
     margin-left: 10px;
     position: absolute;
     bottom: -7px;
-    transition: 0.1s all ease-in-out; 
+    transition: 0.3s all ease-in-out; 
 }
 
 
