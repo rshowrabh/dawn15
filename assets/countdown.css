@@ -101,8 +101,7 @@ p {
     .countdown {
         gap: 5px;
     }
-    .offer-details > *{
+    .offer-details {
         align-items: center;
-        margin: 0px;
     }
   }
