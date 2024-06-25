@@ -5,6 +5,7 @@
     justify-content: center;
     background-color: rgb(var(--color-background));
     color: rgb(var(--color-foreground));
+    gap: 10px;
 }
 
 /* Image container styling */
@@ -12,7 +13,6 @@
     flex: 1;
     display: flex;
     max-width: 100%;
-    gap: 10px;
 }
 
 .image-container img {
