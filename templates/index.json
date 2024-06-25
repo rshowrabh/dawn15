@@ -171,12 +171,21 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "countdown_CCHnTB": {
+      "type": "countdown",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "two_column_gallary_tKwQzF",
-    "three_column_gallary_Fg6cW3"
+    "three_column_gallary_Fg6cW3",
+    "countdown_CCHnTB"
   ]
 }
