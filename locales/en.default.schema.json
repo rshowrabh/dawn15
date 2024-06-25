@@ -453,6 +453,18 @@
         "name" : "Two Column Gallary"
       }
     },
+    "three-column-gallary": {
+      "name" : "Three Column Gallary",
+      "presets" : {
+        "name" : "Three Column Gallary"
+      }
+    },
+    "countdown": {
+      "name" : "Countdown",
+      "presets" : {
+        "name" : "Countdown"
+      }
+    },
     "announcement-bar": {
       "name": "Announcement bar",
       "settings": {
