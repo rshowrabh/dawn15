@@ -26,7 +26,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+.offer-details > * {
+    margin: 0px;
 }
 
 .special-offer {
@@ -103,5 +106,7 @@ p {
     }
     .offer-details {
         align-items: center;
+        padding: 10px 0px;
     }
+    
   }
