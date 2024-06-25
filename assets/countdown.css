@@ -43,6 +43,7 @@
     color: rgb(var(--color-button-text));
     padding: 0 5px;
     border-radius: 4px;
+    margin-left: 20px;
 }
 
 h1 {
