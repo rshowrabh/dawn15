@@ -278,6 +278,12 @@
         "name" : "Two Column Gallary"
       }
     },
+    "countdown": {
+      "name" : "Countdown",
+      "presets": {
+        "name" : "Countdown"
+      }
+    },
 
     "header": {
       "announcement": "Announcement",
