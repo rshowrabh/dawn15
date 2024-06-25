@@ -288,9 +288,9 @@
       }
     },
     "countdown": {
-      "name": "CountDown",
+      "name": "Countdown",
       "presets": {
-        "name": "CountDown"
+        "name": "Countdown"
       }
     },
     "header": {
