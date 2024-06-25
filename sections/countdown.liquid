@@ -42,7 +42,7 @@
               <div class="time" id="seconds">00</div>
           </div>
           <!-- Call to action button -->
-          <a href="#" class="btn btn-primary mt-20">Get Only $39.00</a>
+          <a href="{{section.settings.button_link}}" class="btn btn-primary mt-20">{{section.settings.button_label}}</a>
       </div>
   </div>
   </div>
@@ -116,6 +116,17 @@ const countdownFunction = setInterval(() => {
     "label": "Select Date",
     "default": "July 3, 2024 00:00:00",
     "info":"M D, Y H:M:S"
+    },
+    {
+    "type": "text",
+    "id": "button_label",
+    "label": "Button Label",
+    "default": "Get only $39.00"
+    },
+    {
+    "type": "url",
+    "id": "button_link",
+    "label": "Button Link"
     },
     {
     "type": "color_scheme",
