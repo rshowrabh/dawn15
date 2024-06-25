@@ -172,13 +172,14 @@
         "padding_bottom": 52
       }
     },
-    "countdown_CCHnTB": {
+    "countdown_aDYLJW": {
       "type": "countdown",
       "settings": {
-        "offer": "-30%",
-        "heading": "Save on Setss",
+        "image": "shopify:\/\/shop_images\/woodash_media_2.webp",
+        "offer": "-20%",
+        "heading": "Save on Sets",
         "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
-        "date": "July 1, 2024",
+        "date": "July 3, 2024 00:00:00",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -190,6 +191,6 @@
     "featured_collection",
     "two_column_gallary_tKwQzF",
     "three_column_gallary_Fg6cW3",
-    "countdown_CCHnTB"
+    "countdown_aDYLJW"
   ]
 }
