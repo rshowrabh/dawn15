@@ -3,9 +3,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     background-color: rgb(var(--color-background));
     color: rgb(var(--color-foreground));
-    gap: 10px;
 }
 
 /* Image container styling */
