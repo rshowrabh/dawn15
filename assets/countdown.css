@@ -1,7 +1,7 @@
 /* Offer section styling */
 .offer-section {
     display: flex;
-    align-items: center;
+    align-items: normal;
     justify-content: center;
     gap: 10px;
     background-color: rgb(var(--color-background));
