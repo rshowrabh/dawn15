@@ -175,7 +175,10 @@
     "countdown_CCHnTB": {
       "type": "countdown",
       "settings": {
-        "date": "August 3, 2024 00:00:00",
+        "offer": "-30%",
+        "heading": "Save on Setss",
+        "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
+        "date": "July 1, 2024",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
