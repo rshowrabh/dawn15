@@ -47,7 +47,7 @@
 <!-- External JavaScript (script.js) -->
 <script>
 // Set the date we're counting down to
-const countDownDate = new Date("July 1, 2024 00:00:00").getTime();
+const countDownDate = new Date("{{section.settings.date}}").getTime();
 
 // Update the count down every 1 second
 const countdownFunction = setInterval(() => {
