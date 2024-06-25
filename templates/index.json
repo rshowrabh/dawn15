@@ -175,6 +175,7 @@
     "countdown_CCHnTB": {
       "type": "countdown",
       "settings": {
+        "date": "June 3, 2024 00:00:00",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
