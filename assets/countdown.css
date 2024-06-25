@@ -1,3 +1,7 @@
+
+.mt-20{
+    margin-top: 20px;
+}
 /* Offer section styling */
 .offer-section {
     display: flex;
@@ -75,6 +79,7 @@ p {
     padding: 2% 5%;
     border-radius: 4px;
     text-decoration: none;
+    display: inline-block
 }
 .btn-primary{
     background-color: rgb(var(--color-button));
