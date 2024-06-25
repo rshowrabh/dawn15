@@ -16,65 +16,69 @@
 
 <div id="countdown" class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
-    <!-- Main container for the offer section -->
-    <div class="offer-section">
+     <!-- Main container for the offer section -->
+     <div class="offer-section">
       <!-- Image container -->
       <div class="image-container">
-        <img src="{{'banner.jpg '| asset_url}}" alt="">
+        {% if section.settings.image != blank %}
+          <img src="{{ section.settings.image | image_url }}" alt="">
+        {% else %}
+          <img src="{{'banner.jpg '| asset_url}}" alt="">
+        {% endif %}
       </div>
       <!-- Offer details container -->
       <div class="offer-details">
-        <div class="special-offer">SPECIAL OFFER <span class="discount">-20%</span></div>
-        <h1>Save on Sets</h1>
-        <p>Made using clean, non-toxic ingredients, our products are designed for everyone.</p>
-        <!-- Countdown timer -->
-        <div class="countdown">
-          <div class="time" id="days">00</div>
-          <div class="separator">:</div>
-          <div class="time" id="hours">00</div>
-          <div class="separator">:</div>
-          <div class="time" id="minutes">00</div>
-          <div class="separator">:</div>
-          <div class="time" id="seconds">00</div>
-        </div>
-        <!-- Call to action button -->
-        <a href="#" class="btn btn-primary mt-20">Get Only $39.00</a>
+          <div class="special-offer">SPECIAL OFFER <span class="discount">{{section.settings.offer}}</span></div>
+          <h1>{{section.settings.heading}}</h1>
+          <p>{{section.settings.subtext}}</p>
+          <!-- Countdown timer -->
+          <div class="countdown">
+              <div class="time" id="days">00</div>
+              <div class="separator">:</div>
+              <div class="time" id="hours">00</div>
+              <div class="separator">:</div>
+              <div class="time" id="minutes">00</div>
+              <div class="separator">:</div>
+              <div class="time" id="seconds">00</div>
+          </div>
+          <!-- Call to action button -->
+          <a href="#" class="btn btn-primary mt-20">Get Only $39.00</a>
       </div>
-    </div>
+  </div>
   </div>
 </div>
 
 <!-- External JavaScript (script.js) -->
 <script>
-  // Set the date we're counting down to
-  const countDownDate = new Date("{{section.settings.date}}").getTime();
+// Set the date we're counting down to
+const countDownDate = new Date("{{section.settings.date}}").getTime();
 
-  // Update the count down every 1 second
-  const countdownFunction = setInterval(() => {
-      // Get today's date and time
-      const now = new Date().getTime();
+// Update the count down every 1 second
+const countdownFunction = setInterval(() => {
+    // Get today's date and time
+    const now = new Date().getTime();
 
-      // Find the distance between now and the count down date
-      const distance = countDownDate - now;
+    // Find the distance between now and the count down date
+    const distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Time calculations for days, hours, minutes and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the result in the element with id
-      document.getElementById("days").innerText = String(days).padStart(2, '0');
-      document.getElementById("hours").innerText = String(hours).padStart(2, '0');
-      document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
-      document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    // Display the result in the element with id
+    document.getElementById("days").innerText = String(days).padStart(2, '0');
+    document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
 
-      // If the count down is over, write some text
-      if (distance < 0) {
-          clearInterval(countdownFunction);
-          document.querySelector(".countdown").innerHTML = "EXPIRED";
-      }
-  }, 1000);
+    // If the count down is over, write some text
+    if (distance < 0) {
+        clearInterval(countdownFunction);
+        document.querySelector(".countdown").innerHTML = "EXPIRED";
+    }
+}, 1000);
 </script>
 
 {% schema %}
@@ -83,6 +87,29 @@
 "tag": "section",
 "class": "section",
   "settings": [
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Select Image"
+    },
+    {
+    "type": "text",
+    "id": "offer",
+    "label": "Select Offer",
+    "default": "-20%"
+    },
+    {
+    "type": "text",
+    "id": "heading",
+    "label": "Heading",
+    "default": "Save on Sets"
+    },
+    {
+    "type": "text",
+    "id": "subtext",
+    "label": "Sub Text",
+    "default": "Made using clean, non-toxic ingredients, our products are designed for everyone."
+    },
     {
     "type": "text",
     "id": "date",
