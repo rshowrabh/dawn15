@@ -51,7 +51,6 @@
     position: absolute;
     bottom: 10px;
     text-decoration: none;
-    color: rgb(var(--color-button-text));
 }
 #three-column-gallary .arrow{
     margin-left: 5px;
