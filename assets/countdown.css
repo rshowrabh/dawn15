@@ -69,17 +69,22 @@ p {
 }
 
 /* Call to action button styling */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #000;
-    color: rgb(var(--color-button-text));
-    text-transform: uppercase;
-    border: none;
-    border-radius: 4px;
+.btn{
+    box-shadow: 0 4px 9px rgba(0,0,0,.05);
     cursor: pointer;
-    font-size: 16px;
+    padding: 2% 5%;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    transition: .2s all linear;
+}
+.btn-primary:hover{
+    color: rgb(var(--color-button));
+    background-color: rgb(var(--color-button-text));
+
 }
 
 /* Responsive Mobile */
