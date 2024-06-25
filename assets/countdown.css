@@ -88,4 +88,8 @@ p {
     .offer-section {
         display: block
     }
+    /* Countdown timer styling */
+    .countdown {
+        gap: 5px;
+    }
   }
