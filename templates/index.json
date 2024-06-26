@@ -33,6 +33,7 @@
         "slide_tTiciJ": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/bg-slider-16.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -40,7 +41,7 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "",
