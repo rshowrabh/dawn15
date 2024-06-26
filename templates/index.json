@@ -29,21 +29,11 @@
             "button_label": "Explore More",
             "button_link": ""
           }
-        },
-        "column_K89aYY": {
-          "type": "column",
-          "settings": {
-            "collection_name": "Summer Collection",
-            "heading": "Intensive Glow C# Serum",
-            "button_label": "Explore Moree",
-            "button_link": "shopify:\/\/collections\/all"
-          }
         }
       },
       "block_order": [
         "column_zWhWf8",
-        "column_akdr6U",
-        "column_K89aYY"
+        "column_akdr6U"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -66,7 +56,6 @@
         "column_gcBtRd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/woodash_media_1.webp",
             "collection_name": "Starting at $3",
             "heading": "Winter Collection",
             "button_label": "Show More",
@@ -107,7 +96,6 @@
     "countdown_aDYLJW": {
       "type": "countdown",
       "settings": {
-        "image": "shopify:\/\/shop_images\/woodash_media_2.webp",
         "offer": "-20%",
         "heading": "Save on Sets",
         "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
