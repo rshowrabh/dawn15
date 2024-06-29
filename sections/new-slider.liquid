@@ -99,7 +99,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     <div class="section-{{ section.id }}-padding page-width">
         <div class="slider">
             <div class="slides">
-                {% for block in section.settings.blocks %}
+                {% for block in section.blocks %}
                     <div class="slide">
                     {% if block.settings.image != blank %}
                         <img src="{{ block.settings.image | image_url }}" alt="">
