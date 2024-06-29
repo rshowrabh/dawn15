@@ -21,18 +21,18 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                 {% for block in section.blocks %}
                     <div class="slide">
                     {% if block.settings.image != blank %}
-                        <img src="{{ block.settings.image | image_url }}" alt="">
-                        <div class="banner_text">
-                            <h1>Reveal The Beauty of Skin</h1>
-                            <p>Made using clean, non-toxic ingredients, our products are designed for everyone.</p>
-                            <a class="btn btn-primary" href="#">Shop More</a>
-                        </div>
+                        <img src="{{ block.settings.image | image_url }}" alt="">                       
+                            <div class="content">
+                                <h1>Love Your Skin Naturally</h1>
+                                <p>Made using clean, non-toxic ingredients, our products are designed for everyone.</p>
+                                <button onclick="location.href='#'">Shop Now</button>
+                            </div>
                       {% else %}
                         <img src="{{'banner.jpg '| asset_url}}" alt="">
-                        <div class="banner_text"> 
-                            <h1>Reveal The Beauty of Skin</h1>
+                        <div class="content">
+                            <h1>Love Your Skin Naturally</h1>
                             <p>Made using clean, non-toxic ingredients, our products are designed for everyone.</p>
-                            <a class="btn btn-primary" href="#">Shop More</a>
+                            <button onclick="location.href='#'">Shop Now</button>
                         </div>
                       {% endif %}                  
                    </div>
