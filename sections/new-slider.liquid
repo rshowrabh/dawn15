@@ -1,3 +1,5 @@
+{{ 'new-slider.css' | asset_url | stylesheet_tag }}
+
 {%- style -%}
 .section-{{ section.id }}-padding {
 padding-top: calc({{ section.settings.padding_top }}px * 0.75);
@@ -11,90 +13,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 }
 }
 {%- endstyle -%}
-<style>
-    /* Basic reset */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
 
-    body {
-        font-family: Arial, sans-serif;
-    }
-
-    /* Slider container */
-    .slider {
-        position: relative;
-        max-width: 1200px;
-        margin: 40px auto;
-        overflow: hidden;
-        border: 2px solid #ddd;
-        border-radius: 10px;
-    }
-
-    /* Slides */
-    .slides {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-    }
-
-    .slide {
-        min-width: 100%;
-        transition: opacity 1s ease;
-    }
-
-    .slide img {
-        width: 100%;
-        display: block;
-        border-bottom: 2px solid #ddd;
-    }
-
-    /* Navigation arrows */
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: red;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .arrow.left {
-        left: 10px;
-    }
-
-    .arrow.right {
-        right: 10px;
-    }
-
-    /* Dots navigation */
-    .dots {
-        text-align: center;
-        padding: 10px 0;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-    }
-
-    .dot {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin: 0 5px;
-        background-color: #bbb;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .dot.active {
-        background-color: #717171;
-    }
-</style>
 <div id="new-slider" class="color-{{ section.settings.color_scheme }} gradient isolate">
     <div class="section-{{ section.id }}-padding page-width">
         <div class="slider">
@@ -127,59 +46,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 
     </div>
 </div>
-<script>
-    // Initial Dots
-    var count = document.querySelector(".slides").childElementCount;
-    console.log(count);
-    for (var i = 0; i < count; i++) {
-        document.querySelector(".dots").innerHTML += `<span class="dot"></span>`;
-
-    }
-    // JavaScript for slider functionality
-    const slides = document.querySelector('.slides');
-    const slide = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-    const leftArrow = document.querySelector('.arrow.left');
-    const rightArrow = document.querySelector('.arrow.right');
-
-    let currentIndex = 0;
-
-    // Function to update slider position
-    function updateSlider() {
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentIndex);
-        });
-
-    }
-
-    // Function to show next slide
-    function showNextSlide() {
-        currentIndex = (currentIndex + 1) % slide.length;
-        updateSlider();
-    }
-
-    // Function to show previous slide
-    function showPrevSlide() {
-        currentIndex = (currentIndex - 1 + slide.length) % slide.length;
-        updateSlider();
-    }
-
-    // Event listeners for arrows
-    rightArrow.addEventListener('click', showNextSlide);
-    leftArrow.addEventListener('click', showPrevSlide);
-
-    // Event listeners for dots
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            currentIndex = index;
-            updateSlider();
-        });
-    });
-
-    // Auto slide functionality
-    setInterval(showNextSlide, 3000);
-</script>
+{{ 'new-slider.js' | asset_url | scipt_taq }}
 {% schema %}
 {
 "name": "New Slider",
