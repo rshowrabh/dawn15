@@ -48,4 +48,4 @@ updateSlider();
 });
 
 // Auto slide functionality
-setInterval(showNextSlide, 3000);
+// setInterval(showNextSlide, 3000);
