@@ -13,7 +13,6 @@ body {
 .slider {
     position: relative;
     overflow: hidden;
-    height: 500px;
 }
 
 /* Slides */
@@ -85,6 +84,5 @@ body {
 .slider {
     position: relative;
     overflow: hidden;
-    height: auto;
 }
   }
