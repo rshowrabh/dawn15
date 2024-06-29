@@ -25,6 +25,7 @@
         "slide_UVNLtn": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/bg-slider-14.jpg",
             "collection_name": "Starting at $31.2",
             "heading": "Summer Collection",
             "button_label": "Explore More",
