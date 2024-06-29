@@ -30,6 +30,7 @@ body {
 .slide img {
     max-width: 100%;
     display: block;
+    border-bottom: 2px solid #ddd;
 }
 
 /* Navigation arrows */
