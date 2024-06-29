@@ -58,7 +58,7 @@ body {
     text-align: center;
     padding: 10px 0;
     position: absolute;
-    bottom: 0;
+    bottom: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
@@ -77,3 +77,14 @@ body {
 .dot.active {
     background-color: #717171;
 }
+
+/* Responsive Mobile */
+
+@media only screen and (max-width: 767px) {
+    /* Slider container */
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+  }
