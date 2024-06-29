@@ -9,6 +9,14 @@
 */
 {
   "sections": {
+    "new_slider_3hrjmB": {
+      "type": "new-slider",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "slideshow_hYBcmd": {
       "type": "slideshow",
       "blocks": {
@@ -164,6 +172,7 @@
     }
   },
   "order": [
+    "new_slider_3hrjmB",
     "slideshow_hYBcmd",
     "two_column_gallary_tKwQzF",
     "three_column_gallary_Fg6cW3",
