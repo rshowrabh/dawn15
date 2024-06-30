@@ -51,6 +51,7 @@
         "slides_q6Fi7W": {
           "type": "slides",
           "settings": {
+            "bg_image": "shopify:\/\/shop_images\/pexels-photo-9218639.jpg",
             "content_position": "center-center",
             "content_alignment": "left",
             "opacity": 10,
