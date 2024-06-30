@@ -87,16 +87,19 @@
 }
 
 .slick-dots li {
-    background: #898989;
+    border:1px solid #898989;
     width: 12px;
     height: 12px;
     border-radius: 50%;
     margin: 3px;
     cursor: pointer;
+    transition: .1s all linear;
 }
 
 .slick-dots .slick-active {
-    background: #fff;
+    background: transparent;
+    width: 15px;
+    height: 15px;
 }
 
 .slider-items.slick-initialized.slick-slider.slick-dotted {
