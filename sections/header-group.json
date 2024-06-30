@@ -20,10 +20,18 @@
             "text": "Welcome to our store",
             "link": ""
           }
+        },
+        "announcement_tc6kg8": {
+          "type": "announcement",
+          "settings": {
+            "text": "Flash Sell 20%",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement_EVykMM"
+        "announcement_EVykMM",
+        "announcement_tc6kg8"
       ],
       "settings": {
         "color_scheme": "scheme-1",
