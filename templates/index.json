@@ -11,21 +11,6 @@
   "sections": {
     "new_slider_KNN68L": {
       "type": "new-slider",
-      "blocks": {
-        "slide_Th4D9A": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/pexels-photo-9430982.jpg",
-            "collection_name": "Starting at $31.2",
-            "heading": "Summer Collection",
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_Th4D9A"
-      ],
       "settings": {
         "color_scheme": "",
         "padding_top": 40,
