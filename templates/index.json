@@ -30,24 +30,6 @@
             "color_scheme": "scheme-3"
           }
         },
-        "slides_jyCVWk": {
-          "type": "slides",
-          "settings": {
-            "bg_image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-9651419.jpg",
-            "content_position": "left-center",
-            "content_alignment": "left",
-            "opacity": 10,
-            "heading": "Stylish Collection",
-            "sub_heading": "",
-            "text": "<p>Grab the deal right now! you can get extra 15% off this season.<\/p>",
-            "btn_label": "Shop now",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "scheme-4"
-          }
-        },
         "slides_q6Fi7W": {
           "type": "slides",
           "settings": {
@@ -65,12 +47,30 @@
             "enable_link": false,
             "color_scheme": "scheme-1"
           }
+        },
+        "slides_JgEcCr": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-9651419.jpg",
+            "content_position": "left-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Stylish look",
+            "sub_heading": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
         "slides_bLJHz3",
-        "slides_jyCVWk",
-        "slides_q6Fi7W"
+        "slides_q6Fi7W",
+        "slides_JgEcCr"
       ],
       "settings": {
         "slider_height": "default",
