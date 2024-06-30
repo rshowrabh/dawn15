@@ -11,6 +11,14 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "new_announcement_bar_qLTEMn": {
+      "type": "new-announcement-bar",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "header": {
       "type": "header",
       "settings": {
@@ -56,6 +64,7 @@
     }
   },
   "order": [
+    "new_announcement_bar_qLTEMn",
     "header",
     "announcement_bar_qhanRM"
   ]
