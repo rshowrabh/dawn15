@@ -34,10 +34,10 @@
           "type": "slides",
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-9651419.jpg",
-            "content_position": "left-top",
+            "content_position": "left-center",
             "content_alignment": "left",
             "opacity": 10,
-            "heading": "Get extra 15% off",
+            "heading": "",
             "sub_heading": "",
             "text": "<p>Grab the deal right now! you can get extra 15% off this season.<\/p>",
             "btn_label": "Shop now",
