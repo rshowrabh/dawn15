@@ -95,7 +95,9 @@
     transition: .1s all linear;
     margin-right: 10px;
 }
-
+.slick-dots li button::before{
+    display: none;
+}
 .slick-dots .slick-active {
     background: transparent;
     transform: scale(3);
