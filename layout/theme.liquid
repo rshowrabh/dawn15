@@ -308,7 +308,8 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
-
+    {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'script.js' | asset_url | script_tag }}
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {
