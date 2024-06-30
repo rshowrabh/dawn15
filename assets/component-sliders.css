@@ -1,3 +1,6 @@
+.sliders .btn-primary:hover{
+    background-color: transparent;
+}
 .slider-item {
     position: relative;
 }
