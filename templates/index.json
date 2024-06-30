@@ -52,7 +52,7 @@
           "type": "slides",
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-9651419.jpg",
-            "content_position": "left-center",
+            "content_position": "right-center",
             "content_alignment": "left",
             "opacity": 10,
             "heading": "Unveiling Radiant Jewelry Collections",
@@ -63,7 +63,7 @@
             "second_label": "",
             "second_url": "",
             "enable_link": false,
-            "color_scheme": "scheme-4"
+            "color_scheme": "scheme-3"
           }
         }
       },
