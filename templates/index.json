@@ -9,38 +9,71 @@
 */
 {
   "sections": {
-    "new_slider_LXP7bR": {
-      "type": "new-slider",
+    "image_banner_slider_KQXg6m": {
+      "type": "image-banner-slider",
       "blocks": {
-        "slide_3XrQVJ": {
-          "type": "slide",
+        "slides_bLJHz3": {
+          "type": "slides",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bg-slider-16.jpg",
-            "collection_name": "Starting at $31.2",
-            "heading": "Summer Collection",
-            "button_label": "Explore More",
-            "button_link": ""
+            "bg_image": "shopify:\/\/shop_images\/bg-slider-16.jpg",
+            "content_position": "center-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
           }
         },
-        "slide_UVNLtn": {
-          "type": "slide",
+        "slides_jyCVWk": {
+          "type": "slides",
           "settings": {
-            "image": "shopify:\/\/shop_images\/bg-slider-14.jpg",
-            "collection_name": "Starting at $31.2",
-            "heading": "Summer Collection",
-            "button_label": "Explore More",
-            "button_link": ""
+            "bg_image": "shopify:\/\/shop_images\/bg-slider-14.jpg",
+            "content_position": "center-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
+          }
+        },
+        "slides_q6Fi7W": {
+          "type": "slides",
+          "settings": {
+            "content_position": "center-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
+            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "text": "",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "accent-1"
           }
         }
       },
       "block_order": [
-        "slide_3XrQVJ",
-        "slide_UVNLtn"
+        "slides_bLJHz3",
+        "slides_jyCVWk",
+        "slides_q6Fi7W"
       ],
       "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "slider_height": "default",
+        "center_width": false
       }
     },
     "two_column_gallary_tKwQzF": {
@@ -143,7 +176,7 @@
     }
   },
   "order": [
-    "new_slider_LXP7bR",
+    "image_banner_slider_KQXg6m",
     "two_column_gallary_tKwQzF",
     "three_column_gallary_Fg6cW3",
     "countdown_aDYLJW"
