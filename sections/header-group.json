@@ -11,34 +11,26 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
+    "announcement_bar_HDajPn": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_EVykMM": {
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
             "link": ""
           }
-        },
-        "announcement_brkb6e": {
-          "type": "announcement",
-          "settings": {
-            "text": "Flash Sale",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_brkb6e"
+        "announcement_EVykMM"
       ],
       "settings": {
         "color_scheme": "scheme-1",
         "show_line_separator": true,
         "show_social": true,
         "auto_rotate": true,
-        "change_slides_speed": 9,
+        "change_slides_speed": 5,
         "enable_country_selector": true,
         "enable_language_selector": true
       }
@@ -64,7 +56,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "announcement_bar_HDajPn",
     "header"
   ]
 }
