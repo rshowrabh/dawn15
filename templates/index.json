@@ -33,19 +33,19 @@
         "slides_jyCVWk": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify:\/\/shop_images\/bg-slider-14.jpg",
-            "content_position": "center-center",
+            "bg_image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-9651419.jpg",
+            "content_position": "left-center",
             "content_alignment": "left",
             "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
+            "heading": "Get extra 15% off",
+            "sub_heading": "Grab the deal right now! you can get extra 15% off this season.",
             "text": "",
             "btn_label": "Shop now",
             "url": "",
             "second_label": "",
             "second_url": "",
             "enable_link": false,
-            "color_scheme": "accent-1"
+            "color_scheme": "scheme-4"
           }
         },
         "slides_q6Fi7W": {
