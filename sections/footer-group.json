@@ -19,18 +19,26 @@
           "settings": {
             "show_social": false
           }
+        },
+        "link_list_N4eKyY": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": ""
+          }
         }
       },
       "block_order": [
-        "brand_information_PmTTUU"
+        "brand_information_PmTTUU",
+        "link_list_N4eKyY"
       ],
       "settings": {
         "payment_width": 90,
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Footer Done",
-        "enable_follow_on_shop": true,
-        "show_social": true,
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
