@@ -101,7 +101,9 @@
     transform: scale(3);
     border: 1px solid #FFF;
 }
-
+.slick-dots li.slick-active button::before{
+    color: transparent;
+}
 .slider-items.slick-initialized.slick-slider.slick-dotted {
     margin-bottom: 0;
 }
