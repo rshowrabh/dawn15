@@ -9,14 +9,6 @@
 */
 {
   "sections": {
-    "new_slider_KNN68L": {
-      "type": "new-slider",
-      "settings": {
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "image_banner_slider_KQXg6m": {
       "type": "image-banner-slider",
       "blocks": {
@@ -176,7 +168,6 @@
     }
   },
   "order": [
-    "new_slider_KNN68L",
     "image_banner_slider_KQXg6m",
     "two_column_gallary_tKwQzF",
     "three_column_gallary_Fg6cW3",
