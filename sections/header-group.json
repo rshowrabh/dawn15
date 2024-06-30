@@ -11,27 +11,19 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement_bar_HDajPn": {
-      "type": "announcement-bar",
+    "new_announcement_bar_jfggne": {
+      "type": "new-announcement-bar",
       "blocks": {
-        "announcement_EVykMM": {
+        "announcement_79dRyq": {
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
             "link": ""
           }
-        },
-        "announcement_tc6kg8": {
-          "type": "announcement",
-          "settings": {
-            "text": "Flash Sell 20%",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement_EVykMM",
-        "announcement_tc6kg8"
+        "announcement_79dRyq"
       ],
       "settings": {
         "color_scheme": "scheme-1",
@@ -64,7 +56,7 @@
     }
   },
   "order": [
-    "announcement_bar_HDajPn",
+    "new_announcement_bar_jfggne",
     "header"
   ]
 }
