@@ -93,12 +93,12 @@
     border-radius: 50%;
     cursor: pointer;
     transition: .1s all linear;
+    margin-right: 10px;
 }
 
 .slick-dots .slick-active {
     background: transparent;
-    width: 10px;
-    height: 10px;
+    transform: scale(3);
     border: 1px solid #FFF;
 }
 
