@@ -26,11 +26,27 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "link_list_nRUAEY": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "text_wwzCRr": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
         }
       },
       "block_order": [
         "brand_information_PmTTUU",
-        "link_list_N4eKyY"
+        "link_list_N4eKyY",
+        "link_list_nRUAEY",
+        "text_wwzCRr"
       ],
       "settings": {
         "payment_width": 90,
