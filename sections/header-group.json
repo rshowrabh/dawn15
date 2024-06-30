@@ -44,10 +44,10 @@
         "padding_bottom": 0
       }
     },
-    "announcement_bar_qhanRM": {
+    "announcement_bar_nUCrke": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_HJHiQw": {
+        "announcement_ALtatW": {
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
@@ -56,12 +56,12 @@
         }
       },
       "block_order": [
-        "announcement_HJHiQw"
+        "announcement_ALtatW"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "show_line_separator": true,
-        "show_social": true,
+        "show_social": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
         "enable_country_selector": true,
@@ -72,6 +72,6 @@
   "order": [
     "new_announcement_bar_qLTEMn",
     "header",
-    "announcement_bar_qhanRM"
+    "announcement_bar_nUCrke"
   ]
 }
