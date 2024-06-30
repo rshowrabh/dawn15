@@ -15,10 +15,10 @@
       "type": "new-announcement-bar",
       "settings": {
         "heading": "Flash Sale 30%",
-        "fb_text": "100K Followers",
-        "fb_url": "",
-        "insta_text": "100K Followers",
-        "insta_url": "",
+        "fb_text": "77K Followers",
+        "fb_url": "https:\/\/www.facebook.com\/lesia.e.emporium.bd",
+        "insta_text": "15K Followers",
+        "insta_url": "https:\/\/www.instagram.com\/lesia_e_emporium",
         "store_link": "",
         "color_scheme": "",
         "padding_top": 0,
@@ -58,6 +58,7 @@
       "block_order": [
         "announcement_ALtatW"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
