@@ -14,6 +14,12 @@
     "new_announcement_bar_qLTEMn": {
       "type": "new-announcement-bar",
       "settings": {
+        "heading": "Flash Sale 30%",
+        "fb_text": "100K Followers",
+        "fb_url": "",
+        "insta_text": "100K Followers",
+        "insta_url": "",
+        "store_link": "",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -58,8 +64,8 @@
         "show_social": true,
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
+        "enable_country_selector": true,
+        "enable_language_selector": true
       }
     }
   },
