@@ -15,19 +15,19 @@
         "slides_bLJHz3": {
           "type": "slides",
           "settings": {
-            "bg_image": "shopify:\/\/shop_images\/bg-slider-16.jpg",
+            "bg_image": "shopify:\/\/shop_images\/pexels-photo-9430982.jpg",
             "content_position": "left-top",
             "content_alignment": "left",
             "opacity": 10,
-            "heading": "Dream Spaces: Your Imagination, Our Blueprint",
-            "sub_heading": "Discover our vast collection of curated designs and embark on a journey to redefine your living space.",
-            "text": "<p>No text<\/p>",
+            "heading": "The most extensive & affordable collection",
+            "sub_heading": "",
+            "text": "<p>A celebration of vibrant enamel and joyful gemstones in brilliant cut silhouettes.<\/p>",
             "btn_label": "Shop now",
             "url": "",
             "second_label": "",
             "second_url": "",
             "enable_link": false,
-            "color_scheme": "accent-1"
+            "color_scheme": "scheme-3"
           }
         },
         "slides_jyCVWk": {
