@@ -1,5 +1,5 @@
 {{ 'component-sliders.css' | asset_url | stylesheet_tag: preload: true }}
-
+ 
 {%- liquid
   assign s = section.settings
   assign slider_height = s.slider_height
@@ -47,7 +47,7 @@
               {%- endif -%}
               {%- if btn_label != blank or second_label != blank -%}
                 <div class="sliderr-buttons">
-                  <a href="{{url}}" class="btn primary-btn">{{ btn_label }}</a>
+                  <a href="{{url}}" class="btn btn-primary">{{ btn_label }}</a>
                   {%- if second_label != blank -%}
                     <a href="{{second_url}}" class="btn secondary-btn">{{ second_label }}</a>
                   {%- endif -%}
