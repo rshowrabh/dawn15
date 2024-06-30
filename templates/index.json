@@ -34,7 +34,7 @@
           "type": "slides",
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/pexels-the-glorious-studio-9651419.jpg",
-            "content_position": "left-center",
+            "content_position": "left-top",
             "content_alignment": "left",
             "opacity": 10,
             "heading": "Get extra 15% off",
