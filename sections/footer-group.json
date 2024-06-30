@@ -51,7 +51,7 @@
       "settings": {
         "payment_img": "shopify:\/\/shop_images\/SSLCommerz_white_f15278fb-9ebf-406b-b96d-0a6d36da872f.png",
         "payment_img_mob": "shopify:\/\/shop_images\/ssl_commerze.81ae0eea.png",
-        "payment_width": 90,
+        "payment_width": 70,
         "color_scheme": "scheme-4",
         "newsletter_enable": false,
         "newsletter_heading": "",
