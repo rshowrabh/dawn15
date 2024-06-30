@@ -20,6 +20,11 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     padding: 10px 20px;
     font-size: 14px;
   }
+  .social-info-bar .heading{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   /* Social media section */
   .social-media{
@@ -76,6 +81,10 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
     .info span {
       margin-left: 0;
     }
+    .social-info-bar .heading{
+    position: static;
+    transform: translateX(0%);
+  }
   }
 </style>
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
@@ -99,7 +108,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
             {{section.settings.insta_text}}</a>
         </div>
       </div>
-      <div class="headign">
+      <div class="heading">
         <span>{{section.settings.heading}}</span>
       </div>
       <div class="info">
