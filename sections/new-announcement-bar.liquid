@@ -1,15 +1,15 @@
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
-  }
+.section-{{ section.id }}-padding {
+padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
+}
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
 {%- endstyle -%}
 
 <style>
@@ -19,110 +19,121 @@
     align-items: center;
     padding: 10px 20px;
     font-size: 14px;
-}
+  }
 
-/* Social media section */
-.social-media span {
+  /* Social media section */
+  .social-media span {
     margin-right: 20px;
-}
+  }
+  .social-media span svg{
+    height: 20px;
+    width: 20px;
+  }
 
-/* Info section */
-.info span {
+  /* Info section */
+  .info span {
     margin-left: 20px;
-}
+  }
 
-.info a {
+  .info a {
     text-decoration: none;
     color: #000;
-}
+  }
 
-.info a:hover {
+  .info a:hover {
     text-decoration: underline;
-}
+  }
 
-/* Icons */
-.fab, .fas {
+  /* Icons */
+  .fab,
+  .fas {
     margin-right: 5px;
-}
+  }
 
-/* Responsive styles */
-@media (max-width: 768px) {
+  /* Responsive styles */
+  @media (max-width: 768px) {
     .social-info-bar {
-        flex-direction: column;
-        align-items: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .social-media, .info {
-        margin-bottom: 10px;
+    .social-media,
+    .info {
+      margin-bottom: 10px;
     }
 
     .info span {
-        margin-left: 0;
+      margin-left: 0;
     }
-}
+  }
 </style>
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
     <div class="social-info-bar">
       <div class="social-media">
-          <span><svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
-            <path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z"></path>
-          </svg> 100k Followers</span>
-          <span><svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
-            <path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z"></path>
-          </svg> 300k Followers</span>
+        <a href="#">
+          <svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
+            <path fill="currentColor"
+              d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z">
+            </path>
+          </svg> 100k Followers</a>
+        <a href="#"><svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
+            <path fill="currentColor"
+              d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z">
+            </path>
+          </svg> 300k Followers</a>
       </div>
       <div class="headign">
         <span>Free shipping on all U.S. orders $50+ | <a href="#">Discover More</a></span>
       </div>
-      <div class="info">         
-          <span><i class="fas fa-map-marker-alt"></i> Find a Store</span>
-          <span>USD <i class="fas fa-caret-down"></i></span>
+      <div class="info">
+        <span><i class="fas fa-map-marker-alt"></i> Find a Store</span>
+        <span>USD <i class="fas fa-caret-down"></i></span>
       </div>
-  </div>
+    </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "New Announcement Bar",
-  "settings": [
-    {
-      "type": "color_scheme",
-      "id": "color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
-    },
-    {
-      "type": "range",
-      "id": "padding_top",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
-      "default": 0
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "min": 0,
-      "max": 100,
-      "step": 4,
-      "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
-      "default": 0
-    }
-  ],
-  "presets": [
-    {
-      "name": "New Announcement Bar"
+"name": "New Announcement Bar",
+"settings": [
+{
+"type": "color_scheme",
+"id": "color_scheme",
+"label": "t:sections.all.colors.label",
+"default": "scheme-1"
+},
+{
+"type": "header",
+"content": "t:sections.all.padding.section_padding_heading"
+},
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_top",
+"default": 0
+},
+{
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_bottom",
+"default": 0
+}
+],
+"presets": [
+{
+"name": "New Announcement Bar"
 
-    }
-  ]
+}
+]
 }
 {% endschema %}
