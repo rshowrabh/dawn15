@@ -604,17 +604,9 @@
     justify-content: center;
 }
 }
-.footer-block {
-  padding: 0px 20px;
-}.footer-payment-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.footer_arrow{
-  opacity: 0;
-  visibility: hidden;
-}
+
+/*  */
+
  /* Footer */
  .grid .footer-block.grid__item {
   margin: 0;
@@ -665,4 +657,15 @@
   height: 3rem;
   color:rgb(var(--color-foreground));
 
+}
+.footer-block {
+  padding: 0px 20px;
+}.footer-payment-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.footer_arrow{
+  opacity: 0;
+  visibility: hidden;
 }
