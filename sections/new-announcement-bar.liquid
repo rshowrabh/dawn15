@@ -13,6 +13,9 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
 {%- endstyle -%}
 
 <style>
+  .new-announcement-bar{
+    border: 1px solid #d5d5d5;
+  }
   .social-info-bar {
     display: flex;
     justify-content: space-between;
@@ -82,7 +85,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
   }
   }
 </style>
-<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+<div id="new-announcement-bar" class="color-{{ section.settings.color_scheme }} gradient isolate">
   <div class="section-{{ section.id }}-padding page-width">
     <div class="social-info-bar">
       <div class="social-media">
