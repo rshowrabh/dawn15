@@ -1,3 +1,5 @@
-<svg width="40" height="40" viewBox="0 0 40 40" class="icon" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M30 16L20 26L10 16L11.3333 14.6667L20 23.3333L28.6667 14.6667L30 16Z" fill="currentColor"></path>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px"><path d="M50 55.4314L64.4314 41L66 42.5686L50 58.5686L34 42.5686L35.5686 41L50 55.4314Z" fill="white" /></svg>
+
+<!-- <svg width="100" height="100" viewBox="0 0 100 100" class="icon icon-big-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M50 55.4314L64.4314 41L66 42.5686L50 58.5686L34 42.5686L35.5686 41L50 55.4314Z" fill="currentColor"></path>
+</svg> -->
