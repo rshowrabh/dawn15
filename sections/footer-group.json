@@ -30,8 +30,8 @@
         "link_list_nRUAEY": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "<strong>Information<\/strong>",
+            "menu": "information"
           }
         },
         "text_wwzCRr": {
