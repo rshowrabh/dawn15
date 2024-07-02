@@ -12,24 +12,6 @@
     "image_banner_slider_KQXg6m": {
       "type": "image-banner-slider",
       "blocks": {
-        "slides_bLJHz3": {
-          "type": "slides",
-          "settings": {
-            "bg_image": "shopify:\/\/shop_images\/WedEss0624_Desktop.d4236.jpg",
-            "content_position": "right-center",
-            "content_alignment": "right",
-            "opacity": 10,
-            "heading": "The most extensive & affordable collection",
-            "sub_heading": "",
-            "text": "<p>A celebration of vibrant enamel and joyful gemstones in brilliant cut silhouettes.<\/p>",
-            "btn_label": "Shop now",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "scheme-3"
-          }
-        },
         "slides_q6Fi7W": {
           "type": "slides",
           "settings": {
@@ -46,6 +28,24 @@
             "second_url": "",
             "enable_link": false,
             "color_scheme": "scheme-1"
+          }
+        },
+        "slides_bLJHz3": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify:\/\/shop_images\/WedEss0624_Desktop.d4236.jpg",
+            "content_position": "right-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "The most extensive & affordable collection",
+            "sub_heading": "",
+            "text": "<p>A celebration of vibrant enamel and joyful gemstones in brilliant cut silhouettes.<\/p>",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "scheme-3"
           }
         },
         "slides_JgEcCr": {
@@ -68,8 +68,8 @@
         }
       },
       "block_order": [
-        "slides_bLJHz3",
         "slides_q6Fi7W",
+        "slides_bLJHz3",
         "slides_JgEcCr"
       ],
       "settings": {
