@@ -13,7 +13,7 @@
   {%- endstyle -%}
    <style>
     /* Container for the entire section */
-    .container {
+   #new-video .container {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -24,50 +24,34 @@
       gap: 10px;
     }
     /* Content section styling */
-    .content{
+    #new-video .content{
       width: calc(33.33%)
     }
-    .content-text{
+    #new-video .content-text{
       width: 80%;
     }
-    .image {
+    #new-video .image {
       width: calc(66.67%)
     }
-    .content h1 {
+    #new-video .content h1 {
       font-size: 36px;
       margin-bottom: 10px;
     }
-    .content h2 {
+    #new-video .content h2 {
       font-size: 20px;
       color: #999;
       margin-bottom: 20px;
     }
-    .content p {
+    #new-video .content p {
       font-size: 16px;
       margin-bottom: 20px;
       line-height: 1.5;
     }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      font-size: 16px;
-      color: #fff;
-      background-color: #000;
-      text-align: center;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn:hover {
-      background-color: #444;
-    }
     /* Image section styling */
-    .image {
+    #new-video .image {
       position: relative;
     }
-    .image img {
-      width: 100%;
-      height: auto;
-    }
+   
     #video{
       width: 100%;
       -webkit-box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
@@ -76,7 +60,7 @@
     }
     /* Play button styling */
   
-    .play-button{
+    #new-video .play-button{
       position: absolute;
       top: 50%;
       left: 50%;
@@ -89,10 +73,10 @@
     }
     /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
+        #new-video .container {
         flex-direction: column-reverse;
       }
-      .content,
+      #new-video .content,
       .image {
           width: calc(100%);
     }
@@ -112,7 +96,7 @@
             Made using clean, non-toxic ingredients, our products are designed for
             everyone.
             </p>
-            <a href="#" class="btn">Explore More</a>
+            <a href="#" class="btn btn-primary">Explore More</a>
         </div>      
       </div>
       <div class="image">
