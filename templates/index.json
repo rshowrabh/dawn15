@@ -116,6 +116,7 @@
         "column_RCHkAy": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Femme_Hexagonal_Necklace_1200x-03.jpg",
             "collection_name": "Starting at $31.2",
             "heading": "Summer Collection",
             "button_label": "Explore More",
@@ -125,6 +126,7 @@
         "column_gcBtRd": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_7792_700x_b6ab5486-ea7d-43cb-9e49-3078a09a215b.jpg",
             "collection_name": "Starting at $3",
             "heading": "Winter Collection",
             "button_label": "Show More",
