@@ -61,7 +61,6 @@
     /* Play button styling */
   
     #new-video .play-button{
-      display: none;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -102,7 +101,7 @@
       </div>
       <div class="image">
         <video id="video">
-            <iframe width="720" height="380" src="https://www.youtube.com/embed/PhPlKqDcvwI?enablejsapi=1&autoplay=1{{ "19901231T230000Z" | date: "%Y%m%dT%H%M%S", 360 }}" title="Shukhe Nai Goni Miya | Niloy Alamgir | JS Heme | সুখে নাই গনি মিয়া | New Eid Natok 2024 | NTV Natok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <source src="{{section.settings.video.sources[1].url}}" type="video/mp4">
           </video>
         <div onclick="playPause()" class="play-button">
           <svg
@@ -162,6 +161,11 @@
     "tag": "section",
     "class": "section",
     "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Add Video"
+      },
       {
         "type": "color_scheme",
         "id": "color_scheme",
