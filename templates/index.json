@@ -65,12 +65,31 @@
             "enable_link": false,
             "color_scheme": "scheme-3"
           }
+        },
+        "slides_wd8ckd": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify:\/\/shop_images\/astorCollectionBanner.5937c.jpg",
+            "content_position": "right-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Unveiling Radiant Jewelry Collections",
+            "sub_heading": "",
+            "text": "<p>Step into our world of radiant jewelry collections, where each piece sparkles with a story waiting to intertwine with yours.<\/p>",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "scheme-3"
+          }
         }
       },
       "block_order": [
         "slides_q6Fi7W",
         "slides_bLJHz3",
-        "slides_JgEcCr"
+        "slides_JgEcCr",
+        "slides_wd8ckd"
       ],
       "settings": {
         "slider_height": "default",
