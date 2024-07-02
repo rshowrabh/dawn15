@@ -34,11 +34,16 @@
             "menu": "information"
           }
         },
-        "text_wwzCRr": {
-          "type": "text",
+        "contact_qcLPhm": {
+          "type": "contact",
           "settings": {
-            "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+            "heading": "<strong>Contact Us<\/strong>",
+            "phone": "01759-040327",
+            "email": "lesia.e.emporium@gmail.com",
+            "address": "Panthapath, Dhaka-1205 Bangladesh.",
+            "open_time": "Open Hours: 10am - 8pm",
+            "social_heading": "Follow us",
+            "show_social": false
           }
         }
       },
@@ -46,7 +51,7 @@
         "brand_information_PmTTUU",
         "link_list_N4eKyY",
         "link_list_nRUAEY",
-        "text_wwzCRr"
+        "contact_qcLPhm"
       ],
       "settings": {
         "payment_img": "shopify:\/\/shop_images\/SSLCommerz_white_0a92ba05-672a-43b3-834a-d24361ab1aed.png",
