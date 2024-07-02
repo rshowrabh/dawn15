@@ -30,24 +30,6 @@
             "color_scheme": "scheme-1"
           }
         },
-        "slides_tkfdbw": {
-          "type": "slides",
-          "settings": {
-            "bg_image": "shopify:\/\/shop_images\/engagement.39cf5.jpg",
-            "content_position": "left-center",
-            "content_alignment": "left",
-            "opacity": 10,
-            "heading": "Stylish look",
-            "sub_heading": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "btn_label": "Shop now",
-            "url": "",
-            "second_label": "",
-            "second_url": "",
-            "enable_link": false,
-            "color_scheme": "scheme-1"
-          }
-        },
         "slides_bLJHz3": {
           "type": "slides",
           "settings": {
@@ -64,6 +46,24 @@
             "second_url": "",
             "enable_link": false,
             "color_scheme": "scheme-3"
+          }
+        },
+        "slides_tkfdbw": {
+          "type": "slides",
+          "settings": {
+            "bg_image": "shopify:\/\/shop_images\/engagement.39cf5.jpg",
+            "content_position": "left-center",
+            "content_alignment": "left",
+            "opacity": 10,
+            "heading": "Stylish look",
+            "sub_heading": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "btn_label": "Shop now",
+            "url": "",
+            "second_label": "",
+            "second_url": "",
+            "enable_link": false,
+            "color_scheme": "scheme-1"
           }
         },
         "slides_JgEcCr": {
@@ -105,8 +105,8 @@
       },
       "block_order": [
         "slides_q6Fi7W",
-        "slides_tkfdbw",
         "slides_bLJHz3",
+        "slides_tkfdbw",
         "slides_JgEcCr",
         "slides_wd8ckd"
       ],
