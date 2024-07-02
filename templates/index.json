@@ -77,46 +77,13 @@
         "center_width": false
       }
     },
-    "two_column_gallary_tKwQzF": {
-      "type": "two-column-gallary",
-      "blocks": {
-        "column_zWhWf8": {
-          "type": "column",
-          "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        },
-        "column_akdr6U": {
-          "type": "column",
-          "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_zWhWf8",
-        "column_akdr6U"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "three_column_gallary_Fg6cW3": {
       "type": "three-column-gallary",
       "blocks": {
         "column_RCHkAy": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Femme_Hexagonal_Necklace_1200x-03.jpg",
+            "image": "shopify:\/\/shop_images\/bracelets.6c0c2.jpg",
             "collection_name": "Starting at $31.2",
             "heading": "Summer Collection",
             "button_label": "Explore More",
@@ -168,6 +135,38 @@
         "padding_bottom": 52
       }
     },
+    "two_column_gallary_tKwQzF": {
+      "type": "two-column-gallary",
+      "blocks": {
+        "column_zWhWf8": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        },
+        "column_akdr6U": {
+          "type": "column",
+          "settings": {
+            "collection_name": "New Collection",
+            "heading": "Intensive Glow C+ Serum",
+            "button_label": "Explore More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zWhWf8",
+        "column_akdr6U"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "new_video_J7kxJX": {
       "type": "new-video",
       "settings": {
@@ -179,9 +178,9 @@
   },
   "order": [
     "image_banner_slider_KQXg6m",
-    "two_column_gallary_tKwQzF",
     "three_column_gallary_Fg6cW3",
     "countdown_aDYLJW",
+    "two_column_gallary_tKwQzF",
     "new_video_J7kxJX"
   ]
 }
