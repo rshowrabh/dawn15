@@ -1,0 +1,218 @@
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+      padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+   <style>
+    /* Container for the entire section */
+    .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      background-color: #fff;
+      gap: 10px;
+    }
+    /* Content section styling */
+    .content{
+      width: calc(33.33%)
+    }
+    .content-text{
+      width: 80%;
+    }
+    .image {
+      width: calc(66.67%)
+    }
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .content h2 {
+      font-size: 20px;
+      color: #999;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #000;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #444;
+    }
+    /* Image section styling */
+    .image {
+      position: relative;
+    }
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+    #video{
+      width: 100%;
+      -webkit-box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
+      -moz-box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
+      box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
+    }
+    /* Play button styling */
+  
+    .play-button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background:transparent;
+      border-radius: 50%;
+      color: #FFF;
+    }
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column-reverse;
+      }
+      .content,
+      .image {
+          width: calc(100%);
+    }
+    #video{
+      box-shadow: none;
+    }
+  }
+  </style>
+  <div id="new-video" class="color-{{ section.settings.color_scheme }} gradient isolate">
+    <div class="section-{{ section.id }}-padding page-width">
+        <div class="container">
+      <div class="content">
+        <div class="content-text">
+            <h2>NEW COLLECTION</h2>
+            <h1>Anti-aging Cream</h1>
+            <p>
+            Made using clean, non-toxic ingredients, our products are designed for
+            everyone.
+            </p>
+            <a href="#" class="btn">Explore More</a>
+        </div>      
+      </div>
+      <div class="image">
+        <video id="video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          </video>
+        <div onclick="playPause()" class="play-button">
+          <svg
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 60 60"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                fill="currentColor"
+                d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30
+		c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15
+		C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"
+              />
+              <path
+                fill="currentColor"
+                d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30
+		S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+<script>
+        var myVideo = document.getElementById("video"); 
+
+        function playPause() { 
+        if (myVideo.paused) 
+            myVideo.play(); 
+        else 
+            myVideo.pause(); 
+        } 
+
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+</script>
+  
+  {% schema %}
+  {
+    "name": "New Video",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+    "presets": [
+      {
+        "name": "New Video"
+      }
+    ]
+  }
+  {% endschema %}
+  
