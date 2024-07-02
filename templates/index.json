@@ -141,8 +141,9 @@
         "column_AUyYht": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/necklaces-sb5nfxu7.jpg",
             "collection_name": "Starting at $31.2",
-            "heading": "Summer Collection",
+            "heading": "Necklaces",
             "button_label": "Explore More",
             "button_link": ""
           }
