@@ -89,13 +89,12 @@
         <div class="container">
       <div class="content">
         <div class="content-text">
-            <h2>NEW COLLECTION</h2>
-            <h1>Anti-aging Cream</h1>
+            <h2>{{section.settings.collection_name}}</h2>
+            <h1>{{section.settings.title}}/h1>
             <p>
-            Made using clean, non-toxic ingredients, our products are designed for
-            everyone.
+              {{section.settings.text}}
             </p>
-            <a href="#" class="btn btn-primary">Explore More</a>
+            <a href="{{section.settings.button_url}}" class="btn btn-primary">{{section.settings.button_label}}</a>
         </div>      
       </div>
       <div class="image">
@@ -160,6 +159,35 @@
     "tag": "section",
     "class": "section",
     "settings": [
+      {
+        "type": "text",
+        "id": "collection_name",
+        "label": "Collection Name",
+        "default": "New Collection"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Anti-aging Cream"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Add Text",
+        "default" : "Made using clean, non-toxic ingredients, our products are designed for everyone."
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "Explore More"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"
+      },
       {
         "type": "video",
         "id": "video",
