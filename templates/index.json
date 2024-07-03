@@ -239,6 +239,7 @@
     "new_video_J7kxJX": {
       "type": "new-video",
       "settings": {
+        "video": "shopify:\/\/files\/videos\/cosmetic.mp4",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
