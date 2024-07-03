@@ -95,10 +95,10 @@
         </div>      
       </div>
       <div class="image">
-        <video id="video" muted loop autoplay>
+        <video id="video" controls  loop autoplay>
             <source src="{{section.settings.video.sources[1].url}}" type="video/mp4">
           </video>
-        {% comment %} <div onclick="playPause()" class="play-button">
+           <div onclick="playPause()" class="play-button">
           <svg
             version="1.1"
             id="Capa_1"
@@ -121,13 +121,13 @@
               />
             </g>
           </svg>
-        </div> {% endcomment %}
+        </div> 
       </div>
     </div>
     </div>
   </div>
 
-{% comment %} <script>
+<script>
         var myVideo = document.getElementById("video"); 
         var playbtn = document.getElementsByClassName("play-button"); 
 
@@ -150,7 +150,7 @@
         function makeNormal() { 
             myVideo.width = 420; 
         } 
-</script> {% endcomment %}
+</script>
   
   {% schema %}
   {
