@@ -132,10 +132,12 @@
 
 <script>
         var myVideo = document.getElementById("video"); 
+        var playbtn = document.getElementsByClassName("play-button"); 
 
         function playPause() { 
         if (myVideo.paused) 
-            myVideo.play(); 
+            myVideo.play();
+
         else 
             myVideo.pause(); 
         } 
