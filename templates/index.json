@@ -223,14 +223,14 @@
         "video_PPaTYe": {
           "type": "video",
           "settings": {
-            "video_link": "",
-            "title": "Video slide",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7cc1ff36e51c4c1a9e52e410bd6ae9e9.mp4",
+            "title": "What is Moissanite?",
+            "text": "<p>Moissanite offers a more affordable alternative to diamonds for engagement rings, with similar durability and greater brilliance and fire.<\/p>",
             "color_text": "#ffffff",
-            "button_label": "",
-            "button_link": "",
+            "button_label": "Shop Moissanites",
+            "button_link": "shopify:\/\/collections",
             "color_btn_bg": "#ffffff",
-            "color_btn_text": "#ffffff"
+            "color_btn_text": "#000000"
           }
         }
       },
