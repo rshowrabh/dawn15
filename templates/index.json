@@ -115,6 +115,20 @@
         "center_width": false
       }
     },
+    "new_video_NwEdrB": {
+      "type": "new-video",
+      "settings": {
+        "collection_name": "Luxury Jewellry",
+        "title": "What is Moissanite?",
+        "text": "Moissanite is a mineral composed of silicon carbide. Often referred to as the gemstone from the stars, it was discovered in 1893 inside of a meteorite in Canyon Diablo, Arizona, by Nobel Prize-winning chemist Henri Moissan. Initially mistakenly identifying his discovery as diamonds, it wasn’t until 1904 that Moissan determined the crystals were, in fact, silicon carbide. This naturally occurring mineral form of what we now call moissanite was named in honor of Moissan later in his life.",
+        "button_label": "Explore More",
+        "button_url": "",
+        "video": "shopify:\/\/files\/videos\/325d0bace0a54f82bf3bcf0111f86042.HD-720p-1.6Mbps-20879800.mp4",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "three_column_gallary_Fg6cW3": {
       "type": "three-column-gallary",
       "blocks": {
@@ -235,28 +249,14 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "new_video_NwEdrB": {
-      "type": "new-video",
-      "settings": {
-        "collection_name": "Luxury Jewellry",
-        "title": "What is Moissanite?",
-        "text": "Moissanite is a mineral composed of silicon carbide. Often referred to as the gemstone from the stars, it was discovered in 1893 inside of a meteorite in Canyon Diablo, Arizona, by Nobel Prize-winning chemist Henri Moissan. Initially mistakenly identifying his discovery as diamonds, it wasn’t until 1904 that Moissan determined the crystals were, in fact, silicon carbide. This naturally occurring mineral form of what we now call moissanite was named in honor of Moissan later in his life.",
-        "button_label": "Explore More",
-        "button_url": "",
-        "video": "shopify:\/\/files\/videos\/325d0bace0a54f82bf3bcf0111f86042.HD-720p-1.6Mbps-20879800.mp4",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "image_banner_slider_KQXg6m",
+    "new_video_NwEdrB",
     "three_column_gallary_Fg6cW3",
     "featured_collection_QCeXGc",
     "countdown_aDYLJW",
-    "two_column_gallary_tKwQzF",
-    "new_video_NwEdrB"
+    "two_column_gallary_tKwQzF"
   ]
 }
