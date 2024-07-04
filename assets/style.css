@@ -22,3 +22,10 @@
 .collection .card--standard > .card__content .card__information, .collection .card-information{
     text-align: center;
 }
+.collection .card-information{
+    font-weight: 600;
+}
+.title-wrapper--no-top-margin > .title{
+    text-align: center;
+    font-weight: 600;
+}
