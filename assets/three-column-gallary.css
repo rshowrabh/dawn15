@@ -39,6 +39,9 @@
 #three-column-gallary .text p{
     font-weight: 400;
 }
+#three-column-gallary .text a{
+    font-weight: 400;
+}
 
 #three-column-gallary .item{
     width: calc(33.33% - 20px);
@@ -64,8 +67,9 @@
 #three-column-gallary .btn-outline:hover .arrow{
     margin-left: 10px;
     position: absolute;
-    bottom: -7px; 
+    bottom: -10px; 
     transition: 0.1s all ease-in-out;
+    font-weight: 600;
 }
 
 
