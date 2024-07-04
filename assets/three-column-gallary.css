@@ -58,7 +58,7 @@
 #three-column-gallary .arrow{
     margin-left: 5px;
     position: absolute;
-    bottom: -7px;
+    bottom: -10px;
     transition: 0.1s all linear; 
 }
 #three-column-gallary .btn-outline:hover .arrow{
