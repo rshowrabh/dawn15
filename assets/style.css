@@ -19,3 +19,6 @@
     background-color: rgb(var(--color-button-text));
 
 }
+.collection .card--standard > .card__content .card__information, .collection .card-information{
+    text-align: center;
+}
