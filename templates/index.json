@@ -217,37 +217,27 @@
         "padding_bottom": 60
       }
     },
-    "two_column_gallary_tKwQzF": {
-      "type": "two-column-gallary",
+    "video_banner_zUAap4": {
+      "type": "video-banner",
       "blocks": {
-        "column_zWhWf8": {
-          "type": "column",
+        "video_PPaTYe": {
+          "type": "video",
           "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
-            "button_label": "Explore More",
-            "button_link": ""
-          }
-        },
-        "column_akdr6U": {
-          "type": "column",
-          "settings": {
-            "collection_name": "New Collection",
-            "heading": "Intensive Glow C+ Serum",
-            "button_label": "Explore More",
-            "button_link": ""
+            "video_link": "",
+            "title": "Video slide",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "color_text": "#ffffff",
+            "button_label": "",
+            "button_link": "",
+            "color_btn_bg": "#ffffff",
+            "color_btn_text": "#ffffff"
           }
         }
       },
       "block_order": [
-        "column_zWhWf8",
-        "column_akdr6U"
+        "video_PPaTYe"
       ],
-      "disabled": true,
       "settings": {
-        "color_scheme": "scheme-1",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
@@ -257,6 +247,6 @@
     "three_column_gallary_Fg6cW3",
     "featured_collection_QCeXGc",
     "countdown_aDYLJW",
-    "two_column_gallary_tKwQzF"
+    "video_banner_zUAap4"
   ]
 }
