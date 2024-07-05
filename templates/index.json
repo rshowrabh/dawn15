@@ -126,7 +126,7 @@
         "video": "shopify:\/\/files\/videos\/325d0bace0a54f82bf3bcf0111f86042.HD-720p-1.6Mbps-20879800.mp4",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     },
     "three_column_gallary_Fg6cW3": {
@@ -199,7 +199,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 80
       }
     },
     "video_banner_zUAap4": {
