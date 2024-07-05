@@ -24,7 +24,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Does moissanite get cloudy?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>No, moissanite does not get cloudy over time. Read our <a href=\"https:\/\/www.brilliantearth.com\/jewelry\/buying-guide\/care\/\" target=\"_blank\">Care Instructions <\/a>for tips on how to preserve, protect, and clean your jewelry.<\/p>",
             "page": ""
           }
@@ -33,7 +33,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How is moissanite made?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Moissanite is grown in a laboratory by professionals with advanced, specialized equipment.<\/p>",
             "page": ""
           }
@@ -42,7 +42,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "How long does moissanite last?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Moissanites are strong, long-lasting gemstones. With proper care, moissanites can last throughout your lifetime and be passed down to future generations.<\/p>",
             "page": ""
           }
@@ -50,18 +50,18 @@
         "collapsible_row_CCJwDU": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How long does moissanite last?",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Is moissanite a precious stone?",
+            "icon": "none",
+            "row_content": "<p>No, moissanite is not a precious stone. The only precious stones are diamonds, rubies, sapphires, and emeralds.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_rhywT8": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How can you tell moissanite from cubic zirconia?",
+            "icon": "none",
+            "row_content": "<p>To the untrained eye, it can be difficult to tell the difference between moissanite and cubic zirconia. We recommend bringing your gemstone in to a trained professional who will be able to validate exactly what it is.<\/p>",
             "page": ""
           }
         }
@@ -81,11 +81,11 @@
         "layout": "none",
         "color_scheme": "",
         "container_color_scheme": "",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 60
+        "padding_top": 40,
+        "padding_bottom": 80
       }
     }
   },
