@@ -202,29 +202,6 @@
         "padding_bottom": 80
       }
     },
-    "video_banner_zUAap4": {
-      "type": "video-banner",
-      "blocks": {
-        "video_PPaTYe": {
-          "type": "video",
-          "settings": {
-            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7cc1ff36e51c4c1a9e52e410bd6ae9e9.mp4",
-            "title": "Diamonds for Your Future",
-            "text": "<p>Our lab grown diamonds are 100% Carbon Neutral, certified by Clear Neutral. Choose a lab grown diamond engagement ring that's beautiful<em>and<\/em>helps the planet.<\/p>",
-            "color_text": "#c9a26c",
-            "button_label": "Shop Moissanites",
-            "button_link": "shopify:\/\/collections\/rings",
-            "color_btn_bg": "#ffffff",
-            "color_btn_text": "#242833"
-          }
-        }
-      },
-      "block_order": [
-        "video_PPaTYe"
-      ],
-      "settings": {
-      }
-    },
     "countdown_aDYLJW": {
       "type": "countdown",
       "settings": {
@@ -239,6 +216,29 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "video_banner_zUAap4": {
+      "type": "video-banner",
+      "blocks": {
+        "video_PPaTYe": {
+          "type": "video",
+          "settings": {
+            "video_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7cc1ff36e51c4c1a9e52e410bd6ae9e9.mp4",
+            "title": "Diamonds for Your Future",
+            "text": "<p>Our lab grown diamonds are 100% Carbon Neutral, certified by Clear Neutral. Choose a lab grown diamond engagement ring that's beautiful<em>and<\/em>helps the planet.<\/p>",
+            "color_text": "#ddbe92",
+            "button_label": "Shop Moissanites",
+            "button_link": "shopify:\/\/collections\/rings",
+            "color_btn_bg": "#ddbe92",
+            "color_btn_text": "#242833"
+          }
+        }
+      },
+      "block_order": [
+        "video_PPaTYe"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -246,7 +246,7 @@
     "new_video_NwEdrB",
     "three_column_gallary_Fg6cW3",
     "featured_collection_QCeXGc",
-    "video_banner_zUAap4",
-    "countdown_aDYLJW"
+    "countdown_aDYLJW",
+    "video_banner_zUAap4"
   ]
 }
