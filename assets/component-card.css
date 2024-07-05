@@ -307,6 +307,7 @@
 
 .card__heading:last-child {
   margin-bottom: 0;
+  font-size: 1.6rem;
 }
 
 .card--horizontal .card__heading,
