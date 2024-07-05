@@ -202,21 +202,6 @@
         "padding_bottom": 80
       }
     },
-    "countdown_aDYLJW": {
-      "type": "countdown",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/engagement_desktop_2_2_.a0702.jpg",
-        "offer": "-20%",
-        "heading": "Save on Sets",
-        "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
-        "date": "07 20, 2024",
-        "button_label": "Get  $39.00",
-        "button_link": "shopify:\/\/blogs\/news",
-        "color_scheme": "",
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
     "video_banner_zUAap4": {
       "type": "video-banner",
       "blocks": {
@@ -239,6 +224,21 @@
       ],
       "settings": {
       }
+    },
+    "countdown_aDYLJW": {
+      "type": "countdown",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/engagement_desktop_2_2_.a0702.jpg",
+        "offer": "-20%",
+        "heading": "Save on Sets",
+        "subtext": "Made using clean, non-toxic ingredients, our products are designed for everyone.",
+        "date": "07 20, 2024",
+        "button_label": "Get  $39.00",
+        "button_link": "shopify:\/\/blogs\/news",
+        "color_scheme": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
     }
   },
   "order": [
@@ -246,7 +246,7 @@
     "new_video_NwEdrB",
     "three_column_gallary_Fg6cW3",
     "featured_collection_QCeXGc",
-    "countdown_aDYLJW",
-    "video_banner_zUAap4"
+    "video_banner_zUAap4",
+    "countdown_aDYLJW"
   ]
 }
