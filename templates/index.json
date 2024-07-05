@@ -214,8 +214,8 @@
             "color_text": "#c9a26c",
             "button_label": "Shop Moissanites",
             "button_link": "shopify:\/\/collections\/rings",
-            "color_btn_bg": "#000000",
-            "color_btn_text": "#ffffff"
+            "color_btn_bg": "#ffffff",
+            "color_btn_text": "#242833"
           }
         }
       },
