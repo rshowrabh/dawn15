@@ -1,0 +1,132 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " এবং ",
+      "last_word_connector": ", এবং "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "আপনি কি {{address}} ঠিকানাটি মুছতে চান?"
+      },
+      "general": {
+        "page_title": "চেকআউট",
+        "error_page_title": "ত্রুটি",
+        "skip_to_content": "এড়িয়ে যাও কন্টেন্ট",
+        "breadcrumb": "ব্রেডক্রাম্ব",
+        "continue_button_label": "চালিয়ে যান",
+        "complete_purchase_button_label": "সম্পূর্ণ আদেশ",
+        "pay_now_button_label": "এখন পরিশোধ করুন",
+        "authenticate_purchase_button_label": "পেমেন্ট প্রমাণীকরণ",
+        "edit_link_label": "সম্পাদনা করুন",
+        "all_rights_reserved": "সর্বস্বত্ব সংরক্ষিত %{shop_name}",
+        "print_policies_link_label": "ছাপা",
+        "cart": "কার্ট",
+        "close_modal_label": "বন্ধ",
+        "close_notice_label": "বন্ধ",
+        "expand_notice_label": "আরো দেখুন",
+        "continue_to_shipping_method": "শিপিং চালিয়ে যান",
+        "continue_to_payment_method": "পেমেন্ট চালিয়ে যান",
+        "continue_to_review": "পর্যালোচনা আদেশ",
+        "back_to_cart": "কার্টে ফেরত যান",
+        "back_to_contact_information": "তথ্য-এ ফেরত যান",
+        "back_to_shipping_method": "শিপিং এ ফিরে যান",
+        "back_to_payment_method": "পেমেন্টে ফিরে যান",
+        "choose_shipping_method": "একটি শিপিং পদ্ধতি চয়ন করুন",
+        "choose_payment_method": "একটি অর্থপ্রদান পদ্ধতি চয়ন করুন",
+        "choose_billing_address": "একটি বিলিং ঠিকানা চয়ন করুন",
+        "contact_us_html": "আরও তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন",
+        "autocomplete_title": "পরামর্শ",
+        "autocomplete_single_item": "1টি আইটেম উপলব্ধ",
+        "autocomplete_multi_item": "{{number}} টি আইটেম উপলব্ধ৷",
+        "autocomplete_close": "প্রস্তাবনা বন্ধ করুন",
+        "forwarding_indicator": {
+          "new_window": "একটি নতুন উইন্ডোতে খোলে৷",
+          "external": "বাহ্যিক ওয়েবসাইট খোলে।",
+          "external_and_new_window": "একটি নতুন উইন্ডোতে বহিরাগত ওয়েবসাইট খোলে।"
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - চেকআউট"
+        },
+        "tooltip_accessibility_label": "অধিক তথ্য",
+        "errors": {
+          "only_empty_terms_accepted": "এই নীতি শুধুমাত্র খালি শর্তাবলী গ্রহণ করে.",
+          "session_identifier_not_unique_error": "আপনার অর্ডারে কিছু ভুল হয়েছে, অনুগ্রহ করে আবার চেক আউট করার চেষ্টা করুন।",
+          "line_item_limit_reached": "লাইন আইটেমগুলির সর্বাধিক সংখ্যায় পৌঁছেছে৷",
+          "session_is_already_finished": "এই চেকআউট অধিবেশন ইতিমধ্যে চূড়ান্ত করা হয়েছে.",
+          "merchandise": {
+            "only_value_constraint": "মার্চেন্ডাইজ ইনপুটে শুধুমাত্র সঠিক মান অনুমোদিত।",
+            "merchandise_not_found": "পণ্য পাওয়া যায়নি.",
+            "merchandise_variant_not_found": "পণ্য বৈকল্পিক পাওয়া যায়নি.",
+            "merchandise_not_applicable": "পণ্য বৈকল্পিক ক্রয় করা যাবে না.",
+            "bundle_products_not_supported_for_b2b": "এই অবস্থানের জন্য B2B অর্ডারে বান্ডেল করা আইটেম যোগ করা যাবে না।",
+            "gift_card_quantity_mismatch": "উপহার কার্ডের কোডগুলি নির্দিষ্ট করার সময়, লাইন আইটেমের পরিমাণ এবং উপহার কার্ডের কোডগুলির সংখ্যা অবশ্যই মিলবে৷",
+            "gift_card_not_supported": "এই চেকআউটে উপহার কার্ড সমর্থিত নয়।",
+            "gift_card_not_unique": "এই চেকআউটে {{code}} কোড সহ উপহার কার্ড একাধিকবার আসে৷ কোড তুলনা করার আগে ফর্ম্যাট করা হয়.",
+            "gift_card_used": "উপহার কার্ড কোড {{code}} ইতিমধ্যেই একটি উপহার কার্ডে বরাদ্দ করা হয়েছে৷ কোড তুলনা করার আগে ফর্ম্যাট করা হয়.",
+            "gift_card_invalid": "উপহার কার্ড কোড {{code}} অবৈধ৷",
+            "gift_card_code_changed": "উপহার কার্ড কোড {{proposed_code}} পরিবর্তন করে {{formatted_code}} করা হয়েছে ফর্ম্যাটিং নিয়ম মেনে চলার জন্য৷",
+            "gift_card_with_attributes_not_supported": "কাস্টম বৈশিষ্ট্য সহ উপহার কার্ড এই চেকআউটে সমর্থিত নয়৷",
+            "gift_card_with_components_not_supported": "উপাদান সহ উপহার কার্ড এই চেকআউটে সমর্থিত নয়।",
+            "selling_plan_mismatch": "সদস্যতা আপডেট করা হয়েছে.",
+            "selling_plan_not_supported": "সদস্যতা সমর্থিত নয়.",
+            "selling_plan_not_supported_b2b": "B2B চেকআউটের জন্য সদস্যতা সমর্থিত নয়।",
+            "price_mismatch": "এই পণ্যদ্রব্যের জন্য পূর্বে প্রস্তাবিত মূল্য অবৈধ ছিল এবং আপডেট করা হয়েছে৷",
+            "inventory_not_found": "এই পণ্যদ্রব্যের জন্য কোনো ইনভেন্টরি পাওয়া যায়নি।",
+            "product_not_published": "পণ্য প্রকাশ করা হয় না.",
+            "duplicated_stable_id": "এই মার্চেন্ডাইজ লাইনে অন্য লাইনের মতো একই স্থিতিশীল-আইডি রয়েছে।",
+            "minimum_quantity_not_met": "কিছু আইটেমের পরিমাণ ন্যূনতম প্রয়োজনীয়তা পূরণ করে না।",
+            "maximum_quantity_exceeded": "কিছু আইটেমের পরিমাণ অনুমোদিত সর্বোচ্চ ছাড়িয়ে গেছে।",
+            "quantity_increment_not_met": "কিছু আইটেমের পরিমাণ অর্ডার সীমা পূরণ করে না।",
+            "quantity_rules_not_met": "কিছু আইটেমের পরিমাণ অর্ডার সীমা পূরণ করে না।",
+            "bundle_requires_components": "এই বান্ডিল পণ্যদ্রব্য কোন উপাদান আছে.",
+            "title_too_long": "মার্চেন্ডাইজ শিরোনাম অনেক বড়।",
+            "title_empty": "মার্চেন্ডাইজ শিরোনাম খালি।"
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "কোম্পানির পরিচিতির কোম্পানিতে অ্যাক্সেস নেই।",
+            "customer_account_required": "চালিয়ে যেতে গ্রাহককে লগ ইন করতে হবে।",
+            "company_location_required": "চালিয়ে যাওয়ার জন্য গ্রাহককে অবশ্যই একটি কোম্পানির অবস্থান বেছে নিতে হবে।",
+            "contact_info_does_not_match_customer_account": "নির্দিষ্ট গ্রাহকের তথ্য লগ ইন করা গ্রাহক অ্যাকাউন্টের সাথে মেলে।",
+            "phone_number_does_not_match_expected_pattern": "নির্দিষ্ট ফোন নম্বরটি প্রত্যাশিত প্যাটার্নের সাথে মেলে না৷",
+            "email_required": "সাবস্ক্রিপশন ব্যবহার করে পণ্যদ্রব্য কেনা হলে একটি ইমেল প্রয়োজন।",
+            "email_domain_is_invalid": "এই নির্দিষ্ট ডোমেন সমাধান করা যাবে না.",
+            "missing_contact_method": "একটি বৈধ যোগাযোগ পদ্ধতি অনুপস্থিত.",
+            "checkout_completion_target_is_missing": "চেকআউট সমাপ্তির লক্ষ্য অনুপস্থিত.",
+            "invalid_customer_profile": "একটি অবৈধ গ্রাহক প্রোফাইল প্রদান করা হয়েছে.",
+            "customer_profile_access_restricted": "চেকআউটের গ্রাহক প্রোফাইল অ্যাক্সেস করার অনুমতি নেই।",
+            "checkout_completion_target_is_invalid_proc": "অবৈধ চেকআউট সমাপ্তি লক্ষ্য."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "কার্টে শুধুমাত্র একটি ডেলিভারি লাইন থাকতে হবে।",
+            "wrong_number_of_delivery_lines": "পণ্যদ্রব্যের প্রতিটি গ্রুপের জন্য একটি ডেলিভারি লাইন নির্দিষ্ট করতে হবে।",
+            "external_delivery_promise_error": "একটি বহিরাগত বিতরণ প্রতিশ্রুতি ত্রুটি আনা.",
+            "options_instructions_invalid": "নির্দিষ্ট নির্দেশাবলী প্রত্যাশিত প্যাটার্নের সাথে মেলে না।",
+            "destination_address_required": "চালিয়ে যাওয়ার জন্য একটি গন্তব্য ঠিকানা প্রয়োজন৷",
+            "pickup_points_unavailable": "পিক আপ পয়েন্ট বর্তমানে অনুপলব্ধ.",
+            "local_pickup_delivery_line_detail_changed": "চালিয়ে যাওয়ার জন্য বর্তমান স্থানীয় পিকআপ ডেলিভারি কৌশল পরিবর্তন করতে হবে।",
+            "local_pickup_no_delivery_strategy_available": "স্থানীয় পিকআপ ডেলিভারি কৌশল পাওয়া যায়নি।",
+            "origin_location_id_required": "রিটেইল ডেলিভারি পদ্ধতির অনুরোধ করা হলে একটি মূল অবস্থান আইডি প্রয়োজন।",
+            "invalid_origin_location_id": "মূল অবস্থান আইডির সাথে মেলে এমন একটি অবস্থান খুঁজে পাওয়া যায়নি৷",
+            "origin_location_id_not_allowed": "অনুরোধ করা ডেলিভারি পদ্ধতি একটি মূল অবস্থান আইডি সমর্থন করে না.",
+            "auto_fulfill_not_allowed": "এই অধিবেশন পরিপূর্ণ আচরণ ওভাররাইড করার জন্য অনুমোদিত নয়.",
+            "auto_fulfill_required": "রিটেইল ডেলিভারি পদ্ধতির অনুরোধ করা হলে স্বয়ংক্রিয়ভাবে পূরণ করা প্রয়োজন।",
+            "prefetch_shipping_rates_used": "প্রিফেচড শিপিং রেট কখনই হার ফেরত দেওয়া উচিত নয়।",
+            "fulfillment_constraints_not_satisfied": "এক বা একাধিক পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট ছিল না.",
+            "must_fulfill_from_constraint_not_satisfied": "পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট নয় কারণ প্রয়োজনীয় অবস্থান থেকে আইটেম পূরণ করা যাবে না।",
+            "must_fulfill_from_same_location_constraint_not_satisfied": "পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট নয় কারণ আইটেম একই অবস্থান থেকে পূরণ করা যাবে না.",
+            "delivery_strategy_conditions_not_satisfied": "এই অবস্থানের জন্য ডেলিভারি কৌশলগুলি উপলব্ধ, কিন্তু তাদের শর্তগুলি সন্তুষ্ট নয়৷"
+          }
+        }
+      }
+    }
+  }
+}
