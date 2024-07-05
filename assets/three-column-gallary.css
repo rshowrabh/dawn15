@@ -75,6 +75,9 @@
     transition: 0.1s all ease-in-out;
     font-weight: 600;
 }
+#three-column-gallary .text a{
+    transition: 0.1s all ease-in-out;
+}
 
 
 
