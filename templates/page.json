@@ -32,16 +32,25 @@
         "collapsible_row_4BA3VB": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How is moissanite made?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Moissanite is grown in a laboratory by professionals with advanced, specialized equipment.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_yLi3DX": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "How long does moissanite last?",
+            "icon": "check_mark",
+            "row_content": "<p>Moissanites are strong, long-lasting gemstones. With proper care, moissanites can last throughout your lifetime and be passed down to future generations.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CCJwDU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does moissanite last?",
             "icon": "check_mark",
             "row_content": "",
             "page": ""
@@ -61,6 +70,7 @@
         "collapsible_row_LJF7Nc",
         "collapsible_row_4BA3VB",
         "collapsible_row_yLi3DX",
+        "collapsible_row_CCJwDU",
         "collapsible_row_rhywT8"
       ],
       "settings": {
