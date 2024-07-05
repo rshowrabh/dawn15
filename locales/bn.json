@@ -123,9 +123,259 @@
             "fulfillment_constraints_not_satisfied": "এক বা একাধিক পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট ছিল না.",
             "must_fulfill_from_constraint_not_satisfied": "পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট নয় কারণ প্রয়োজনীয় অবস্থান থেকে আইটেম পূরণ করা যাবে না।",
             "must_fulfill_from_same_location_constraint_not_satisfied": "পূর্ণতা সীমাবদ্ধতা সন্তুষ্ট নয় কারণ আইটেম একই অবস্থান থেকে পূরণ করা যাবে না.",
-            "delivery_strategy_conditions_not_satisfied": "এই অবস্থানের জন্য ডেলিভারি কৌশলগুলি উপলব্ধ, কিন্তু তাদের শর্তগুলি সন্তুষ্ট নয়৷"
+            "delivery_strategy_conditions_not_satisfied": "এই অবস্থানের জন্য ডেলিভারি কৌশলগুলি উপলব্ধ, কিন্তু তাদের শর্তগুলি সন্তুষ্ট নয়৷",
+            "out_of_stock_at_origin_location": "মূল অবস্থানে কোন স্টক.",
+            "invalid_signature": "অবৈধ ডিসকাউন্ট স্বাক্ষর।"
+          },
+          "discount": {
+            "discounts_not_allowed_for_b2b": "B2B স্টোরগুলিতে ডিসকাউন্ট অনুমোদিত নয়।",
+            "custom_discount_not_honoured": "সরবরাহকৃত কাস্টম ডিসকাউন্টকে সম্মানিত করা হয়নি।",
+            "unsupported_expectation": "সরবরাহকৃত ডিসকাউন্ট লাইনে এমন একটি প্রত্যাশা রয়েছে যা নীতিটি ব্যাখ্যা করতে পারেনি৷",
+            "additional_requested_discount_code_discarded": "অনুরোধ করা অতিরিক্ত কোড ডিসকাউন্ট বাতিল করা হয়েছে.",
+            "allocations_mismatch": "প্রত্যাশিত ডিসকাউন্ট বরাদ্দ প্রকৃত ডিসকাউন্ট বরাদ্দের সাথে মেলে না।",
+            "discount_code_not_honoured": "<strong style=\"text-transform:uppercase\">%{ছাড়_প্রত্যাখ্যান_বার্তা}<\/strong>",
+            "discount_title_too_long": "ডিসকাউন্ট শিরোনাম 255 অক্ষরের বেশি হতে পারে না।"
+          },
+          "tax": {
+            "new_tax_must_be_accepted": "চালিয়ে যাওয়ার জন্য বিক্রেতার প্রস্তাবে একটি নতুন ট্যাক্স লাইন অবশ্যই গ্রহণ করতে হবে।",
+            "unresolvable_tax_terms": "বর্তমান আলোচনার প্রেক্ষাপটে প্রস্তাবিত শর্তাবলী অমীমাংসিত।",
+            "delivery_price_is_abstract": "সম্পর্কিত বিতরণ মূল্য বিমূর্ত.",
+            "tax_inclusivity_mismatch": "কংক্রিট totalTaxAndDutyAmount বা totalAmountIncludedInTarget মানের সাথে পুনরায় আলোচনা করুন।",
+            "tax_exemption_not_supported": "বর্তমান আলোচনার অধিবেশনের জন্য কর ছাড় সমর্থিত নয়।",
+            "delivery_tax_exemption_not_supported": "ডেলিভারি লাইনের জন্য ট্যাক্স ছাড় বর্তমানে সমর্থিত নয়।",
+            "proposed_allocations_required": "'প্রস্তাবিত বরাদ্দ' ক্ষেত্র অনুপস্থিত।",
+            "merchandise_terms_must_be_defined": "পণ্যদ্রব্য শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "delivery_terms_must_be_defined": "ডেলিভারি শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "merchandise_discount_terms_must_be_defined": "মার্চেন্ডাইজ ডিসকাউন্ট শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "delivery_discount_terms_must_be_defined": "ডেলিভারি ডিসকাউন্ট শর্তাবলী সংজ্ঞায়িত করা আবশ্যক.",
+            "allocated_required": "অনুপস্থিত 'বরাদ্দ' ক্ষেত্র৷",
+            "value_required": "অনুপস্থিত 'মান' ক্ষেত্র।",
+            "line_splits_not_supported": "'মার্চেন্ডাইজ লাইন' ক্ষেত্রটি অবশ্যই বিভক্ত করা উচিত যাতে বিক্রেতার প্রস্তাবে প্রতিটির একটি একক লাইন উপাদান থাকে৷"
+          },
+          "payment": {
+            "manual_payments_not_allowed_for_b2b": "B2B দোকানে ম্যানুয়াল পেমেন্ট অনুমোদিত নয়।",
+            "positive_amount_expected": "অর্থপ্রদানের পরিমাণ অবশ্যই 0-এর বেশি হতে হবে।",
+            "total_amount_mismatch": "অর্থপ্রদানের মোট পরিমাণ অর্থপ্রদানের পরিমাণের সাথে মেলে না।",
+            "subscription_terms_not_accepted": "সাবস্ক্রিপশন শর্তাবলী গ্রহণ করা হয় না.",
+            "missing_session_id": "ক্রেডিট কার্ড সেশন তথ্য অনুপস্থিত.",
+            "gateway_not_supported": "পেমেন্ট গেটওয়ে অর্থপ্রদানের পদ্ধতি সংরক্ষণ করা সমর্থন করে না।",
+            "credit_card_last_name_required": "'শেষ নাম' শূন্য হতে পারে না।",
+            "credit_card_update_failed": "ক্রেডিট কার্ড আপডেট ব্যর্থ হয়েছে.",
+            "installments_amount_invalid": "কিস্তি লেনদেনের জন্য অবৈধ পরিমাণ।",
+            "installments_test_mode_not_allowed": "পরীক্ষার মোড অনুমোদিত নয়।",
+            "installments_gift_card_not_allowed": "কিস্তি উপহার কার্ড ব্যবহার করার অনুমতি দেয় না.",
+            "installments_unsupported_currency": "কিস্তি এই মুদ্রা সমর্থন করে না.",
+            "installments_unsupported_shipping": "কিস্তি এই ঠিকানায় শিপিং সমর্থন করে না.",
+            "installments_unsupported_billing": "কিস্তি এই বিলিং ঠিকানা সমর্থন করে না.",
+            "installments_unsupported_subscriptions": "কিস্তি সাবস্ক্রিপশন সমর্থন করে না।",
+            "installments_ineligible_line_item": "এই ক্রয়ের একটি লাইন আইটেমের জন্য কিস্তি নিষ্ক্রিয় করা হয়েছে।",
+            "shop_cash_not_allowed": "শপ পে ছাড়া শপ ক্যাশ অনুমোদিত নয়।",
+            "shop_cash_unsupported_checkout_source": "শপ ক্যাশ এই চেকআউট সমর্থন করে না।",
+            "shop_cash_gift_card_not_allowed": "শপ ক্যাশ উপহার কার্ড কেনার অনুমতি দেয় না।",
+            "shop_cash_not_enabled": "শপ ক্যাশ এই দোকানের জন্য সক্ষম নয়।",
+            "shop_cash_unsupported_subscriptions": "শপ ক্যাশ সাবস্ক্রিপশন সমর্থন করে না।",
+            "shop_cash_unsupported_shipping": "শপ ক্যাশ কোনো শিপিং ছাড়াই পণ্যদ্রব্য সমর্থন করে না।",
+            "invalid_address_type": "প্রদত্ত ঠিকানার ধরন এই অর্থপ্রদান পদ্ধতির জন্য অবৈধ৷",
+            "missing_retail_attributions": "ম্যানুয়ালি প্রবেশ করা ক্রেডিট কার্ডের অর্থপ্রদানের জন্য খুচরা বৈশিষ্ট্য প্রয়োজন।",
+            "unexpected_retail_attributions": "ক্রেডিট কার্ড পেমেন্টের জন্য অপ্রত্যাশিতভাবে রিটেল অ্যাট্রিবিউশন দেওয়া হয়েছে।",
+            "invalid_card_source": "এই সেশনে এই কার্ড উৎস ব্যবহার করার অনুমতি নেই।",
+            "wallet_content_missing": "ওয়ালেট সামগ্রী অনুপস্থিত৷",
+            "payment_instrument_not_found": "পেমেন্ট পদ্ধতি খুঁজে পাওয়া যায়নি",
+            "unauthorized_capture_method": "অর্থপ্রদান ক্যাপচার পদ্ধতি কনফিগার করা অনুমোদিত নয়৷",
+            "saved_payment_methods_not_allowed": "সংরক্ষিত অর্থপ্রদানের পদ্ধতি অনুমোদিত নয়।",
+            "saved_payment_methods_not_enabled": "এই দোকানের জন্য সংরক্ষিত অর্থপ্রদান পদ্ধতি সক্ষম করা নেই৷",
+            "saved_payment_methods_cvv_verification_disabled": "নির্বাচিত অর্থপ্রদানের পদ্ধতির জন্য CVV যাচাইকরণ প্রয়োজন যা এই দোকানের জন্য সক্ষম নয়৷ একটি ভিন্ন অর্থপ্রদানের পদ্ধতি নির্বাচন করুন।",
+            "store_credit_not_enabled": "এই দোকানের জন্য স্টোর ক্রেডিট সক্ষম করা নেই।",
+            "store_credit_account_not_found": "দোকান ক্রেডিট অ্যাকাউন্ট পাওয়া যায়নি.",
+            "store_credit_account_mismatch": "স্টোর ক্রেডিট অ্যাকাউন্ট ক্রেতা পরিচয়ের সাথে মেলে না।",
+            "store_credit_mismatched_currency": "দোকান ক্রেডিট অ্যাকাউন্টের মুদ্রা চেকআউট মুদ্রার সাথে মেলে না।",
+            "store_credit_insufficient_funds": "স্টোর ক্রেডিট অ্যাকাউন্টে পর্যাপ্ত তহবিল নেই।",
+            "store_credit_buying_gift_card": "আপনি একটি উপহার কার্ড কিনতে দোকান ক্রেডিট ব্যবহার করতে পারবেন না.",
+            "gift_cards_not_allowed_for_b2b": "B2B স্টোরগুলিতে উপহার কার্ড অনুমোদিত নয়।",
+            "method_required": "একটি অর্থপ্রদান পদ্ধতি প্রস্তাব করা আবশ্যক.",
+            "paypal_express_address_invalid": "পেপ্যাল ​​একটি অবৈধ ঠিকানা ফেরত দিয়েছে৷",
+            "shop_cash_unsupported_currency": "শপ ক্যাশ এই মুদ্রা সমর্থন করে না।",
+            "market_manager_blocks_wallet_payments": "পেমেন্ট পদ্ধতি মার্কেট ম্যানেজার দ্বারা সমর্থিত নয়।"
+          },
+          "tip": {
+            "not_accepted_by_shop": "দোকান টিপস গ্রহণ করে না.",
+            "only_one_tip_line_allowed": "একাধিক টিপ লাইন সমর্থিত নয়।",
+            "tips_not_allowed_for_b2b": "B2B দোকানে টিপস অনুমোদিত নয়।",
+            "currency_change_reset": "মুদ্রা পরিবর্তনের কারণে টিপ রিসেট করা হয়েছে।",
+            "tips_not_allowed_for_deferred_purchase_options": "বিলম্বিত ক্রয় বিকল্পগুলির জন্য টিপস এখনও সমর্থিত নয়।"
+          },
+          "sale_attribution": {
+            "draft_order_not_exist": "এই খসড়া অর্ডার বর্তমান দোকানে বিদ্যমান নেই।",
+            "staff_member_not_exist": "এই স্টাফ বর্তমান দোকানে বিদ্যমান নেই.",
+            "location_not_exist": "বর্তমান দোকানে এই অবস্থানটি নেই।",
+            "point_of_sale_device_not_exist": "বর্তমান দোকানে এই পয়েন্ট অফ সেল ডিভাইসটি বিদ্যমান নেই৷",
+            "unresolvable_target_merchandise_lines": "বর্তমান আলোচনার প্রেক্ষাপটে প্রস্তাবিত বিক্রয় বৈশিষ্ট্যগুলি অমীমাংসিত৷"
+          },
+          "non_negotiable": {
+            "missing_non_negotiable_terms": "আপনার ক্রেতার প্রস্তাবে অ-আলোচনাযোগ্য_ শর্তাবলী থাকা উচিত।",
+            "invalid_signature": "{{target_terms}} এর স্বাক্ষরটি অবৈধ৷"
+          },
+          "inventory": {
+            "missing_quantity_value": "ক্রেতার ইনভেন্টরি লাইনে পরিমাণ ক্ষেত্র অনুপস্থিত।",
+            "changing_behavior_not_allowed": "এই ক্লায়েন্টের ইনভেন্টরি আচরণ পরিবর্তন করার অনুমতি নেই।",
+            "only_one_inventory_behavior_allowed": "বর্তমানে প্রতি চেকআউটে শুধুমাত্র একটি ইনভেন্টরি আচরণ অনুমোদিত।"
+          },
+          "optional_duties": {
+            "optional_duties_not_permitted": "এই চেকআউটের জন্য দায়িত্ব অস্বীকার করা অনুমোদিত নয়।"
+          },
+          "attribution": {
+            "retail_attribution_not_allowed": "এই চেকআউটের জন্য খুচরা অ্যাট্রিবিউশন অনুমোদিত নয়।",
+            "retail_attribution_required": "এই চেকআউটের জন্য খুচরা অ্যাট্রিবিউশন প্রয়োজন৷"
+          },
+          "captcha": {
+            "metadata_missing": "এই চেকআউটের জন্য একটি ক্যাপচা সম্পূর্ণ করা প্রয়োজন৷",
+            "metadata_mismatch": "প্রদত্ত ক্যাপচা প্রদানকারী এবং প্রকার প্রত্যাশিত মানগুলির সাথে মেলে না৷",
+            "token_missing": "এই চেকআউটটি সম্পূর্ণ করতে একটি ক্যাপচা টোকেন প্রদান করতে হবে।",
+            "job_enqueue_failed": "ক্যাপচা যাচাইকরণ কাজটি সারিবদ্ধ হতে ব্যর্থ হয়েছে৷",
+            "job_already_queued": "এই ক্যাপচা টোকেনের জন্য ক্যাপচা যাচাইকরণ ইতিমধ্যেই সারিবদ্ধ হয়েছে৷",
+            "token_expired": "প্রদত্ত ক্যাপচা টোকেনের মেয়াদ শেষ হয়ে গেছে। চেকআউট চালিয়ে যেতে একটি নতুন ক্যাপচা সম্পূর্ণ করুন।",
+            "token_invalid": "প্রদত্ত ক্যাপচা টোকেনটি অবৈধ ছিল৷ চেকআউট চালিয়ে যেতে একটি নতুন ক্যাপচা সম্পূর্ণ করুন।",
+            "token_not_valid_for_session": "প্রদত্ত ক্যাপচা এই চেকআউটের সাথে ব্যবহার করা যাবে না।"
+          },
+          "fx_reconciliation_override": {
+            "shop_currency_mismatch": "প্রাপ্ত পরিমাণ দোকান মুদ্রা হতে হবে."
+          },
+          "checkout_source": {
+            "revoked": "এই চেকআউটটি আর উপলব্ধ নেই৷"
           }
+        },
+        "full_price": "পূর্ণ মূল্য:",
+        "title": "চেকআউট - {{shopName}}",
+        "full_title": "{{pageTitle}} - {{shopName}} - চেকআউট৷",
+        "loading_title": "চেকআউট - {{shopName}}",
+        "google_map_title": "গুগল মানচিত্র",
+        "confirm_order_button_label": "আদেশ নিশ্চিত করুন"
+      },
+      "shipping_errors": {
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "শিপিংয়ের জন্য যোগ্যতার জন্য কার্টের আইটেমগুলি মূল্য বা ওজনের প্রয়োজনীয়তাগুলি পূরণ করে না। আপনার কার্ট আপডেট করুন এবং আবার চেষ্টা করুন.",
+        "shipping_method_not_available_updated": {
+          "one": "আপনার যোগ করা আইটেমটি আপনার অবস্থানে পাঠানো হয় না। চেক আউট করতে এটি সরান, বা দোকানে যোগাযোগ করুন।",
+          "other": "আপনার যোগ করা এক বা একাধিক আইটেম আপনার অবস্থানে পাঠানো হয় না। চেক আউট করতে তাদের সরান, বা দোকানে যোগাযোগ করুন."
+        },
+        "payment_method_not_supported": "আপনি %{country}-এর জন্য এই অর্থপ্রদানের পদ্ধতি ব্যবহার করতে পারবেন না। এই দেশে পাঠানোর জন্য একটি ভিন্ন অর্থপ্রদান পদ্ধতি ব্যবহার করুন.",
+        "empty_state": "উপলব্ধ শিপিং পদ্ধতি দেখতে আপনার শিপিং ঠিকানা লিখুন.",
+        "title": "শিপিং উপলব্ধ নেই"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "এক্সপ্রেস চেকআউট",
+        "or": "বা",
+        "or_pay_another_way": "অথবা অন্য উপায়ে অর্থ প্রদান করুন",
+        "or_check_out_another_way": "অথবা অন্য উপায় চেক আউট",
+        "or_pay_with_credit_card": "অথবা ক্রেডিট কার্ড দিয়ে পেমেন্ট করুন",
+        "show_more_options": "আরও বিকল্প দেখান",
+        "hide_more_options": "আরও অপশন লুকান"
+      },
+      "post_purchase": {
+        "page_title": "কিনা পোস্ট",
+        "title": "কিনা পোস্ট",
+        "escape_confirmation": "আপনি আপনার অর্ডারের জন্য অর্থ প্রদান করেছেন।",
+        "escape_action": "অর্ডার নিশ্চিতকরণ দেখুন ›",
+        "components": {
+          "close": "বন্ধ",
+          "expand": "আরো দেখুন",
+          "processing": "প্রক্রিয়া করা হচ্ছে...",
+          "submit": "জমা দিন"
         }
+      },
+      "processing": {
+        "redirecting_page_title": "পুনঃনির্দেশ করা হচ্ছে...",
+        "redirecting_title": "পুনঃনির্দেশ করা হচ্ছে...",
+        "redirecting_notice": "আমরা আপনাকে পুনঃনির্দেশ করা পর্যন্ত অপেক্ষা করুন।",
+        "redirecting_to_bank": "{{bank}} এ পুনঃনির্দেশ করা হচ্ছে",
+        "complete_your_purchase_title": "আপনার ক্রয় সম্পূর্ণ করুন",
+        "continue_to_payment_gateway_notice": "আপনার অর্থপ্রদানের তথ্য যোগ করতে অর্থপ্রদান করা চালিয়ে যান।",
+        "continue_to_payment_gateway_button_label": "পেমেন্ট চালিয়ে যান",
+        "complete_your_purchase_title_error": "আপনার পেমেন্ট তথ্য ঠিক করুন",
+        "continue_to_payment_gateway_notice_error": "আপনার অর্থপ্রদানের তথ্য যাচাই করা যায়নি।",
+        "continue_to_payment_gateway_button_label_error": "পেমেন্টের তথ্য আপডেট করুন",
+        "page_title": "প্রসেসিং অর্ডার",
+        "title": "প্রসেসিং অর্ডার",
+        "your_order_has_been_received_title": "তোমার আদেশের জন্য ধন্যবাদ",
+        "you_will_receive_confirmation": "আমরা এখন অনেক অর্ডার পাচ্ছি। আপনি শীঘ্রই ইমেল বা টেক্সট দ্বারা নিশ্চিতকরণ পাবেন। আপনি যদি পরের ঘন্টার মধ্যে এটি না পান তবে আমাদের জানান।",
+        "you_will_not_be_charged": "আপনাকে এখনও চার্জ করা হবে না",
+        "wait": {
+          "short": "আপনার অর্ডার প্রক্রিয়া করা হচ্ছে.",
+          "medium": {
+            "one": "আপনার অর্ডার প্রক্রিয়া করা হচ্ছে. আনুমানিক অপেক্ষার সময় হল %{count} মিনিট৷",
+            "other": "আপনার অর্ডার প্রক্রিয়া করা হচ্ছে. আনুমানিক অপেক্ষার সময় হল %{count} মিনিট।"
+          },
+          "long": "আপনার অর্ডার প্রক্রিয়া হওয়ার সাথে সাথে আপনি একটি ইমেল পাবেন। বর্তমানে প্রচুর পরিমাণে অর্ডার রয়েছে।",
+          "no_auto_refresh_html": "যদি আপনি স্বয়ংক্রিয়ভাবে পুনঃনির্দেশিত না হন, %{link}।",
+          "refresh_this_page": "এই পৃষ্ঠাটি রিফ্রেশ করুন"
+        },
+        "action_required": "অ্যাকশন প্রয়োজন"
+      },
+      "failed_payment": {
+        "page_title": "পেমেন্ট প্রক্রিয়া করা যায়নি",
+        "title": "পেমেন্ট প্রক্রিয়া করা যায়নি",
+        "payment_not_processed_title": "আপনার পেমেন্ট প্রক্রিয়া করা যায়নি",
+        "payment_not_processed_text": "আপনাকে চার্জ করা হয়নি। আপনার ক্রয় সম্পূর্ণ করতে আপনার কার্টে ফিরে যান।",
+        "return_to_cart_button_label": "কার্টে ফেরত যান"
+      },
+      "payment_gateway": {
+        "credit_card_label": "ক্রেডিট কার্ড",
+        "bank_deposit_label": "ব্যাংক আমানত",
+        "cash_on_delivery_label": "ক্যাশ অন ডেলিভারি (সিওডি)",
+        "money_order_label": "মানি অর্ডার",
+        "debit_card_label": "ডেবিট কার্ড",
+        "deferred_payment_label": "পরে অর্থপ্রদানের পদ্ধতি বেছে নিন",
+        "fixed_payment_label": "আপনার পেমেন্ট {{dueDate}} তারিখে বকেয়া হবে।",
+        "generic_payment_terms": "আপনি {{translatedName}} শর্তে আছেন। আপনার পেমেন্ট {{dueDate}} তারিখে বকেয়া হবে।",
+        "login_prompt": {
+          "no_access": {
+            "message": "সংরক্ষিত অর্থপ্রদানের পদ্ধতি যোগ করতে বা ব্যবহার করতে এই অবস্থানে অ্যাক্সেস সহ একটি অ্যাকাউন্টে {{logIn}} ।",
+            "link": "প্রবেশ করুন"
+          }
+        },
+        "direct_payment_terms": "আপনি {{translatedName}} শর্তে আছেন। আপনার কার্ডটি {{dueDate}} তারিখে চার্জ করা হবে।",
+        "fixed_direct_payment_terms": "আপনার কার্ড থেকে {{dueDate}} তারিখে চার্জ করা হবে।",
+        "order_due_on_fulfillment_choose_later": "আপনার অর্ডার পূরণ হয়ে গেলে আপনার পেমেন্ট বকেয়া হবে।",
+        "order_due_on_fulfillment_payment": "আপনার অর্ডার পূরণ হয়ে গেলে আপনার কার্ড থেকে চার্জ করা হবে।",
+        "order_due_on_receipt_choose_later": "আপনার পেমেন্ট রসিদ উপর বকেয়া হবে.",
+        "order_deposit_due_now": "আজ {{depositAmount}} দিতে হবে। ব্যালেন্স {{translatedName}} শর্তে আছে এবং {{dueDate}} তারিখে বকেয়া আছে।",
+        "order_deposit_due_on_fulfillment": "আজ {{depositAmount}} দিতে হবে৷ আপনার অর্ডার পূর্ণ হলে ব্যালেন্স বকেয়া হবে।",
+        "draft_order_payment_due_later_no_terms": "আপনার অর্ডার নিশ্চিত হওয়ার পরে আপনার অর্থ প্রদান করা হবে।",
+        "draft_order_payment_due_later_no_terms_payment_selected": "আপনার অর্ডার নিশ্চিত হয়ে গেলে আপনার কার্ড চার্জ করা হবে।",
+        "draft_order_payment_due_later_terms": "আপনার অর্ডার নিশ্চিত হয়ে গেলে আপনি {{translatedName}} শর্তে থাকবেন।",
+        "draft_order_payment_due_on_fulfillment": "আপনার অর্ডার নিশ্চিত এবং পূরণ হয়ে গেলে আপনার পেমেন্ট বকেয়া হবে।"
+      },
+      "thank_you": {
+        "title": "আপনার ক্রয় করার জন্য আপনাকে ধন্যবাদ!",
+        "confirmation_email_sent_text": "একটি নিশ্চিতকরণ ইমেল %{email}-এ পাঠানো হয়েছে",
+        "return_to_store_link_label": "কেনাকাটা চালিয়ে যান",
+        "print_link_label": "প্রিন্ট রসিদ",
+        "payment_information_title": "পেমেন্ট তথ্য",
+        "shipping_information_title": "হস্তান্তর তথ্য",
+        "page_title": "ধন্যবাদ, %{display_name}!",
+        "page_title_no_name": "ধন্যবাদ!",
+        "purchase_order_number_title": "PO নম্বর #%{purchase_order_number}",
+        "cancelled_page_title": "অর্ডার বাতিল",
+        "failed_pending_payment_page_title": "আপনার পেমেন্টে সমস্যা আছে",
+        "customer_information_title": "আদেশ বিবরণী",
+        "contact_information_title": "যোগাযোগের তথ্য",
+        "billing_address_title": "বিলিং ঠিকানা",
+        "company_location_title": "অবস্থান",
+        "shipping_address_title": "প্রেরণের ঠিকানা",
+        "shipping_address_map_title": "Google ম্যাপ শিপিং ঠিকানার পিন পয়েন্ট প্রদর্শন করছে: %{address}",
+        "payment_method_title": "মূল্যপরিশোধ পদ্ধতি",
+        "shipping_method_title": "পরিবহণ মাধ্যম",
+        "tracking_number": "ট্র্যাকিং নম্বর:",
+        "company_tracking_number": "%{company} ট্র্যাকিং নম্বর:",
+        "estimated_arrival": "সম্ভাব্য প্রসব তারিখ: ",
+        "estimated_delivery": "বর্তমান ডেলিভারি অনুমান: ",
+        "re-order": "একই আইটেম পুনরায় অর্ডার",
+        "confirmed": "নিশ্চিত করা হয়েছে",
+        "gift_card_confirmation_by_text": "যদি আপনি এটি গ্রহণ না করেন, তাহলে পাঠ্যটি পুনরায় পাঠান বা আমাদের সাথে যোগাযোগ করুন৷",
+        "gift_card_confirmation_by_email": "যদি আপনি এটি না পান, ইমেলটি আবার পাঠান বা আমাদের সাথে যোগাযোগ করুন৷",
+        "gift_card_title": "উপহার কার্ড",
+        "resend_gift_cards": "উপহার কার্ড পুনরায় পাঠান",
+        "thank_you_title": "আপনার অর্ডার নিশ্চিত করা হয়েছে",
+        "thank_you_title_payment": "আপনার পেমেন্ট নিশ্চিত করা হয়েছে"
       }
     }
   }
