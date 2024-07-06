@@ -23,15 +23,21 @@
  #testimonial .slide_section{
     width: calc(66.67%); 
 }
- #testimonial .arrow > *{
+ /* #testimonial .arrow{
+   border: 1px solid #d5d5d5;
+   padding: 15px;
+   border-radius: 50%;
+} */
+ #testimonial .arrow .arrow_prev{
+   transform: rotate(90deg);
    border: 1px solid #d5d5d5;
    padding: 15px;
    border-radius: 50%;
 }
- #testimonial .arrow .arrow_prev{
-   transform: rotate(90deg);
-}
  #testimonial .arrow .arrow_next{
     transform: rotate(270deg);
+    border: 1px solid #d5d5d5;
+   padding: 15px;
+   border-radius: 50%;
 }
 
