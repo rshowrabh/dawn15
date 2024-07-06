@@ -19,6 +19,9 @@
     font-weight: 600;
     color: #4E7661;
 }
+#testimonial .content_area .text h1{
+   margin: 0;
+}
 #testimonial .content_area  svg{
     color: #4E7661;
 }
