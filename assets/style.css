@@ -37,8 +37,15 @@
     text-align: center;
     font-weight: 600;
 }
+/* Language Selector */
 .disclosure__list-wrapper{
 	bottom: -112px !important;
+}
+.localization-form:only-child {
+    margin: 0;
+  }
+.localization-form__select::after, .localization-form__select::before, form__select:hover.localization-form__select::after, .localization-form__select:hover.localization-form__select::after{
+ box-shadow: none;
 }
 /* Responsive Mobile */
 
