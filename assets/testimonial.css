@@ -7,7 +7,11 @@
     align-items: flex-start;
 }
 #testimonial .content_area{
-    width: calc(50%);
+    width: calc(45%);
+    padding: 15px;
+}
+#testimonial .content_area h1{
+    padding: 15px 0px;
 }
  #testimonial .slide_section{
     width: calc(66.67%);
