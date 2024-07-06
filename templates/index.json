@@ -123,7 +123,6 @@
         "text": "Moissanite is a mineral composed of silicon carbide. Often referred to as the gemstone from the stars, it was discovered in 1893 inside of a meteorite in Canyon Diablo, Arizona, by Nobel Prize-winning chemist Henri Moissan. Initially mistakenly identifying his discovery as diamonds, it wasn’t until 1904 that Moissan determined the crystals were, in fact, silicon carbide. This naturally occurring mineral form of what we now call moissanite was named in honor of Moissan later in his life.",
         "button_label": "Explore More",
         "button_url": "",
-        "video": "shopify:\/\/files\/videos\/325d0bace0a54f82bf3bcf0111f86042.HD-720p-1.6Mbps-20879800.mp4",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 40
@@ -239,6 +238,18 @@
         "padding_top": 80,
         "padding_bottom": 80
       }
+    },
+    "discount_banner_hBAQjh": {
+      "type": "discount-banner",
+      "settings": {
+        "height": "500px",
+        "image": "shopify:\/\/shop_images\/WLBST00002_3__37653.1719495063.1280.1280.jpg",
+        "discount_price": "-20%",
+        "banner_heading": "Limited Time, Unbeatable Savings",
+        "banner_text": "<p>Hurry and take advantage of our limited-time, unbeatable savings event<\/p>",
+        "is_sale": false,
+        "color_scheme": ""
+      }
     }
   },
   "order": [
@@ -247,6 +258,7 @@
     "three_column_gallary_Fg6cW3",
     "featured_collection_QCeXGc",
     "video_banner_zUAap4",
-    "countdown_aDYLJW"
+    "countdown_aDYLJW",
+    "discount_banner_hBAQjh"
   ]
 }
