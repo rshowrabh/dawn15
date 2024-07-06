@@ -6,6 +6,9 @@
     justify-content: center;
     align-items: flex-start;
 }
+#testimonial .content_area{
+    width: calc(50%);
+}
  #testimonial .slide_section{
     width: calc(66.67%);
 }
