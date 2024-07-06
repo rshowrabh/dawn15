@@ -152,8 +152,8 @@ $('.slide_section').slick({
     arrows:true, 
     autoplay:true,
     centerPadding: '0', 
-    prevArrow:"<span type='button' class='product-arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
-    nextArrow:"<span type='button' class='product-arrow-next'><img src='"+ arrow +"' alt='arrow'></span>",
+    prevArrow: $('.arrow_prev'),
+    nextArrow: $('.arrow_next'),
     responsive: [
       {
         breakpoint: 990,
