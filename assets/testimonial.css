@@ -57,9 +57,12 @@
         display: none;
     }
     #testimonial .slick-dots li{
-        color: black;
+        background-color: black;
     }
     #testimonial .slick-dots .slick-active{
         border-color: black;
     }
+    #testimonial .slick-dots {
+        bottom: 0px;
+      }
 }
