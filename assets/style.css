@@ -38,7 +38,9 @@
     font-weight: 600;
 }
 /* Language Selector */
-
+.header-localization:not(.menu-drawer__localization) .localization-form__select .icon-caret {
+    right: 0;
+  }
 
 /* Responsive Mobile */
 
