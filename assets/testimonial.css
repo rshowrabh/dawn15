@@ -1,7 +1,6 @@
 #testimonial .arrow_section{
     width: calc(33.33%);
     display: flex;
-    width: 33%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -51,4 +50,10 @@
     #testimonial .slide_section , #testimonial .arrow_section{
         width: calc(100%)
     }
+    #testimonial .arrow_section{
+        display: block;
     }
+    #testimonial .arrow{
+        display: none;
+    }
+}
