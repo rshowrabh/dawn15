@@ -8,9 +8,10 @@
 }
 #testimonial .arrow_section h1{
     margin: 0;
+    align-self: flex-start;
 }
 #testimonial .arrow_section p{
-    margin: 20px 0px 40px;
+    align-self: flex-start;
 }
 #testimonial .slide_section .content_area{
     background-color: #ebebeb;
@@ -31,9 +32,7 @@
     width: calc(66.67%); 
 }
 #testimonial .arrow{
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-50%);
+    align-self: last baseline;
 }
  #testimonial .arrow > *{
     position: static;
