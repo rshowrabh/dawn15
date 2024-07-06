@@ -142,7 +142,7 @@ function product_slider() {
 }
 
 function review_slider() {
-$('.content_area').slick({
+$('.slide_section').slick({
     dots: false,
     infinite: true,
     speed: 300,
