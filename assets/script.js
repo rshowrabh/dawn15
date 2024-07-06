@@ -72,7 +72,7 @@ function hero_slider() {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 4000,
       arrows:true,
       dots:true,
@@ -243,7 +243,7 @@ $('.slider-nav').slick({
   fade: true
 });
 $('.slider-for').slick({
- autoplay: true,
+  autoplay: true,
   autoplaySpeed: 3000,
   slidesToShow: 1,
   spped:1000,

@@ -98,12 +98,20 @@
         </div>      
       </div>
       <div class="image">
-        <video id="video" autoplay loop controls>
+
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url }}" alt="">
+      {% else %}
+        <img src="{{'banner.jpg '| asset_url}}" alt="">
+      {% endif %}
+        <!-- 
+         <video id="video" autoplay loop controls>
             <source src="{{section.settings.video.sources[1].url}}" type="video/mp4">
           </video>
-           {% comment %} <div onclick="playPause()" class="play-button">
+         <div onclick="playPause()" class="play-button">       
+        </div> 
+        -->
          
-        </div>  {% endcomment %}
       </div>
     </div>
     </div>
@@ -170,9 +178,9 @@
         "label": "Button Url"
       },
       {
-        "type": "video",
-        "id": "video",
-        "label": "Add Video"
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
       },
       {
         "type": "color_scheme",
