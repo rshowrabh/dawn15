@@ -1,3 +1,8 @@
+
+.d-inline{
+    display: inline;
+}
+
 /* Button Css */
 
 .btn{
@@ -28,6 +33,9 @@
 .title-wrapper--no-top-margin > .title{
     text-align: center;
     font-weight: 600;
+}
+.disclosure__list-wrapper {
+	bottom: -112px;
 }
 /* Responsive Mobile */
 
