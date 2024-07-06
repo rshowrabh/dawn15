@@ -60,7 +60,8 @@
         background-color: black;
     }
     #testimonial .slick-dots .slick-active{
-        border-color: black;
+        background: #FFF;
+        border: 1px solid #000;
     }
     #testimonial .slick-dots {
         bottom: 0px;
