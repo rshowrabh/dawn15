@@ -12,3 +12,6 @@
  #testimonial .slide_section{
     width: calc(66.67%);
 }
+ #testimonial .slide_section .content-area{
+    background-color: #d5d5d5;
+}
