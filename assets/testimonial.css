@@ -8,10 +8,11 @@
     align-self:self-start;
 }
 #testimonial .slide_section .content_area{
-    background-color: #ebebeb;
     width: calc(45% -20px);
-    padding: 30px 20px;
-    margin: 0px 20px;
+    padding: 46px 40px 40px 37px;
+    border-radius: 3px 3px 3px 3px;
+    background-color: #F8F8F8;
+    transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
 }
 #testimonial .content_area .text p{
     padding: 5px 0px 15px;
