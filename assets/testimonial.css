@@ -6,6 +6,12 @@
     justify-content: center;
     align-items: flex-start;
 }
+#testimonial .arrow_section h1{
+    margin: 0;
+}
+#testimonial .arrow_section p{
+    margin: 20px 0px 40px;
+}
 #testimonial .slide_section .content_area{
     background-color: #ebebeb;
     width: calc(45% -20px);
@@ -13,7 +19,7 @@
     margin: 0px 20px;
 }
 #testimonial .content_area .text p{
-    padding: 15px 0px;
+    padding: 5px 0px 15px;
     font-size: 20px;
     font-weight: 600;
     color: #4E7661;
