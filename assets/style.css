@@ -5,6 +5,10 @@
 .d-inline-block{
     display: inline-block;
 }
+.icon{
+    width: 20px;
+    height: 20px;
+}
 
 /* Button Css */
 

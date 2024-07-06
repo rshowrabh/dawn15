@@ -1,0 +1,21 @@
+#testimonail .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#testimonail .arrow_section{
+    width: calc(33.33%);
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+ #testimonail .slide_section{
+    width: calc(66.67%);
+}
+#testimonail
+#testimonail
+#testimonail
+#testimonail
