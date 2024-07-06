@@ -56,4 +56,10 @@
     #testimonial .arrow{
         display: none;
     }
+    #testimonial .slick-dots li{
+        color: black;
+    }
+    #testimonial .slick-dots .slick-active{
+        background-color: black;
+    }
 }
