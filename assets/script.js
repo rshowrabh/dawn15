@@ -150,7 +150,7 @@ $('.slide_section').slick({
     slidesToScroll: 1,
     centerMode: true,
     arrows:true, 
-    autoplay:true,
+    autoplay:false,
     centerPadding: '0', 
     prevArrow: $('.arrow_prev'),
     nextArrow: $('.arrow_next'),
