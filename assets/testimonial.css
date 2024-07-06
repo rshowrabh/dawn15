@@ -46,3 +46,9 @@
     transform: rotate(270deg);
 }
 
+
+@media only screen and (max-width: 767px) {
+    #testimonial .slide_section , #testimonial .arrow_section{
+        width: calc(100%)
+    }
+    }
