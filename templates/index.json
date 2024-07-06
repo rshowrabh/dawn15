@@ -242,12 +242,12 @@
     "discount_banner_hBAQjh": {
       "type": "discount-banner",
       "settings": {
-        "height": "500px",
+        "height": "auto",
         "image": "shopify:\/\/shop_images\/WLBST00002_3__37653.1719495063.1280.1280.jpg",
         "discount_price": "-20%",
         "banner_heading": "Limited Time, Unbeatable Savings",
         "banner_text": "<p>Hurry and take advantage of our limited-time, unbeatable savings event<\/p>",
-        "is_sale": false,
+        "is_sale": true,
         "color_scheme": ""
       }
     }
