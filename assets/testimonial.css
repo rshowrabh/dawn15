@@ -8,8 +8,9 @@
 }
 #testimonial .slide_section .content_area{
     background-color: #ebebeb;
-    width: calc(45%);
+    width: calc(45% -20px);
     padding: 30px 20px;
+    margin: 0px 20px;
 }
 #testimonial .content_area .text p{
     padding: 15px 0px;
