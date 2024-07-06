@@ -9,10 +9,16 @@
 #testimonial .slide_section .content-area{
     background-color: #d5d5d5;
     width: calc(45%);
-    padding: 15px;
+    padding: 30px 20px;
 }
 #testimonial .content_area .text{
     padding: 15px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4E7661;
+}
+#testimonial .content_area .star{
+    color: #4E7661;
 }
  #testimonial .slide_section{
     width: calc(66.67%);
