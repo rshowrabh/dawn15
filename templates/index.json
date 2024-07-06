@@ -250,6 +250,14 @@
         "is_sale": true,
         "color_scheme": ""
       }
+    },
+    "testimonial_CRkiBm": {
+      "type": "testimonial",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -259,6 +267,7 @@
     "featured_collection_QCeXGc",
     "video_banner_zUAap4",
     "countdown_aDYLJW",
-    "discount_banner_hBAQjh"
+    "discount_banner_hBAQjh",
+    "testimonial_CRkiBm"
   ]
 }
