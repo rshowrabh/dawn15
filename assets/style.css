@@ -44,7 +44,7 @@
 .localization-form:only-child {
     margin: 0;
   }
-.localization-form__select::after, .localization-form__select::before, form__select:hover.localization-form__select::after, .localization-form__select:hover.localization-form__select::after{
+.localization-form__select::after, .localization-form__select::before, form__select:hover.localization-form__select::after, .localization-form__select:hover.localization-form__select::after, .localization-form__select::before{
  box-shadow: none;
 }
 /* Responsive Mobile */
