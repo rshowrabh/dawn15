@@ -62,4 +62,6 @@
     margin:0 auto;
     margin-bottom: 2rem;    
   }
+  .d-md-block{
+    display: block
 }
