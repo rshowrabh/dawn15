@@ -38,7 +38,7 @@
     font-weight: 600;
 }
 .disclosure__list-wrapper{
-	bottom: -112px;
+	bottom: -112px !important;
 }
 /* Responsive Mobile */
 
