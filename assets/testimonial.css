@@ -6,8 +6,8 @@
     justify-content: center;
     align-items: flex-start;
 }
-#testimonial .slide_section .content-area{
-    background-color: #d5d5d5;
+#testimonial .slide_section .content_area{
+    background-color: #ebebeb;
     width: calc(45%);
     padding: 30px 20px;
 }
