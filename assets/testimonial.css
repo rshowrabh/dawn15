@@ -30,6 +30,11 @@
  #testimonial .slide_section{
     width: calc(66.67%); 
 }
+#testimonial .arrow{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+}
  #testimonial .arrow > *{
     position: static;
     border: 2px solid #d5d5d5;
