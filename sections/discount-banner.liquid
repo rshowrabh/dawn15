@@ -62,7 +62,8 @@
   @media only screen and (max-width: 767px) {
 
     .image-banner {
-      display: grid;
+      display: flex;
+      flex-direction: column;
       padding: 0;
       margin: 0;
       height: auto;
@@ -74,6 +75,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      width: 100%;
     }
     .image-banner .right_section .image img {
       height: 320px;
@@ -88,6 +90,7 @@
     }
     .image-banner .left_section {
       order: 2;
+      width: 100%;
     }
     .right_section .sale {
       font-size: 24px;
