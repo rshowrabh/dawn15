@@ -1,10 +1,10 @@
-#testimonail .container{
+#testimonial .container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
 }
-#testimonail .arrow_section{
+#testimonial .arrow_section{
     width: calc(33.33%);
     display: flex;
     width: 33%;
@@ -12,6 +12,6 @@
     justify-content: center;
     align-items: flex-start;
 }
- #testimonail .slide_section{
+ #testimonial .slide_section{
     width: calc(66.67%);
 }
