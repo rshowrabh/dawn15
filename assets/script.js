@@ -142,11 +142,11 @@ function product_slider() {
 }
 
 function review_slider() {
-$('.reviews-items').slick({
+$('.content_area').slick({
     dots: false,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     arrows:false, 
@@ -158,7 +158,7 @@ $('.reviews-items').slick({
       {
         breakpoint: 990,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           arrows:false
         }
