@@ -149,7 +149,7 @@ $('.slide_section').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
-    arrows:false, 
+    arrows:true, 
     autoplay:true,
     centerPadding: '0', 
     prevArrow:"<span type='button' class='product-arrow-prev'><img src='"+ arrow +"' alt='arrow'></span>",
