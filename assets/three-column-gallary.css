@@ -8,7 +8,9 @@
     align-items:center;
     gap: 25px;
 }
-
+#three-column-gallary .image{
+    z-index: -1;
+}
 .image{
     display: block;
     max-width: 100%;
@@ -17,7 +19,6 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    z-index: -1;
     transition: 0.5s all ease-in-out; 
 }
 .image img{
