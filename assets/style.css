@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 1rem 20px !important;
     color: #FFF!important;
   }
-  .videoBackground .videoBoxInfoTitle, .videoBackground .imageBoxInfoTitle {
+  .videoBackground .videoBoxInfoTitle {
 	font-size: 35px;
 }
   
