@@ -53,6 +53,7 @@
 }
 #three-column-gallary .item .text h2{
     font-size: 25px;
+    margin: 20px 0px;
 }
 #three-column-gallary .btn-outline{
     position: absolute;
