@@ -72,6 +72,15 @@
             "icon_3": "truck",
             "heading_3": "Fast Shipping"
           }
+        },
+        "collapsible_tab_yXbKgV": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -83,7 +92,8 @@
         "buy_buttons",
         "description",
         "share",
-        "icon_with_text_wcenbA"
+        "icon_with_text_wcenbA",
+        "collapsible_tab_yXbKgV"
       ],
       "settings": {
         "enable_sticky_info": true,
