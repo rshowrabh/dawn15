@@ -50,7 +50,6 @@
 .countdown {
     display: flex;
     align-items: center;
-    gap: 0px;
     font-size: 24px;
     font-weight: bold;
     color: rgb(var(--color-button));
