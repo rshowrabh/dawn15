@@ -227,6 +227,7 @@
     },
     "countdown_aDYLJW": {
       "type": "countdown",
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/babapiyush_Diamond_gold_earring_design_Center_the_composition_f_1445x_09a4aa3f-f6e2-4e2b-961b-6c1826c2177a.png",
         "offer": "-20%",
@@ -242,6 +243,7 @@
     },
     "discount_banner_hBAQjh": {
       "type": "discount-banner",
+      "disabled": true,
       "settings": {
         "height": "500",
         "image": "shopify:\/\/shop_images\/CulturedDiamonds_067a1ebe-be48-4e18-93d0-011e18e0d22c.png",
