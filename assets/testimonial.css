@@ -60,8 +60,8 @@
     #testimonial .arrow_section{
         display: block;
     }
-    #testimonial .content_area{
-        margin: 0;
+    #testimonial .slide_section .content_area{
+        margin-right: 0;
     }
     #testimonial .arrow{
         display: none;
