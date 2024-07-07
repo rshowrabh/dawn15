@@ -285,12 +285,24 @@
             "designation": "CO",
             "color_scheme": "scheme-4"
           }
+        },
+        "column_CRwdbw": {
+          "type": "column",
+          "settings": {
+            "star": "4",
+            "text": "This is to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
+            "avater": "shopify:\/\/shop_images\/EFAND25931_1__21116.1719863725.1280.1280.jpg",
+            "name": "Reviewed By SR",
+            "designation": "CO",
+            "color_scheme": "scheme-5"
+          }
         }
       },
       "block_order": [
         "column_AkP6rJ",
         "column_AcARcp",
-        "column_CzGNFj"
+        "column_CzGNFj",
+        "column_CRwdbw"
       ],
       "settings": {
         "color_scheme": "scheme-1",
