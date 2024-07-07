@@ -42,6 +42,11 @@
  #testimonial .arrow .arrow_prev{
    transform: rotate(90deg);
 }
+ #testimonial .profile_image{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
  #testimonial .arrow .arrow_next{
     transform: rotate(270deg);
 }
