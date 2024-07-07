@@ -242,7 +242,6 @@
     },
     "discount_banner_hBAQjh": {
       "type": "discount-banner",
-      "disabled": true,
       "settings": {
         "height": "500",
         "image": "shopify:\/\/shop_images\/CulturedDiamonds_067a1ebe-be48-4e18-93d0-011e18e0d22c.png",
