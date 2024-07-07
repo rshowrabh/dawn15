@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .videoBackground .videoBoxInfoTitle {
 	font-size: 35px !important;
+    margin: 20px 0px !important;
 }
   
 
