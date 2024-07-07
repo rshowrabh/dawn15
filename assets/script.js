@@ -150,7 +150,7 @@ $('.slide_section').slick({
     slidesToScroll: 1,
     centerMode: true,
     arrows:true, 
-    autoplay:false,
+    autoplay:true,
     centerPadding: '0', 
     prevArrow: $('.arrow_prev'),
     nextArrow: $('.arrow_next'),
@@ -160,7 +160,7 @@ $('.slide_section').slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows:false
+          arrows:true
         }
       },
       {
@@ -168,7 +168,7 @@ $('.slide_section').slick({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows:false,
+          arrows:true,
           dots: true 
         }
       }
