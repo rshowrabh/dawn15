@@ -101,7 +101,16 @@
           "settings": {
             "heading": "Privacy Policy",
             "icon": "none",
-            "content": "<ul><li>Inside Dhaka within 02 working days & Outside Dhaka within 04 working<br\/>days.<\/li><li>Inside Dhaka delivery Charge is 70 Taka, Outside Dhaka Delivery Charge is<br\/>150 Taka.<\/li><li>Kindly note that, as per our policy, no product returns will be accepted after delivery. Please inspect the items in front of our delivery personnel for your satisfaction.<\/li><\/ul><p><em><strong>Note:<\/strong><\/em><em> Delivery charges may vary depending on product weight and order size.<\/em><\/p>",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_6XaPbK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Term & Condition",
+            "icon": "none",
+            "content": "",
             "page": ""
           }
         }
@@ -119,7 +128,8 @@
         "share",
         "icon_with_text_wcenbA",
         "collapsible_tab_yXbKgV",
-        "collapsible_tab_f9mGxB"
+        "collapsible_tab_f9mGxB",
+        "collapsible_tab_6XaPbK"
       ],
       "settings": {
         "enable_sticky_info": true,
