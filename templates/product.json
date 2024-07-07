@@ -75,18 +75,6 @@
             "share_label": "Share"
           }
         },
-        "icon_with_text_wcenbA": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "check_mark",
-            "heading_1": "100% Authentic",
-            "icon_2": "return",
-            "heading_2": "Easy Return",
-            "icon_3": "truck",
-            "heading_3": "Fast Shipping"
-          }
-        },
         "collapsible_tab_yXbKgV": {
           "type": "collapsible_tab",
           "settings": {
@@ -113,6 +101,18 @@
             "content": "",
             "page": ""
           }
+        },
+        "icon_with_text_wcenbA": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "100% Authentic",
+            "icon_2": "return",
+            "heading_2": "Easy Return",
+            "icon_3": "truck",
+            "heading_3": "Fast Shipping"
+          }
         }
       },
       "block_order": [
@@ -126,10 +126,10 @@
         "buy_buttons",
         "description",
         "share",
-        "icon_with_text_wcenbA",
         "collapsible_tab_yXbKgV",
         "collapsible_tab_f9mGxB",
-        "collapsible_tab_6XaPbK"
+        "collapsible_tab_6XaPbK",
+        "icon_with_text_wcenbA"
       ],
       "settings": {
         "enable_sticky_info": true,
