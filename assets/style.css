@@ -73,6 +73,9 @@ h1, h2, h3, h4, h5, h6, p {
     transform: rotate(90deg);
     top: 2.4%;
   }
+  .list-menu--inline {
+    flex-wrap: nowrap !important;
+  }
 
 
 /* Responsive Mobile */
