@@ -6,6 +6,9 @@
     align-items: flex-start;
     align-self:self-start;
 }
+#testimonial .arrow_section h1{
+    font-weight: 600;
+}
 #testimonial .slide_section .content_area{
     width: calc(45% -20px);
     padding: 46px 40px 40px 37px;
@@ -23,7 +26,6 @@
 }
 #testimonial .content_area .text h1{
    margin: 0;
-   font-weight: 600;
 }
 #testimonial .content_area  svg{
     color: rgb(var(--color-foreground));
