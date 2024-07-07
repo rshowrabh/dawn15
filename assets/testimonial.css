@@ -42,7 +42,7 @@
  #testimonial .arrow .arrow_prev{
    transform: rotate(90deg);
 }
- #testimonial .profile_image{
+ #testimonial .profile_image img{
     height: 60px;
     width: 60px;
     border-radius: 50%;
