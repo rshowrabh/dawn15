@@ -116,7 +116,8 @@
           {% render 'maps.svg' %}
           Find a Store</a
         >
-        <div class="header__icons header__icons--localization header-localization d-inline-block">
+        {% if section.settings.language %}
+          <div class="header__icons header__icons--localization header-localization d-inline-block">
           <div class="desktop-localization-wrapper"> 
               <localization-form class="small-hide medium-hide" data-prevent-hide>
                 {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
@@ -128,6 +129,8 @@
               </localization-form>
           </div>
         </div>
+        {% endif %}
+        
         <!--
           <span>USD <svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
             <path fill="currentColor"
@@ -176,6 +179,11 @@
 "type": "url",
 "id": "store_link",
 "label": "Store Url"
+},
+{
+"type": "checkbox",
+"id": "language",
+"label": "Enable Language"
 },
 {
 "type": "color_scheme",
