@@ -265,56 +265,34 @@
             "color_scheme": "scheme-3"
           }
         },
-        "column_VbdfpM": {
+        "column_AkP6rJ": {
           "type": "column",
           "settings": {
-            "star": "1",
+            "star": "5",
             "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
             "name": "Reviewed ByFarukh Hasan",
             "designation": "CO",
             "color_scheme": "scheme-3"
           }
         },
-        "column_8cAVjX": {
+        "column_CzGNFj": {
           "type": "column",
           "settings": {
-            "star": "1",
+            "star": "5",
             "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
             "name": "Reviewed ByFarukh Hasan",
             "designation": "CO",
             "color_scheme": "scheme-4"
           }
-        },
-        "column_HB77Nj": {
-          "type": "column",
-          "settings": {
-            "star": "5",
-            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
-            "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO",
-            "color_scheme": ""
-          }
-        },
-        "column_UXthbT": {
-          "type": "column",
-          "settings": {
-            "star": "5",
-            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
-            "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
         "column_AcARcp",
-        "column_VbdfpM",
-        "column_8cAVjX",
-        "column_HB77Nj",
-        "column_UXthbT"
+        "column_AkP6rJ",
+        "column_CzGNFj"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding_top": 40,
         "padding_bottom": 52
       }
