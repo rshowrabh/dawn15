@@ -280,12 +280,32 @@
             "name": "Reviewed ByFarukh Hasan",
             "designation": "CO"
           }
+        },
+        "column_HB77Nj": {
+          "type": "column",
+          "settings": {
+            "star": "5",
+            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
+            "name": "Reviewed ByFarukh Hasan",
+            "designation": "CO"
+          }
+        },
+        "column_UXthbT": {
+          "type": "column",
+          "settings": {
+            "star": "5",
+            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
+            "name": "Reviewed ByFarukh Hasan",
+            "designation": "CO"
+          }
         }
       },
       "block_order": [
         "column_AcARcp",
         "column_VbdfpM",
-        "column_8cAVjX"
+        "column_8cAVjX",
+        "column_HB77Nj",
+        "column_UXthbT"
       ],
       "settings": {
         "color_scheme": "",
