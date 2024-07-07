@@ -257,10 +257,12 @@
         "column_AcARcp": {
           "type": "column",
           "settings": {
-            "star": "1",
-            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
-            "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO"
+            "star": "4",
+            "text": "This is to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
+            "avater": "shopify:\/\/shop_images\/pexels-photo-9430982.jpg",
+            "name": "Reviewed By SR",
+            "designation": "CO",
+            "color_scheme": "scheme-4"
           }
         },
         "column_VbdfpM": {
@@ -269,7 +271,8 @@
             "star": "1",
             "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
             "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO"
+            "designation": "CO",
+            "color_scheme": ""
           }
         },
         "column_8cAVjX": {
@@ -278,7 +281,8 @@
             "star": "1",
             "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
             "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO"
+            "designation": "CO",
+            "color_scheme": ""
           }
         },
         "column_HB77Nj": {
@@ -287,7 +291,8 @@
             "star": "5",
             "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
             "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO"
+            "designation": "CO",
+            "color_scheme": ""
           }
         },
         "column_UXthbT": {
@@ -296,7 +301,8 @@
             "star": "5",
             "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
             "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO"
+            "designation": "CO",
+            "color_scheme": ""
           }
         }
       },
