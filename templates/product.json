@@ -30,6 +30,20 @@
           "settings": {
           }
         },
+        "inventory_WHQXBC": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 10,
+            "show_inventory_quantity": true
+          }
+        },
+        "sku_NX4NpE": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -87,6 +101,8 @@
         "vendor",
         "title",
         "price",
+        "inventory_WHQXBC",
+        "sku_NX4NpE",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
