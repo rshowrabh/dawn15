@@ -64,8 +64,8 @@
         display: block;
         text-align: center;
     }
-    #testimonial .arrow_section h1{
-        margin: 3rem 0 2rem;
+    #testimonial .arrow_section p{
+        margin: 2rem 0 3rem;
     }
     #testimonial .slide_section .content_area{
         margin-right: 0;
