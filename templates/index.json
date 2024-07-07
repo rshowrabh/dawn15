@@ -255,6 +255,16 @@
     "testimonial_CRkiBm": {
       "type": "testimonial",
       "blocks": {
+        "column_AkP6rJ": {
+          "type": "column",
+          "settings": {
+            "star": "5",
+            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
+            "name": "Reviewed ByFarukh Hasan",
+            "designation": "CO",
+            "color_scheme": "scheme-4"
+          }
+        },
         "column_AcARcp": {
           "type": "column",
           "settings": {
@@ -264,16 +274,6 @@
             "name": "Reviewed By SR",
             "designation": "CO",
             "color_scheme": "scheme-5"
-          }
-        },
-        "column_AkP6rJ": {
-          "type": "column",
-          "settings": {
-            "star": "5",
-            "text": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief.",
-            "name": "Reviewed ByFarukh Hasan",
-            "designation": "CO",
-            "color_scheme": "scheme-4"
           }
         },
         "column_CzGNFj": {
@@ -288,8 +288,8 @@
         }
       },
       "block_order": [
-        "column_AcARcp",
         "column_AkP6rJ",
+        "column_AcARcp",
         "column_CzGNFj"
       ],
       "settings": {
