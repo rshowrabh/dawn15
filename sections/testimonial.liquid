@@ -32,8 +32,8 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                 {% for block in section.blocks %}
                     <div>
                     <div class="content_area">
-                        {% for i in (1..block.settings.star) %}
-                            <div class="star-20 d-flex">
+                        <div class="star-20 d-flex">
+                        {% for i in (1..block.settings.star) %}                        
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
                                 class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 576 512">
@@ -43,6 +43,7 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                             </svg>
                         </div>
                           {% endfor %}
+                        </div>
                         <div class="text">
                             <p>{{block.settings.text}}</p>
                         </div>
