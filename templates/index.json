@@ -243,7 +243,7 @@
     "discount_banner_hBAQjh": {
       "type": "discount-banner",
       "settings": {
-        "height": "380",
+        "height": "400",
         "image": "shopify:\/\/shop_images\/CulturedDiamonds_067a1ebe-be48-4e18-93d0-011e18e0d22c.png",
         "discount_price": "-20%",
         "banner_heading": "Limited Time, Unbeatable Savings",
