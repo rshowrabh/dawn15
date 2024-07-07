@@ -23,6 +23,7 @@
 }
 #testimonial .content_area .text h1{
    margin: 0;
+   font-weight: 600;
 }
 #testimonial .content_area  svg{
     color: rgb(var(--color-foreground));
@@ -59,6 +60,7 @@
     }
     #testimonial .arrow_section{
         display: block;
+        text-align: center;
     }
     #testimonial .slide_section .content_area{
         margin-right: 0;
