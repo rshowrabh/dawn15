@@ -44,6 +44,16 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: rgb(var(--color-button-text));
 
 }
+.btn-primary-outline{
+    color: rgb(var(--color-button));
+    background-color: rgb(var(--color-button-text));
+    transition: .2s all linear;
+}
+.btn-primary-outline:hover{
+    background-color: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+
+}
 .collection .card--standard > .card__content .card__information, .collection .card-information{
     text-align: center;
 }

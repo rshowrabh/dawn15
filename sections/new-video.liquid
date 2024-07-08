@@ -50,9 +50,12 @@
       margin-bottom: 20px;
       line-height: 1.5;
     }
+    #new-video .content .btn-primary-outline {
+      margin-left: 15px;
+    }
     /* Play button styling */
   
-    #new-video .play-button{
+    /* #new-video .play-button{
       position: absolute;
       top: 50%;
       left: 50%;
@@ -62,7 +65,7 @@
       background:transparent;
       border-radius: 50%;
       color: #FFF;
-    }
+    } */
     /* Responsive Design */
     @media (max-width: 768px) {
       #new-video .image {
@@ -95,6 +98,7 @@
               {{section.settings.text}}
             </p>
             <a href="{{section.settings.button_url}}" class="btn btn-primary">{{section.settings.button_label}}</a>
+            <a href="{{section.settings.button_url2}}" class="btn btn-primary-outline">{{section.settings.button_label2}}</a>
         </div>      
       </div>
       <div class="image">
@@ -175,6 +179,17 @@
       {
         "type": "url",
         "id": "button_url",
+        "label": "Button Url"
+      },
+      {
+        "type": "text",
+        "id": "button_label2",
+        "label": "Button Label",
+        "default": "Explore More"
+      },
+      {
+        "type": "url",
+        "id": "button_url2",
         "label": "Button Url"
       },
       {
