@@ -12,12 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
+        "price": {
+          "type": "price",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
           }
         },
         "title": {
@@ -25,9 +22,11 @@
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "vendor": {
+          "type": "text",
           "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
           }
         },
         "sku_NX4NpE": {
@@ -109,9 +108,9 @@
         }
       },
       "block_order": [
-        "vendor",
-        "title",
         "price",
+        "title",
+        "vendor",
         "sku_NX4NpE",
         "inventory_WHQXBC",
         "variant_picker",
