@@ -32,9 +32,9 @@
       width: calc(50%);
       overflow: visible;
       z-index: 99;
-      -webkit-box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
-      -moz-box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
-      box-shadow: -75px 0px 0px -25px rgba(201,201,201,1);
+      -webkit-box-shadow: {{ section.settings.box_shadow }};
+      -moz-box-shadow: {{ section.settings.box_shadow }};
+      box-shadow: {{ section.settings.box_shadow }};
     }
     #new-video .content h1 {
       font-size: 36px;
@@ -196,6 +196,12 @@
         "type": "image_picker",
         "id": "image",
         "label": "Add Image"
+      },
+      {
+        "type": "text",
+        "id": "box_shadow",
+        "label": "Box Shadow",
+        "default" : "-60px 0px 8px -20px rgb(201, 201, 201)"
       },
       {
         "type": "color_scheme",
