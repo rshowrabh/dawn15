@@ -106,9 +106,8 @@ h1, h2, h3, h4, h5, h6, p {
   /* Mobile Menu */
   .menu-drawer__account {
     padding: 1rem 20px !important;
-    color: #FFF!important;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
   }
   .videoBackground .videoBoxInfoTitle {
 	  font-size: 35px !important;
