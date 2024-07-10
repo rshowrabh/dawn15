@@ -98,7 +98,8 @@ h1, h2, h3, h4, h5, h6, p {
 @media only screen and (max-width: 767px) {
 .footer-block__image-wrapper {
     margin:0 auto;
-    margin-bottom: 2rem;    
+    margin-bottom: 2rem;  
+}  
   }
   .d-md-block{
     display: block
@@ -107,6 +108,8 @@ h1, h2, h3, h4, h5, h6, p {
   .menu-drawer__account {
     padding: 1rem 20px !important;
     color: #FFF!important;
+    display: flex;
+    justify-content: center;
   }
   .videoBackground .videoBoxInfoTitle {
 	font-size: 35px !important;
