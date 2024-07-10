@@ -108,7 +108,7 @@
           </nav>
           <div class="menu-drawer__utility-links">
             {%- if shop.customer_accounts_enabled -%}
-              <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account btn primary-btn link focus-inset h5 medium-hide large-up-hide">
+              <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account btn btn-primary link focus-inset h5 medium-hide large-up-hide">
                 <account-icon>
                   {%- if customer and customer.has_avatar? -%}
                     {{ customer | avatar }}
