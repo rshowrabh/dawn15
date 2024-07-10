@@ -105,9 +105,9 @@ h1, h2, h3, h4, h5, h6, p {
   }
   /* Mobile Menu */
   .menu-drawer__account {
-    padding: 1rem 20px !important;
-    display: flex !important;
-    justify-content: center !important;
+    padding: 1rem 20px;
+    display: flex;
+    justify-content: center;
   }
   .videoBackground .videoBoxInfoTitle {
 	  font-size: 35px !important;
