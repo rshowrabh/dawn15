@@ -711,11 +711,4 @@
     .info-tab-content ul{
       padding: 0;
     }
-
-  /* Mobile Menu */
-  .menu-drawer__account {
-    padding: 1rem 20px !important;
-    color: #FFF!important;
-  }
-
 }
