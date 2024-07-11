@@ -16,7 +16,7 @@
 
 <div>
   <div class="section-{{ section.id }}-padding page-width page-margin  left">
-    <div class="color-{{ section.settings.color_scheme }} gradient image-banner template-discount-banner " style="height: {{ section.settings.height }};">
+    <div class="color-{{ section.settings.color_scheme }} gradient image-banner template-discount-banner">
       <div class="left_section">
         <div class="text">
           {% if section.settings.is_sale %}
@@ -47,12 +47,6 @@
   {
     "name": "Discount Banner",
     "settings": [
-      {
-        "type": "text",
-        "id": "height",
-        "label": "Section Height",
-        "default": "500px"
-      },
       {
         "type": "image_picker",
         "id": "image",
