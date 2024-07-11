@@ -109,6 +109,9 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex !important;
     justify-content: center;
   }
+  .menu-drawer__account account-icon svg{
+    margin-right: 10px;
+  }
   .videoBackground .videoBoxInfoTitle {
 	  font-size: 35px !important;
     margin: 20px 0px !important;
