@@ -24,7 +24,7 @@
           {% endif %}
           <h1>{{ section.settings.banner_heading }}</h1>
           <p>{{ section.settings.banner_text }}</p>
-          <a href="" class="btn btn-primary">Shop Now</a>
+          <a href="{{section.settings.button_url}}" class="btn btn-primary">{{section.settings.button_label}}</a>
         </div>
       </div>
       <div class="right_section">
@@ -63,12 +63,25 @@
         "id": "banner_heading",
         "label": "Heading",
         "default": "Limited Time, Unbeatable Savings"
-      }, {
+      }, 
+      {
         "type": "richtext",
         "id": "banner_text",
         "label": "Sub Heading",
         "default": "<p>Hurry and take advantage of our limited-time, unbeatable savings event</p>"
-      }, {
+      }, 
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "Shop More"
+      }, 
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"
+      },       
+      {
         "type": "checkbox",
         "id": "is_sale",
         "label": "Enable Sale"
