@@ -246,11 +246,12 @@
     "discount_banner_hBAQjh": {
       "type": "discount-banner",
       "settings": {
-        "height": "500",
         "image": "shopify:\/\/shop_images\/CulturedDiamonds_067a1ebe-be48-4e18-93d0-011e18e0d22c.png",
         "discount_price": "-20%",
         "banner_heading": "Limited Time, Unbeatable Savings",
         "banner_text": "<p>Hurry and take advantage of our limited-time, unbeatable savings event<\/p>",
+        "button_label": "Shop More",
+        "button_url": "shopify:\/\/products\/graduated-v-shape-diamond-wedding-band",
         "is_sale": true,
         "color_scheme": "scheme-2"
       }
