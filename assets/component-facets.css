@@ -1244,7 +1244,8 @@ input.mobile-facets__checkbox {
 .facets__summary .icon-caret,.facet-filters__sort + .icon-caret {
   right: 7px;
 }
-.facets__summary,.facet-filters__field .select__select, .mobile-facets__sort .select__select {
-  padding: 4px 2.75rem 4px 6px;
-  border: 1px solid #d5d5d5;
+.facets__summary, .facet-filters__field .select__select, .mobile-facets__sort .select__select {
+	padding: 0px 12rem 0px 6px;
+	border: 1px solid #d5d5d5;
+	line-height: 27px;
 }
