@@ -12,7 +12,6 @@
     "breadcrumbs_xz6nEn": {
       "type": "breadcrumbs",
       "settings": {
-        "custom_liquid": "",
         "color_scheme": "scheme-5",
         "padding_top": 0,
         "padding_bottom": 0
@@ -29,7 +28,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
-        "products_per_page": 16,
+        "products_per_page": 12,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
