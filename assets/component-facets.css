@@ -1266,3 +1266,6 @@ input.mobile-facets__checkbox {
 .facets__form .product-count {
   grid-column-start: -100;
 }
+.facet-filters__label,#verticalTitle {
+	font-weight: 700;
+}
