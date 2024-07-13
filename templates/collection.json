@@ -12,6 +12,10 @@
     "breadcrumbs_xz6nEn": {
       "type": "breadcrumbs",
       "settings": {
+        "custom_liquid": "",
+        "color_scheme": "scheme-5",
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "banner": {
