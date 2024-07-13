@@ -19,7 +19,8 @@
     }
 
     .breadcrumbs a {
-        text-decoration: underline;
+        text-decoration: none;
+        color: rgb(var(--color-foreground));
     }
 
     .breadcrumbs li:not(:last-child):after {
@@ -31,7 +32,7 @@
     }
 
     .breadcrumbs [aria-current="page"] {
-        color: inherit;
+        color: rgba(var(--color-foreground),0.75);
         font-weight: normal;
         text-decoration: none;
     }
