@@ -91,6 +91,14 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 16px;
     background: #FFF;
   }
+  .facets__summary .icon-caret {
+    right: 7px;
+  }
+  .facets__summary {
+    padding: 4px 2.75rem 4px 6px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #000;
+  }
 
 
 /* Responsive Mobile */
