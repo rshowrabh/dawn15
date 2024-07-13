@@ -86,12 +86,9 @@ h1, h2, h3, h4, h5, h6, p {
   .list-menu--inline {
     flex-wrap: nowrap !important;
   }
-  .select select, .select select option{
-    font-weight: 700;
-    font-size: 16px;
-    background: #FFF;
+  .facets__form .product-count {
+    grid-column-start: -20;
   }
-
 
 
 /* Responsive Mobile */
