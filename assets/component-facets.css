@@ -1252,4 +1252,11 @@ input.mobile-facets__checkbox {
 #ProductCountDesktop{
   line-height: 25px;
   font-weight: 700;
+  text-wrap: nowrap;
+}
+.facets__form {
+	display: grid;
+	gap: 0;
+	grid-template-columns: auto;
+	margin-bottom: 0rem;
 }
