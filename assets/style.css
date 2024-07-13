@@ -100,6 +100,9 @@ h1, h2, h3, h4, h5, h6, p {
   height: 0 !important;
 }
 
+.collection-hero .collection-hero__title {
+  font-weight: 700;
+}
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
