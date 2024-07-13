@@ -1239,3 +1239,12 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+/* Custom */
+.facets__summary .icon-caret {
+  right: 7px;
+}
+.facets__summary {
+  padding: 4px 2.75rem 4px 6px;
+  border: 1px solid #000;
+}
