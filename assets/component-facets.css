@@ -1260,3 +1260,6 @@ input.mobile-facets__checkbox {
 	grid-template-columns: auto;
 	margin-bottom: 0rem;
 }
+.facets__form .product-count {
+  grid-column-start: -100;
+}

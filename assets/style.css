@@ -86,9 +86,6 @@ h1, h2, h3, h4, h5, h6, p {
   .list-menu--inline {
     flex-wrap: nowrap !important;
   }
-  .facets__form .product-count {
-    grid-column-start: -15 !important;
-  }
 
 
 /* Responsive Mobile */
