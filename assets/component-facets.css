@@ -1269,3 +1269,6 @@ input.mobile-facets__checkbox {
 .facet-filters__label,#verticalTitle {
 	font-weight: 700;
 }
+.select__select:focus{
+  box-shadow: none;
+}
