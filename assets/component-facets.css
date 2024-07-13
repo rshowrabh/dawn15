@@ -1244,6 +1244,9 @@ input.mobile-facets__checkbox {
 .facets__summary .icon-caret,.facet-filters__sort + .icon-caret {
   right: 7px;
 }
+.mobile-facets__sort .select .icon-caret {
+  right: 10px;
+}
 .facets__summary, .facet-filters__field .select__select, .mobile-facets__sort .select__select {
 	padding: 0px 12rem 0px 6px;
 	border: 1px solid #d5d5d5;
