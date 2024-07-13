@@ -1241,10 +1241,10 @@ input.mobile-facets__checkbox {
 }
 
 /* Custom */
-.facets__summary .icon-caret {
+.facets__summary .icon-caret,.facet-filters__sort + .icon-caret {
   right: 7px;
 }
-.facets__summary {
+.facets__summary,.facet-filters__field .select__select, .mobile-facets__sort .select__select {
   padding: 4px 2.75rem 4px 6px;
   border: 1px solid #000;
 }
