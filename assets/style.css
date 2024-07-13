@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6, p {
 	text-decoration: none;
 }
 .pagination__item--current::after {
-  height: 0;
+  height: 0 !important;
 }
 
 /* Responsive Mobile */
