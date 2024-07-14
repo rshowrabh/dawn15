@@ -123,7 +123,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Only Desktop */
 /* Cart Button */
-@media only screen and (min-width: 767px) {
     .product-form .button--full-width {
       display: flex;
       position: absolute;
@@ -135,7 +134,7 @@ h1, h2, h3, h4, h5, h6, p {
     .price-per-item__container .quantity {
       width: 42%;
     }
-}
+
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
