@@ -163,12 +163,12 @@ h1, h2, h3, h4, h5, h6, p {
   } 
 
   /* Buy Button Css */
-
+  
   .product-form .button--full-width {
     display: flex;
     width: 50%;
     position: absolute;
     top: 262px;
-    right: 0;
+    left:19rem;
   }
 }
