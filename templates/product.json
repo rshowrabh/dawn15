@@ -40,7 +40,6 @@
         },
         "sku_NX4NpE": {
           "type": "sku",
-          "disabled": true,
           "settings": {
             "text_style": "body"
           }
@@ -74,7 +73,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
@@ -180,8 +178,8 @@
         "description": "Description",
         "deliver_return_title": "Delivery & Return Policy",
         "terms_condition_title": "Terms & Condition",
-        "delivery_return": "",
-        "terms_condition": "",
+        "delivery_return": "<p>hhhhhhhhhhhhhhhhhh<\/p>",
+        "terms_condition": "<p>ggggggggggggggggggggggg<\/p>",
         "color_scheme": ""
       }
     },
