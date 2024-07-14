@@ -103,6 +103,17 @@ h1, h2, h3, h4, h5, h6, p {
 .collection-hero .collection-hero__title {
   font-weight: 700;
 }
+
+/* Single Product Css */
+.price--on-sale .price__sale {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--color-foreground);
+  font-weight: 700;
+}
+
+
+
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
