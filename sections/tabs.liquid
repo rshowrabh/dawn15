@@ -1,0 +1,127 @@
+{{ 'component-product-info.css' | asset_url | stylesheet_tag: preload: true }}
+{%- liquid
+  assign s = section.settings
+  assign description = s.description
+  assign product_description = product.metafields.custom.product_description.value
+-%}
+<div class="single-product-info color-{{ section.settings.color_scheme }} gradient">
+  <div class="page-width">
+    <div class="single-product-info-wrap">
+
+      <div class="product-info-tab">
+        <ul class="info-tab-items">
+          <li class="info-tab-item active" data-id="1">{{ description }}</li>
+          {% for block in section.blocks %}
+            {%- liquid
+              assign b = block.settings
+              assign text = b.text
+              assign loop = forloop.index | plus: 1
+            -%}
+            <li class="info-tab-item fill" data-id="{{loop}}">{{ text }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="product-info-tab-contents">
+        <div class="info-tab-content show" id="tab_content_1">
+          {{ product.description }}
+          {% if product_description != blank %}
+            {% render 'product-info'
+              , product_info: product_description %}
+          {% endif %}
+        </div>
+        {% for block in section.blocks %}
+          {%- liquid
+            assign b = block.settings
+            assign tab_content = b.tab_content
+            assign page = b.page
+            assign loop = forloop.index
+          -%}
+          <div class="info-tab-content" id="tab_content_{{loop}}">
+            {%- if page != blank -%}
+              {{ page }}
+            {% else %}
+              {{ tab_content }}
+            {%- endif -%}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Info",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description",
+        "default": "Description"
+      },
+      {
+        "type": "text",
+        "id": "deliver_return_title",
+        "label": "Return Policy",
+        "default": "Delivery & Return Policy"
+      },
+      {
+        "type": "text",
+        "id": "terms_condition_title",
+        "label": "Terms Condition Title",
+        "default": "Terms & Condition"
+      }, {
+        "type": "header",
+        "content": "Content"
+      }, {
+        "type": "richtext",
+        "id": "delivery_return",
+        "label": "Delivery & Return"
+      }, {
+        "type": "richtext",
+        "id": "terms_condition",
+        "label": "Terms & Condition"
+      }, {
+        "type": "header",
+        "content": "Color"
+      }, {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "Color Scheme",
+        "default": "background-1"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "tab",
+        "name": "Tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Tab Heading",
+            "default": "Write Heading"
+          }, {
+            "type": "richtext",
+            "id": "tab_content",
+            "label": "Tab Content"
+          }, {
+            "type": "page",
+            "id": "page",
+            "label": "Page"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Info"
+      }
+    ]
+  }
+{% endschema %}
