@@ -138,6 +138,30 @@
         "padding_bottom": 12
       }
     },
+    "tabs_m6p9MG": {
+      "type": "tabs",
+      "blocks": {
+        "tab_xLb3mR": {
+          "type": "tab",
+          "settings": {
+            "text": "Info",
+            "tab_content": "<p>No Info<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_xLb3mR"
+      ],
+      "settings": {
+        "description": "Description",
+        "deliver_return_title": "Delivery & Return Policy",
+        "terms_condition_title": "Terms & Condition",
+        "delivery_return": "",
+        "terms_condition": "",
+        "color_scheme": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -159,6 +183,7 @@
   },
   "order": [
     "main",
+    "tabs_m6p9MG",
     "related-products"
   ]
 }
