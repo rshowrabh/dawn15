@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6, p {
 
   .product-form .button--full-width {
     display: flex;
-    width: 46%;
+    width: 178px;
     position: absolute;
     top: 262px;
     left:18rem;
