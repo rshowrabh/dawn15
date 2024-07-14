@@ -66,11 +66,13 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
         "collapsible_tab_yXbKgV": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Shipping & Return",
             "icon": "none",
@@ -80,6 +82,7 @@
         },
         "collapsible_tab_f9mGxB": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Privacy Policy",
             "icon": "none",
@@ -89,6 +92,7 @@
         },
         "collapsible_tab_6XaPbK": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Term & Condition",
             "icon": "none",
