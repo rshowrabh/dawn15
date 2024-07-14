@@ -122,12 +122,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* Only Desktop */
+@media only screen and (min-width: 768px) {
 /* Cart Button */
     .product-form .button--full-width {
       display: flex;
       position: absolute;
       top: 220px;
-      right: 42px;
+      left: 198px;
       width: 241px;
       z-index: 999;
     }
@@ -135,7 +136,7 @@ h1, h2, h3, h4, h5, h6, p {
       width: 42%;
       background-color: #f5f5f5;
     }
-
+  }
 /* Responsive Mobile */
 
 @media only screen and (max-width: 767px) {
