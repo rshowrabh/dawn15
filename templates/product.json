@@ -24,6 +24,7 @@
         },
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.vendor }}",
             "text_style": "uppercase"
@@ -31,6 +32,7 @@
         },
         "sku_NX4NpE": {
           "type": "sku",
+          "disabled": true,
           "settings": {
             "text_style": "body"
           }
@@ -144,14 +146,23 @@
         "tab_xLb3mR": {
           "type": "tab",
           "settings": {
-            "text": "Info",
-            "tab_content": "<p>No Info<\/p>",
+            "text": "Shipping and Retrun",
+            "tab_content": "<ul><li>Inside Dhaka within 02 working days & Outside Dhaka within 04 working<br\/>days.<\/li><li>Inside Dhaka delivery Charge is 70 Taka, Outside Dhaka Delivery Charge is<br\/>150 Taka.<\/li><li>Kindly note that, as per our policy, no product returns will be accepted after delivery. Please inspect the items in front of our delivery personnel for your satisfaction.<\/li><\/ul><p><em><strong>Note:<\/strong><\/em><em> Delivery charges may vary depending on product weight and order size.<\/em><\/p>",
             "page": ""
+          }
+        },
+        "tab_mwAG73": {
+          "type": "tab",
+          "settings": {
+            "text": "Terms And Condition",
+            "tab_content": "",
+            "page": "faqs"
           }
         }
       },
       "block_order": [
-        "tab_xLb3mR"
+        "tab_xLb3mR",
+        "tab_mwAG73"
       ],
       "settings": {
         "description": "Description",
