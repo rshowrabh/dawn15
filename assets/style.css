@@ -164,11 +164,4 @@ h1, h2, h3, h4, h5, h6, p {
 
   /* Buy Button Css */
 
-  .product-form .button--full-width {
-    display: flex;
-    width: 178px;
-    position: absolute;
-    top: 262px;
-    left:18rem;
-  }
 }
