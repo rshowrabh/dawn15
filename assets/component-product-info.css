@@ -5,6 +5,8 @@ ul.info-tab-items {
     display: flex;
     border-bottom: 1px solid;
     border-radius: 0;
+    font-weight: 600;
+    font-size: 34px;
 }
 
 li.info-tab-item {
@@ -30,6 +32,7 @@ li.info-tab-item {
     display: none;
     transition: 300ms;
     padding: 15px 0;
+    font-size: 15px;
 }
 
 .info-tab-content.show {
