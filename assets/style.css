@@ -114,8 +114,9 @@ h1, h2, h3, h4, h5, h6, p {
 .price--sold-out .price__badge-sold-out, .price--on-sale .price__badge-sale, .volume-pricing--sale-badge .price__badge-sale {
 	border-radius: 3px;
 }
-.product__title h1{
-  font-size: 34px;
+.product__title h1 {
+  font-size: 28px;
+  letter-spacing: normal;
   font-weight: 600;
 }
 
