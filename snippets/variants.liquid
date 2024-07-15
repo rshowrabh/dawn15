@@ -1,0 +1,113 @@
+
+
+{%- unless product.has_only_default_variant -%}
+    {%- if block.settings.picker_type == 'button' -%}
+        <div class="product-options-buttons">
+            {% for option in product.options_with_values %}
+            <div class="product-option-radio">
+                <label class="form__label" for="SingleOptionSelector-{{ forloop.index0 }}">
+                    {{ option.name }}:
+                </label>
+                {% assign option_position = forloop.index %}
+                <div id="product_option-{{ forloop.index0 }}" class="product_option">
+                {%- for value in option.values -%}
+                    <div class="option-item">
+                        <input type="radio" class="option_input"
+                            {% if option.selected_value == value %} checked {% endif %}
+                            value="{{ value | handleize }}"
+                            name="{{ option.name | handleize }}"
+                            id="{{ option.name |  handleize}}_{{ value }}-{{ forloop.index }}">
+                        <label for="{{ option.name |  handleize}}_{{ value }}-{{ forloop.index }}"> {{value}} </label>
+                    </div>
+                {%- endfor -%}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {%- else -%}
+      <div id="product-options-selectors" class="product-options-selector" data-section="{{ section.id }}" {{ block.shopify_attributes }}>
+      {%- for option in product.options_with_values -%}
+        <div class="product-option-select">
+            <label class="form__label" for="product-select-{{ product.id }}">
+                {{ option.name }}
+            </label>
+            <div class="select-wrap">
+                <select id="single_selector_{{forloop.index}}" class="single_selector">
+                    {%- for value in option.values -%}
+                        <option value="{{ value | handleize }}" {% if option.selected_value == value %} selected {% endif %} >
+                        {{ value }}
+                        </option>
+                    {%- endfor -%}
+                </select> 
+            </div>
+        </div>
+        {%- endfor -%}   
+      </div>
+    {%- endif -%}
+  
+    <select id="productSelect" style="display: none;">
+        {% for variant in product.variants %}
+            <option 
+            data-price="{{ variant.price }}"
+            data-price2="{{ variant.price | money_with_currency }}"
+            data-compare="{{ variant.compare_at_price }}"
+            data-available="{{ variant.available }}"
+            value="{{ variant.id }}">
+            {{variant.title | handleize }}</option>
+        {% endfor %}
+    </select>
+  {%- endunless -%}
+  
+  {% comment %} <noscript class="product-form__noscript-wrapper-{{ section.id }}">
+    <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
+      <label class="form__label" for="Variants-{{ section.id }}">
+        {{- 'products.product.product_variants' | t -}}
+      </label>
+      <div class="select">
+        <select
+          name="id"
+          id="Variants-{{ section.id }}"
+          class="select__select"
+          form="{{ product_form_id }}"
+        >
+          {%- for variant in product.variants -%}
+            <option
+              {% if variant == product.selected_or_first_available_variant %}
+                selected="selected"
+              {% endif %}
+              {% if variant.available == false %}
+                disabled
+              {% endif %}
+              value="{{ variant.id }}"
+            >
+              {%- liquid
+                echo variant.title
+                echo variant.price | money | strip_html | prepend: ' - '
+                if variant.available == false
+                  echo 'products.product.sold_out' | t | prepend: ' - '
+                endif
+                if variant.quantity_rule.increment > 1
+                  echo 'products.product.quantity.multiples_of' | t: quantity: variant.quantity_rule.increment | prepend: ' - '
+                endif
+                if variant.quantity_rule.min > 1
+                  echo 'products.product.quantity.minimum_of' | t: quantity: variant.quantity_rule.min | prepend: ' - '
+                endif
+                if variant.quantity_rule.max != null
+                  echo 'products.product.quantity.maximum_of' | t: quantity: variant.quantity_rule.max | prepend: ' - '
+                endif
+                # TODO: enable theme-check once `item_count_for_variant` is accepted as valid filter
+                # theme-check-disable
+                assign cart_quantity = cart | item_count_for_variant: variant.id
+                # theme-check-enable
+                if cart_quantity > 0
+                  echo 'products.product.quantity.in_cart_html' | t: quantity: cart_quantity | prepend: ' - '
+                endif
+              -%}
+            </option>
+          {%- endfor -%}
+        </select>
+        {% render 'icon-caret' %}
+      </div>
+    </div>
+  </noscript> {% endcomment %}
+  
