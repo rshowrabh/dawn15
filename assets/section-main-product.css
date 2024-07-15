@@ -1500,4 +1500,5 @@ a.product__text {
 
 .shopify-payment-button__button--unbranded:hover, .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color: rgba(var(--color-button-text),var(--alpha-button-background));
+  color: rgba(var(--color-button),var(--alpha-button-background));
 }
