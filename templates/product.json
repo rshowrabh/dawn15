@@ -9,6 +9,14 @@
 */
 {
   "sections": {
+    "breadcrumbs_TJnnPC": {
+      "type": "breadcrumbs",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -187,6 +195,7 @@
     }
   },
   "order": [
+    "breadcrumbs_TJnnPC",
     "main",
     "tabs_m6p9MG",
     "related-products"
