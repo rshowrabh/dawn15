@@ -1,0 +1,81 @@
+.product-form-wrap {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.product-quantity-selector {
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+
+.single-product-form{
+    width: 100%;
+}
+
+.product-btn {
+    width: 70%;
+    max-width: 70%;
+    cursor: pointer;
+    text-transform: none;
+}
+
+.product-qty-minus, .product-qty-plus {
+    width: 60px;
+    height: 52px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.product-input-qty {
+    width: 55%;
+    height: 52px;
+    border: 1px solid;
+    border-right: none;
+    border-left: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.product-qty-minus {
+    border-radius: 4px 0 0 4px;
+}
+
+.product-qty-plus {
+    border-radius: 0 4px 4px 0;
+}
+
+.product-qty-button {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 12px;
+    margin-bottom: 15px;
+}
+
+.product-btn.sold_out {
+    opacity: .5;
+    pointer-events: none;
+}
+.single_selector:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+.product-input-qty:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+@media only screen and (max-width:767px) {
+    .product-qty-minus, 
+    .product-qty-plus,
+    .product-input-qty {
+        height: 45px;
+    }
+    .shopify-payment-button button {
+        min-height: 45px;
+        padding: 0;
+    }    
+}
