@@ -440,7 +440,7 @@
                     </volume-pricing>
                   {%- endif -%}
                 </div>
-              {%- when 'buy_button_quantity_selector' -%}
+              {%- when 'buy_button_selector' -%}
                 <div
                   id="Quantity-Form-{{ section.id }}"
                   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -1129,7 +1129,7 @@
       ]
     },
     {
-      "type": "buy_button_quantity_selector",
+      "type": "buy_button_selector",
       "name": "Buy Button With Quantity Selector",
       "limit": 1,
       "settings": [
