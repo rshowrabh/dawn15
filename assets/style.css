@@ -124,8 +124,8 @@ h1, h2, h3, h4, h5, h6, p {
 .price-per-item__container .quantity{
   width: auto;
 }
-.product-form__submit {
-  margin-bottom: 0rem;
+.price-per-item__container .product-form__submit {
+  margin-bottom: 0rem !important;
 }
 
 
