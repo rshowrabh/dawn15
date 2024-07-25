@@ -38,12 +38,6 @@
             "text_style": "uppercase"
           }
         },
-        "sku_NX4NpE": {
-          "type": "sku",
-          "settings": {
-            "text_style": "body"
-          }
-        },
         "inventory_WHQXBC": {
           "type": "inventory",
           "settings": {
@@ -52,14 +46,29 @@
             "show_inventory_quantity": true
           }
         },
+        "sku_NX4NpE": {
+          "type": "sku",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "buy_button_selector_RTXrk9": {
+          "type": "buy_button_selector",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -123,9 +132,10 @@
         "price",
         "title",
         "vendor",
-        "sku_NX4NpE",
         "inventory_WHQXBC",
+        "sku_NX4NpE",
         "variant_picker",
+        "buy_button_selector_RTXrk9",
         "buy_buttons",
         "description",
         "collapsible_tab_yXbKgV",
@@ -136,6 +146,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
