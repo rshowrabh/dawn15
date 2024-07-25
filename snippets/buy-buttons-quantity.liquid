@@ -78,7 +78,7 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-           {% comment %} Quantity Selector Start {% endcomment %}
+     {% comment %} Quantity Selector Start {% endcomment %}
   <div
   id="Quantity-Form-{{ section.id }}"
   class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -139,6 +139,31 @@
         assign current_qty_for_volume_pricing = cart_qty | plus: product.selected_or_first_available_variant.quantity_rule.increment
       endif
     -%}
+    {% comment %} Add To Cart Button Start {% endcomment %}
+    <button
+    id="ProductSubmitButton-{{ section_id }}"
+    type="submit"
+    name="add"
+    class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+    {% if product.selected_or_first_available_variant.available == false
+      or quantity_rule_soldout
+      or product.selected_or_first_available_variant == nil
+    %}
+      disabled
+    {% endif %}
+  >
+    <span>
+      {%- if product.selected_or_first_available_variant == nil -%}
+        {{ 'products.product.unavailable' | t }}
+      {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+        {{ 'products.product.sold_out' | t }}
+      {%- else -%}
+        {{ 'products.product.add_to_cart' | t }}
+      {%- endif -%}
+    </span>
+    {%- render 'loading-spinner' -%}
+  </button>
+{% comment %} Add to Cart Button End {% endcomment %}
     {%- if product.quantity_price_breaks_configured? -%}
       <price-per-item
         id="Price-Per-Item-{{ section.id }}"
@@ -288,32 +313,12 @@
   {%- endif -%}
 </div>
 {% comment %} Quantity Selector End {% endcomment %}
-          <button
-            id="ProductSubmitButton-{{ section_id }}"
-            type="submit"
-            name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-            {% if product.selected_or_first_available_variant.available == false
-              or quantity_rule_soldout
-              or product.selected_or_first_available_variant == nil
-            %}
-              disabled
-            {% endif %}
-          >
-            <span>
-              {%- if product.selected_or_first_available_variant == nil -%}
-                {{ 'products.product.unavailable' | t }}
-              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
-            </span>
-            {%- render 'loading-spinner' -%}
-          </button>
+
+{% comment %} Buy Button Start {% endcomment %}
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
+{% comment %} Buy Button End {% endcomment %}
         </div>
       {%- endform -%}
     </product-form>
