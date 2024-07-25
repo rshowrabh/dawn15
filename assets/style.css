@@ -120,6 +120,14 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 600;
 }
 
+/* main product css */
+.price-per-item__container .quantity{
+  width: auto;
+}
+.product-form__submit {
+  margin-bottom: 0rem;
+}
+
 
 
 /* Only Desktop */
