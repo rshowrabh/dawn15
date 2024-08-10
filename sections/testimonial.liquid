@@ -47,11 +47,12 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                             {% comment %} <p>{{block.settings.text}}</p> {% endcomment %}
                             {% if block.settings.text.size > 151 %}
                               <div class="product-description-short">
-                              {{ block.settings.text | truncate: 150, ". . . " }}<a class="readmore" href="#">Show More</a>
+                              {{ block.settings.text | truncate: 150, ". . . " }}
+                              <span class="readmore">Show More</span>
                               </div>
                               <div class="product-description-full" style="display:none;">
                               {{ block.settings.text }}
-                              <br><a class="readless" href="#">Show Less</a>
+                              <br><span class="readless">Show Less</span>
                               </div>
                               {% else %}
                               {{ block.settings.text }}
