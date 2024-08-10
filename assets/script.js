@@ -301,6 +301,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Read More Less Function
 $('.readmore').click(function (event) {
-  $('.product-description-full').first().css("display","block");
+  $(this).parent().parent().find('.product-description-full').css("display","block");
   // $(this).closest('.product-description-short').css("display","none");
   });
