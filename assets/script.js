@@ -302,19 +302,19 @@ window.addEventListener('DOMContentLoaded', () => {
 // Read More Less Function
 $('.readmore').click(function (event) {
   event.preventDefault();
-  var descriptionFull = document.querySelector('.product-description-full');
+  var descriptionFull = $('.product-description-full');
   descriptionFull.style.display = 'block';
   descriptionShort.style.visibility = 'visible';
-  var descriptionShort = document.querySelector('.product-description-short');
+  var descriptionShort = $('.product-description-short');
   descriptionShort.style.display = 'none';
   descriptionShort.style.visibility = 'hidden';
   });
   $('.readless').click(function (event) {
   event.preventDefault();
-  var descriptionFull = document.querySelector('.product-description-full');
+  var descriptionFull = $('.product-description-full');
   descriptionFull.style.display = 'none';
   descriptionFull.style.visibility = 'hidden';
-  var descriptionShort = document.querySelector('.product-description-short');
+  var descriptionShort = $('.product-description-short');
   descriptionShort.style.display = 'block';
   descriptionShort.style.visibility = 'visible';
   window.scrollTo({top: 110, behavior: 'smooth'});
