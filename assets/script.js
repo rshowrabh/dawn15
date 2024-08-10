@@ -301,10 +301,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Read More Less Function
 $('.readmore').click(function (event) {
-  $(this).parent().parent().find('.product-description-full').show();
-  $(this).parent().parent().find('.product-description-short').hide();
+  $(this).parent().parent().find('.product-description-full').css("display","block");
+  $(this).parent().parent().find('.product-description-short').css("display","none");
   });
 $('.readless').click(function (event) {
-  $(this).parent().parent().find('.product-description-full').hide();
-  $(this).parent().parent().find('.product-description-short').show();
+  $(this).parent().parent().find('.product-description-full').css("display","none");
+  $(this).parent().parent().find('.product-description-short').css("display","block");
   });
