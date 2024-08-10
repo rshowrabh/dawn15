@@ -304,3 +304,7 @@ $('.readmore').click(function (event) {
   $(this).parent().parent().find('.product-description-full').show(1000);
   $(this).parent().parent().find('.product-description-short').hide(1000);
   });
+$('.readless').click(function (event) {
+  $(this).parent().parent().find('.product-description-full').hide(1000);
+  $(this).parent().parent().find('.product-description-short').show(1000);
+  });
