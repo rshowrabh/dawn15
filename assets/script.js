@@ -300,13 +300,12 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 // Read More Less Function
-$('.readmore').click(function (event) {
-  event.preventDefault();
+$(document).on("click tap touchstart", ".readmore", function(){
   $(this).parent().parent().find('.product-description-full').css("display","block");
   $(this).parent().parent().find('.product-description-short').css("display","none");
-  });
-$('.readless').click(function (event) {
+});
+$(document).on("click tap touchstart", ".readless", function(){
   event.preventDefault();
   $(this).parent().parent().find('.product-description-full').css("display","none");
   $(this).parent().parent().find('.product-description-short').css("display","block");
-  });
+});
