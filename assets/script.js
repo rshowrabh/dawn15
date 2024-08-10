@@ -301,7 +301,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Read More Less Function
 $('.readmore').click(function (event) {
-  $this.parrent.$('.product-description-full').css("display","block");
-  $this.parrent.$('.product-description-full').css("visibility","visible");
-  $this.parrent.$('.product-description-short').css("display","none");
+  this.parrent.$('.product-description-full').css("display","block");
+  this.parrent.$('.product-description-full').css("visibility","visible");
+  this.parrent.$('.product-description-short').css("display","none");
   });
