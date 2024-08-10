@@ -304,13 +304,3 @@ $('.readmore').click(function (event) {
   $('.product-description-full').css("display","block");
   $('.product-description-short').css("display","none");
   });
-  $('.readless').click(function (event) {
-  event.preventDefault();
-  var descriptionFull = $('.product-description-full');
-  descriptionFull.style.display = 'none';
-  descriptionFull.style.visibility = 'hidden';
-  var descriptionShort = $('.product-description-short');
-  descriptionShort.style.display = 'block';
-  descriptionShort.style.visibility = 'visible';
-  window.scrollTo({top: 110, behavior: 'smooth'});
-  })
