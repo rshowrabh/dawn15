@@ -298,3 +298,19 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 
 })
+
+// Read More Less Function
+$('.readmore').click(function (event) {
+  event.preventDefault();
+  var descriptionFull = document.querySelector('.product-description-full');
+  descriptionFull.style.display = 'block';
+  var descriptionShort = document.querySelector('.product-description-short');
+  descriptionShort.style.display = 'none';
+  });
+  $('.readless').click(function (event) {
+  event.preventDefault();
+  var descriptionFull = document.querySelector('.product-description-full');
+  descriptionFull.style.display = 'none';
+  var descriptionShort = document.querySelector('.product-description-short');
+  descriptionShort.style.display = 'block';window.scrollTo({top: 110, behavior: 'smooth'});
+  })
