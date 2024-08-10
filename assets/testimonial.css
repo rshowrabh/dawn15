@@ -18,8 +18,8 @@
     margin-right: 20px;
     min-height: 310px;
     display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #testimonial .content_area .text p{
     padding: 5px 0px 15px;
