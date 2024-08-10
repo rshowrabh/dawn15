@@ -84,6 +84,6 @@
         border: 1px solid #000;
     }
     #testimonial .slick-dots {
-        bottom: 0px;
+        bottom: -40px;
       }
 }
