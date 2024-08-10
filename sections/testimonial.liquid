@@ -48,11 +48,11 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                             {% if block.settings.text.size > 151 %}
                               <div class="product-description-short">
                               {{ block.settings.text | truncate: 150, ". . . " }}
-                              <span class="readmore link">Show More</span>
+                              <span class="readmore">Show More</span>
                               </div>
                               <div class="product-description-full" style="display:none">
                               {{ block.settings.text }}
-                              <br><span class="readless link">Show Less</span>
+                              <br><span class="readless">Show Less</span>
                               </div>
                               {% else %}
                               {{ block.settings.text }}
