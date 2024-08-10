@@ -49,10 +49,10 @@ padding-bottom: {{ section.settings.padding_bottom }}px;
                               <div class="product-description-short">
                               {{ block.settings.text | truncate: 150, ". . . " }}
                               <span class="readmore">Show More</span>
+                              </div>
                               <div class="product-description-full" style="display:none">
                               {{ block.settings.text }}
                               <br><span class="readless">Show Less</span>
-                              </div>
                               </div>
                               {% else %}
                               {{ block.settings.text }}
