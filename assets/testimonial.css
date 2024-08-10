@@ -16,6 +16,10 @@
     background-color: rgb(var(--color-background));
     transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
     margin-right: 20px;
+    min-height: 310px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 #testimonial .content_area .text p{
     padding: 5px 0px 15px;
