@@ -301,13 +301,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Read More Less Function
 $('.readmore').click(function (event) {
-  event.preventDefault();
-  var descriptionFull = $('.product-description-full');
-  descriptionFull.style.display = 'block';
-  descriptionShort.style.visibility = 'visible';
-  var descriptionShort = $('.product-description-short');
-  descriptionShort.style.display = 'none';
-  descriptionShort.style.visibility = 'hidden';
+  $('.product-description-full').css("display","block");
+  $('.product-description-short').css("display","none");
   });
   $('.readless').click(function (event) {
   event.preventDefault();
