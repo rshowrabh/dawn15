@@ -16,7 +16,7 @@
           "type": "slides",
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/DYO_Banner.dde8f.jpg",
-            "content_position": "center-center",
+            "content_position": "center-bottom",
             "content_alignment": "left",
             "opacity": 10,
             "heading": "",
