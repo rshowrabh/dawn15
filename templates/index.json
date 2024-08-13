@@ -16,14 +16,14 @@
           "type": "slides",
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/DYO_Banner.dde8f.jpg",
-            "content_position": "left-center",
+            "content_position": "center-center",
             "content_alignment": "left",
             "opacity": 10,
-            "heading": "Stylish look",
+            "heading": "",
             "sub_heading": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "btn_label": "Shop now",
-            "url": "",
+            "url": "shopify:\/\/collections",
             "second_label": "",
             "second_url": "",
             "enable_link": false,
@@ -50,6 +50,7 @@
         },
         "slides_tkfdbw": {
           "type": "slides",
+          "disabled": true,
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/engagement.39cf5.jpg",
             "content_position": "left-center",
@@ -68,6 +69,7 @@
         },
         "slides_JgEcCr": {
           "type": "slides",
+          "disabled": true,
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/lab_diamonds_sale_banner.6a518.jpg",
             "content_position": "left-center",
@@ -86,6 +88,7 @@
         },
         "slides_wd8ckd": {
           "type": "slides",
+          "disabled": true,
           "settings": {
             "bg_image": "shopify:\/\/shop_images\/astorCollectionBanner.5937c.jpg",
             "content_position": "right-center",
@@ -253,6 +256,8 @@
         "button_label": "Shop More",
         "button_url": "shopify:\/\/products\/graduated-v-shape-diamond-wedding-band",
         "is_sale": true,
+        "padding_top": 40,
+        "padding_bottom": 52,
         "color_scheme": "scheme-2"
       }
     },
