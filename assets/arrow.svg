@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px"><path d="M50 55.4314L64.4314 41L66 42.5686L50 58.5686L34 42.5686L35.5686 41L50 55.4314Z" fill="white" /></svg>
 
 <!-- <svg width="100" height="100" viewBox="0 0 100 100" class="icon icon-big-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path d="M50 55.4314L64.4314 41L66 42.5686L50 58.5686L34 42.5686L35.5686 41L50 55.4314Z" fill="currentColor"></path>
+=======
+<svg xmlns="http://www.w3.org/2000/svg" width="100px" height="100px"><path d="M50 55.4314L64.4314 41L66 42.5686L50 58.5686L34 42.5686L35.5686 41L50 55.4314Z" fill="white" /></svg>
+
+<!-- <svg width="100" height="100" viewBox="0 0 100 100" class="icon icon-big-arrow" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M50 55.4314L64.4314 41L66 42.5686L50 58.5686L34 42.5686L35.5686 41L50 55.4314Z" fill="currentColor"></path>
+>>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
 </svg> -->
