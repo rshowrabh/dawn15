@@ -1,0 +1,207 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.d-inline {
+  display: inline;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.star-20 svg {
+  width: 20px;
+  height: 20px;
+}
+.d-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.p-relative {
+  position: relative;
+}
+
+/* Button Css */
+
+.btn {
+  box-shadow: 0 4px 9px #0000000d;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid rgb(var(--color-button));
+  font-weight: 600;
+  display: inline-block;
+  text-wrap: nowrap;
+  padding: 10px 30px;
+}
+.btn-primary {
+  background-color: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  transition: 0.2s all linear;
+}
+.btn-primary:hover {
+  color: rgb(var(--color-button));
+  background-color: rgb(var(--color-button-text));
+}
+.btn-primary-outline {
+  color: rgb(var(--color-button));
+  background-color: rgb(var(--color-button-text));
+  transition: 0.2s all linear;
+}
+.btn-primary-outline:hover {
+  background-color: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+}
+.collection .card--standard > .card__content .card__information,
+.collection .card-information {
+  text-align: center;
+}
+.collection .card-information {
+  font-weight: 600;
+}
+.title-wrapper--no-top-margin > .title {
+  text-align: center;
+  font-weight: 600;
+}
+/* Language Selector */
+.header-localization:not(.menu-drawer__localization)
+  .localization-form__select
+  .icon-caret {
+  right: 0 !important;
+}
+
+/* Menu Drawrer */
+
+.menu-drawer__menu .icon {
+  position: absolute;
+  top: 0%;
+  right: 3%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-90deg);
+  width: 30px;
+}
+.menu-drawer__close-button .icon {
+  transform: rotate(90deg);
+  top: 2.4%;
+}
+.list-menu--inline {
+  flex-wrap: nowrap !important;
+}
+
+/* Pagination */
+
+.pagination__item--current {
+  border: 1px solid #d5d5d5;
+  border-radius: 50%;
+  background: #d5d5d5;
+  text-decoration: none;
+}
+.pagination__item--current::after {
+  height: 0 !important;
+}
+
+.collection-hero .collection-hero__title {
+  font-weight: 700;
+}
+
+/* Single Product Css */
+.price--on-sale .price__sale {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--color-foreground);
+  font-weight: 700;
+}
+.price--sold-out .price__badge-sold-out,
+.price--on-sale .price__badge-sale,
+.volume-pricing--sale-badge .price__badge-sale {
+  border-radius: 3px;
+}
+.product__title h1 {
+  font-size: 28px;
+  letter-spacing: normal;
+  font-weight: 600;
+}
+
+/* main product css */
+.price-per-item__container .quantity {
+  width: auto;
+}
+.price-per-item__container .product-form__submit {
+  margin-bottom: 0rem !important;
+}
+
+.underline-links-hover:hover a {
+  text-decoration: none !important;
+  color: #7e7e7e;
+}
+.product-form__input,
+.product-form__buttons {
+  max-width: 100% !important;
+}
+.shopify-payment-button__button {
+  line-height: 0px !important;
+}
+.footer__content-bottom-wrapper {
+  flex-direction: column-reverse !important;
+}
+.copyright__content_developer_devider {
+  margin: 0px 10px;
+}
+.copyright__content_developer,
+.copyright__content_developer a {
+  font-size: 1.2rem !important;
+  color: rgba(var(--color-foreground), 0.75) !important;
+  text-decoration: none;
+}
+.footer__content-bottom {
+  border: none !important;
+}
+
+/* Only Desktop */
+@media only screen and (min-width: 768px) {
+  .footer-payment {
+    padding-bottom: 20px;
+    border-bottom: solid 0.1rem rgba(var(--color-foreground), 0.08);
+  }
+  .footer__copyright.caption {
+    margin-top: 10px;
+  }
+}
+/* Responsive Mobile */
+
+@media only screen and (max-width: 767px) {
+  .footer-block__image-wrapper {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+  .d-md-block {
+    display: block;
+  }
+  /* Mobile Menu */
+  .menu-drawer__account {
+    padding: 1rem 20px !important;
+    display: flex !important;
+    justify-content: center;
+  }
+  .menu-drawer__account account-icon svg {
+    margin-right: 10px;
+  }
+  .videoBackground .videoBoxInfoTitle {
+    font-size: 35px !important;
+    margin: 20px 0px !important;
+  }
+  .copyright__content_developer,
+  .footer__copyright.caption {
+    display: block !important;
+  }
+  .copyright__content_developer_devider {
+    display: none !important;
+  }
+}

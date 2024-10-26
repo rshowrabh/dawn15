@@ -1239,3 +1239,36 @@ input.mobile-facets__checkbox {
     padding: 0 1rem 1rem;
   }
 }
+
+/* Custom */
+.facets__summary .icon-caret,.facet-filters__sort + .icon-caret {
+  right: 7px;
+}
+.mobile-facets__sort .select .icon-caret {
+  right: 10px;
+}
+.facets__summary, .facet-filters__field .select__select, .mobile-facets__sort .select__select {
+	padding: 0px 12rem 0px 6px;
+	border: 1px solid #d5d5d5;
+	line-height: 27px;
+}
+#ProductCountDesktop{
+  line-height: 25px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+.facets__form {
+	display: grid;
+	gap: 0;
+	grid-template-columns: auto;
+	margin-bottom: 0rem;
+}
+.facets__form .product-count {
+  grid-column-start: -100;
+}
+.facet-filters__label,#verticalTitle {
+	font-weight: 700;
+}
+.select__select:focus{
+  box-shadow: none;
+}

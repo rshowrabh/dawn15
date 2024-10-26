@@ -1,0 +1,238 @@
+{%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+      padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+    }
+  
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+   <style>
+    /* Container for the entire section */
+   #new-video .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    /* Content section styling */
+    #new-video .content{
+      width: calc(50%)
+    }
+    #new-video .content-text{
+      width: 80%;
+    }
+    #new-video .image {
+      position: relative;
+      width: calc(50%);
+      overflow: visible;
+      z-index: 99;
+      -webkit-box-shadow: -75px 0px 0px -25px rgb(201, 201, 201);
+      -moz-box-shadow: -75px 0px 0px -25px rgb(201, 201, 201);
+      box-shadow: -75px 0px 0px -25px rgb(201, 201, 201);
+    }
+    #new-video .content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    #new-video .content h2 {
+      font-size: 20px;
+      color: #999;
+      margin-bottom: 0px;
+    }
+    #new-video .content p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+    #new-video .content .btn-primary-outline {
+      margin-left: 15px;
+    }
+    /* Play button styling */
+  
+    /* #new-video .play-button{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background:transparent;
+      border-radius: 50%;
+      color: #FFF;
+    } */
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      #new-video .image {
+      box-shadow: none;
+    }
+        #new-video .container {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      #new-video .content,
+      #new-video .image {
+          width: calc(100%);
+    }
+    #new-video .content-text{
+      width: 100%;
+    }   
+    #video{
+      box-shadow: none;
+    }
+  }
+  </style>
+  <div id="new-video" class="color-{{ section.settings.color_scheme }} gradient isolate">
+    <div class="section-{{ section.id }}-padding page-width">
+        <div class="container">
+      <div class="content">
+        <div class="content-text">
+            <h2>{{section.settings.collection_name}}</h2>
+            <h1>{{section.settings.title}}</h1>
+            <p>
+              {{section.settings.text}}
+            </p>
+            <a href="{{section.settings.button_url}}" class="btn btn-primary">{{section.settings.button_label}}</a>
+            <a href="{{section.settings.button_url2}}" class="btn btn-primary-outline">{{section.settings.button_label2}}</a>
+        </div>      
+      </div>
+      <div class="image">
+
+      {% if section.settings.image != blank %}
+        <img src="{{ section.settings.image | image_url }}" alt="">
+      {% else %}
+        <img src="{{'banner.jpg '| asset_url}}" alt="">
+      {% endif %}
+        <!-- 
+         <video id="video" autoplay loop controls>
+            <source src="{{section.settings.video.sources[1].url}}" type="video/mp4">
+          </video>
+         <div onclick="playPause()" class="play-button">       
+        </div> 
+        -->
+         
+      </div>
+    </div>
+    </div>
+  </div>
+
+<script>
+        var myVideo = document.getElementById("video"); 
+        var playbtn = document.getElementsByClassName("play-button"); 
+
+        function playPause() { 
+        if (myVideo.paused) 
+            myVideo.play();
+
+        else 
+            myVideo.pause(); 
+        } 
+
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+</script>
+  
+  {% schema %}
+  {
+    "name": "New Video",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "collection_name",
+        "label": "Collection Name",
+        "default": "New Collection"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Anti-aging Cream"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Add Text",
+        "default" : "Made using clean, non-toxic ingredients, our products are designed for everyone."
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "Explore More"
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"
+      },
+      {
+        "type": "text",
+        "id": "button_label2",
+        "label": "Button Label",
+        "default": "Show More"
+      },
+      {
+        "type": "url",
+        "id": "button_url2",
+        "label": "Button Url"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Add Image"
+      },
+      {
+        "type": "color_scheme",
+        "id": "color_scheme",
+        "label": "t:sections.all.colors.label",
+        "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.section_padding_heading"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_top",
+        "default": 40
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "t:sections.all.padding.padding_bottom",
+        "default": 52
+      }
+    ],
+    "presets": [
+      {
+        "name": "New Video"
+      }
+    ]
+  }
+  {% endschema %}
+  

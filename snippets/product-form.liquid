@@ -1,0 +1,40 @@
+{%- liquid
+    assign show_dynamic_checkout = false
+    if block.settings.show_dynamic_checkout
+        assign show_dynamic_checkout = true
+    endif
+
+    assign show_bundle =  product.metafields.custom.show_bundle 
+-%}
+
+<div class="product-form-wrap">
+    <div class="single-product-form">
+        {% form 'product', product, id:'product_form' %}
+            <input type="hidden" name="id" id="product_id" value="{{ product.selected_or_first_available_variant.id }}">
+            <div class="product-qty-button">
+                <div class="product-quantity-selector">
+                    <span class="product-qty-minus">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 0 448 512">
+                            <path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/>
+                        </svg>
+                    </span>
+                    <input type="text" class="product-input-qty" name="quantity" {% if show_bundle %} value="2" {% else %} value="1"  {% endif %} min="1" max="100">
+                   
+                    <span class="product-qty-plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="15" viewBox="0 0 448 512">
+                            <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/>
+                        </svg>
+                    </span>
+                </div>
+                {%- if product.selected_or_first_available_variant.available -%}
+                    <button type="submit" class="btn btn-primary-outline product-btn addToCart">Add to cart</button>
+                {% else %}
+                    <button type="submit" class="btn btn-primary-outline product-btn sold_out">Sold Out</button>
+                {%- endif -%}
+            </div>
+            {%- if show_dynamic_checkout -%}
+                {{ form | payment_button }}
+            {%- endif -%}
+        {% endform %}
+    </div>
+</div>

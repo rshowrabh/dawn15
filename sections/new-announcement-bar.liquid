@@ -1,0 +1,152 @@
+{{ 'new-announcement-bar.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+  padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+  padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+  padding-top: {{ section.settings.padding_top }}px;
+  padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+  }
+{%- endstyle -%}
+
+<div id="new-announcement-bar" class="color-{{ section.settings.color_scheme }} gradient isolate new-announcement-bar">
+  <div class="section-{{ section.id }}-padding page-width">
+    <div class="social-info-bar">
+      <div class="social-media">
+        <div class="social-media-item">
+          <a target="_blank" href="{{section.settings.fb_url}}">
+             <!-- facebook svg -->
+          {% render 'facebook.svg' %}
+            {{ section.settings.fb_text -}}
+          </a>
+        </div>
+        <div class="social-media-item">
+          <a target="_blank" href="{{section.settings.insta_url}}">
+              <!-- instagram svg -->
+          {% render 'insta.svg' %}
+            {{ section.settings.insta_text -}}
+          </a>
+        </div>
+      </div>
+      <div class="heading">
+        <span>{{ section.settings.heading }}</span>
+      </div>
+      <div class="info">
+        <a target="_blank" href="{{section.settings.store_link}}">
+          <!-- maps svg -->
+          {% render 'maps.svg' %}
+          Find a Store</a
+        >
+        {% if section.settings.language %}
+          <div class="header__icons header__icons--localization header-localization d-inline-block">
+          <div class="desktop-localization-wrapper"> 
+              <localization-form class="small-hide medium-hide" data-prevent-hide>
+                {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
+                  <div>
+                    <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                    {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
+                  </div>
+                {%- endform -%}
+              </localization-form>
+          </div>
+        </div>
+        {% endif %}
+        
+        <!--
+          <span>USD <svg aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
+            <path fill="currentColor"
+              d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z">
+            </path>
+          </svg></span>
+        -->
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "New Announcement Bar",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Announcement",
+"default": "Flash Sale 30%"
+},
+{
+"type": "text",
+"id": "fb_text",
+"label": "Facebook Text",
+"default": "100K Followers"
+},
+{
+"type": "url",
+"id": "fb_url",
+"label": "Facebook Url"
+},
+{
+"type": "text",
+"id": "insta_text",
+"label": "Instagram Text",
+"default": "100K Followers"
+},
+{
+"type": "url",
+"id": "insta_url",
+"label": "Instagram Url"
+},
+{
+"type": "url",
+"id": "store_link",
+"label": "Store Url"
+},
+{
+"type": "checkbox",
+"id": "language",
+"label": "Enable Language"
+},
+{
+"type": "color_scheme",
+"id": "color_scheme",
+"label": "t:sections.all.colors.label",
+"default": "scheme-1"
+},
+{
+"type": "header",
+"content": "t:sections.all.padding.section_padding_heading"
+},
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_top",
+"default": 0
+},
+{
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_bottom",
+"default": 0
+}
+],
+"presets": [
+{
+"name": "New Announcement Bar"
+
+}
+]
+}
+{% endschema %}

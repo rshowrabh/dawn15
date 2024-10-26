@@ -15,6 +15,7 @@
 
 .rich-text__blocks {
   width: 100%;
+  text-align: justify;
 }
 
 @media screen and (min-width: 750px) {
@@ -48,7 +49,7 @@
 .rich-text__blocks > * {
   margin-top: 0;
   margin-bottom: 0;
-}
+  }
 
 .rich-text__blocks > * + * {
   margin-top: 2rem;
@@ -83,4 +84,7 @@
 
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
+}
+.rte>*:last-child {
+  text-align: justify;
 }

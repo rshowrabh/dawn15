@@ -1,0 +1,175 @@
+{{ 'testimonial.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+.section-{{ section.id }}-padding {
+padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
+}
+
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{%- endstyle -%}
+<div id="testimonial" class="color-{{ section.settings.color_scheme }} gradient isolate">
+    <div class="section-{{ section.id }}-padding page-width">
+        <div class="container d-flex d-md-block p-relative">
+            <div class="arrow_section">
+                <h1>Testimonial</h1>
+                <p class="collection__description">{{ section.settings.text }}</p>
+                <div class="arrow d-flex">
+                    <div class="arrow_prev">
+                        {% render 'arrow.svg' | asset_url %}
+                    </div>
+                    <div class="arrow_next">
+                        {% render 'arrow.svg' | asset_url %}
+                    </div>
+                </div>
+            </div>
+            <div class="slide_section d-flex">
+                {% for block in section.blocks %}
+                    <div>
+                    <div class="content_area color-{{ block.settings.color_scheme }} gradient">
+                        <div class="star-20 d-flex">
+                           {% for i in (1..block.settings.star) %}                          
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star"
+                                class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                </path>
+                            </svg>                     
+                          {% endfor %}
+                          </div>
+                        <div class="text">
+                            {% comment %} <p>{{block.settings.text}}</p> {% endcomment %}
+                            {% if block.settings.text.size > 151 %}
+                              <div class="product-description-short">
+                              {{ block.settings.text | truncate: 150, ". . . " }}
+                              <span class="readmore">Show More</span>
+                              </div>
+                              <div class="product-description-full" style="display:none">
+                              {{ block.settings.text }}
+                              <br><span class="readless">Show Less</span>
+                              </div>
+                              {% else %}
+                              {{ block.settings.text }}
+                              {% endif %}
+                        </div>
+                        <div class="profile d-flex">
+                            <div class="profile_image">
+                                {% if block.settings.avater != blank %}
+                                    <img src="{{ block.settings.avater | image_url }}" alt="">
+                                  {% else %}
+                                  <img src="{{ 'profile.png' | asset_url   }}" alt="">
+                                  {% endif %}
+                            </div>
+                            <div class="profile_details">
+                                <div class="name">{{block.settings.name}}</div>
+                                <div class="designaton"> / {{block.settings.designation}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}              
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+"name": "Testimonial",
+"tag": "section",
+"class": "section",
+"settings": [
+{
+"type": "text",
+"id": "text",
+"label": "Text",
+"default": "At Lesia Emporium, customer testimonials highlight the beauty, quality, and value of our moissanite jewelry. These endorsements reflect our commitment to excellence and craftsmanship, helping potential buyers trust in our exceptional products and service."
+},
+{
+"type": "color_scheme",
+"id": "color_scheme",
+"label": "t:sections.all.colors.label",
+"default": "scheme-1"
+},
+{
+"type": "header",
+"content": "t:sections.all.padding.section_padding_heading"
+},
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_top",
+"default": 40
+},
+{
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_bottom",
+"default": 52
+}
+],
+
+"blocks": [
+      {
+        "type": "column",
+        "name": "Add blocks",
+        "settings": [
+          {
+            "type": "text",
+            "id": "star",
+            "label": "How Many Star",
+            "default": "5"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text Here",
+            "default": "I want to mention the delivery service, which was prompt and efficient. The delivery team assembled all the pieces expertly, leaving no mess behind, which was a huge relief."
+          },
+          {
+            "type": "image_picker",
+            "id": "avater",
+            "label": "Enter Avatar"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Enter Reviwer",
+            "default": "Reviewed ByFarukh Hasan"
+          },
+          {
+            "type": "text",
+            "id": "designation",
+            "label": "Enter Designation",
+            "default": "CO"
+          },
+          {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "scheme-1"
+          }
+        ]
+      }
+    ],
+"presets": [
+{
+"name": "Testimonial"
+}
+]
+}
+{% endschema %}

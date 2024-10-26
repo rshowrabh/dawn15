@@ -1,0 +1,52 @@
+<style>
+.header-lang-switcher summary {
+  display: flex;
+  align-items: center;
+}
+</style>
+<localization-form>
+  {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form header-lang-switcher' -%}
+    <div class="no-js-hidden localization-form">
+      <details aria-haspopup="true" role="buton">
+        <summary tabindex="0">
+
+           {% if localization.country.iso_code == 'IL' %}
+                  <img src="{{ 'ban.svg' | asset_url }}" alt="country flag" width="20" height=""/>
+                {% else %}
+                  <img src="{{ 'us.svg' | asset_url }}" alt="country flag" width="20" height=""/>
+                {% endif %}
+          {% comment %} {%- render 'component-icon', icon: 'expand_more' %} {% endcomment %}
+        </summary>
+        
+        <ul role="list">
+          {%- for country in localization.available_countries -%}
+            {% if country.iso_code == 'IL' or country.iso_code == 'US' %}
+             <li tabindex="-1">
+              <a
+                class="{% if country.iso_code == localization.country.iso_code %} active{% endif %}"
+                href="#"
+                {% if country.iso_code == localization.country.iso_code %}
+                  aria-current="true"
+                {% endif %}
+                data-value="{{ country.iso_code }}"
+              >
+                {% if country.iso_code == 'IL' %}
+                 
+                  <img src="{{ 'ban.svg' | asset_url }}" alt="country flag" width="20" height=""/>
+                {% else %}
+                  <img src="{{ 'us.svg' | asset_url }}" alt="country flag" width="20" height=""/>
+                {% endif %}
+              </a>
+          </li>
+          {% endif %}
+        {%- endfor -%}
+        </ul>
+      </details>
+      <input
+        type="hidden"
+        name="country_code"
+        value="{{ localization.language.iso_code }}"
+      >
+    </div>
+  {%- endform -%}
+</localization-form> 

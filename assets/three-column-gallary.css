@@ -1,0 +1,93 @@
+/* three column Gallary CSS */
+
+#three-column-gallary .box{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:center;
+    gap: 25px;
+}
+#three-column-gallary .image{
+    z-index: -1;
+}
+.image{
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out; 
+}
+.image img{
+    height: inherit;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: 0.5s all ease-in-out; 
+}
+#three-column-gallary .text{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+#three-column-gallary .text > *{
+    font-weight: 600;
+    line-height: 0.3;
+    color: rgb(var(--color-foreground));
+}
+#three-column-gallary .text p{
+    font-weight: 400;
+}
+#three-column-gallary .text a{
+    font-weight: 400;
+}
+
+#three-column-gallary .item{
+    width: calc(33.33% - 20px);
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s all ease-in-out; 
+    height: 400px; 
+}
+#three-column-gallary .item .text h2{
+    font-size: 25px;
+    margin: 20px 0px;
+}
+#three-column-gallary .btn-outline{
+    position: absolute;
+    bottom: 30px;
+    text-decoration: none;
+}
+#three-column-gallary .arrow{
+    margin-left: 5px;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.1s all linear; 
+}
+#three-column-gallary .btn-outline:hover .arrow{
+    margin-left: 10px;
+    position: absolute;
+    bottom: -10px; 
+    transition: 0.1s all ease-in-out;
+    font-weight: 600;
+}
+#three-column-gallary .text a:hover{
+    transition: 0.1s all ease-in-out;
+    font-weight: 600;
+}
+#three-column-gallary .text a{
+    transition: 0.1s all ease-in-out;
+}
+
+
+
+/* Responsive Mobile */
+
+@media only screen and (max-width: 767px) {
+    #three-column-gallary .item{
+        width: 100%;
+        height: 330px;
+    }
+  }

@@ -28,6 +28,7 @@
 
     {% render 'meta-tags' %}
 
+
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
@@ -44,6 +45,31 @@
     %}
 
     {% style %}
+       .price__badge-sale,.badge .color-scheme-4,.badge {
+              background-color: {{ settings.aftertextbackgroundcolor }} !important;
+              color: {{ settings.aftertextcolor }} !important;
+              font-size: {{ settings.font_size_badge }}px !important;
+              border-radius: {{ settings.badge_border_radius }}px !important;
+              padding-top: {{ settings.badge_padding_top }}px !important;
+              padding-bottom: {{ settings.badge_padding_bottom }}px !important;
+
+              {% if settings.badge_animation %}
+                animation: pulse 2s infinite ease-in-out;
+              {% endif %}
+            }
+
+            @keyframes pulse {
+              0% {
+                transform: scale(1);
+              }
+              50% {
+                transform: scale(1.1);
+              }
+              to {
+                transform: scale(1);
+              }
+            }
+      
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
@@ -250,9 +276,11 @@
         }
       }
     {% endstyle %}
-
+    {{ 'jquery-2.2.0.min.js' | asset_url | script_tag }}
+    {{ 'slick.min.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
-
+    {{ 'style.css' | asset_url | stylesheet_tag }}
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -283,7 +311,7 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  </head>
+  {% include 'pagefly-app-header' %}</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -306,7 +334,12 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
-
+    <script>
+      var arrow; 
+      window.arrow = '{{ "arrow.svg" |  asset_url }}';
+    </script>
+    {{ 'slick.min.js' | asset_url | script_tag }}
+    {{ 'script.js' | asset_url | script_tag }}
     <script>
       window.shopUrl = '{{ request.origin }}';
       window.routes = {

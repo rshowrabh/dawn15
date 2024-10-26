@@ -195,7 +195,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-decoration: none;
   padding: 1rem 0;
   font-size: 1.4rem;
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-button-text));
   margin-bottom: 0;
 }
 

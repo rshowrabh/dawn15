@@ -65,6 +65,7 @@
 
 .collection__description > * {
   margin: 0;
+  text-align: center;
 }
 
 .collection__title.title-wrapper {
@@ -95,5 +96,5 @@
 }
 
 .collection__view-all a:not(.link) {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }

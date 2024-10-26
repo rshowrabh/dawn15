@@ -1,0 +1,92 @@
+#testimonial .arrow_section {
+  width: calc(33.33%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: self-start;
+}
+#testimonial .arrow_section h1 {
+  font-weight: 600;
+}
+#testimonial .slide_section .content_area {
+  width: calc(45% -20px);
+  padding: 46px 40px 40px 37px;
+  border-radius: 3px 3px 3px 3px;
+  background-color: rgb(var(--color-background));
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin-right: 20px;
+  min-height:310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#testimonial .content_area .text p {
+  padding: 5px 0px 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(var(--color-foreground));
+  font-size: 18px;
+}
+#testimonial .content_area .text h1 {
+  margin: 0;
+}
+#testimonial .content_area svg {
+  color: rgb(var(--color-foreground));
+}
+#testimonial .slide_section {
+  width: calc(66.67%);
+}
+#testimonial .arrow {
+  position: absolute;
+  bottom: 0;
+}
+#testimonial .arrow > * {
+  position: static;
+  border: 2px solid #d5d5d5;
+  border-radius: 50%;
+}
+#testimonial .arrow .arrow_prev {
+  transform: rotate(90deg);
+}
+#testimonial .profile_image img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+#testimonial .arrow .arrow_next {
+  transform: rotate(270deg);
+}
+#testimonial .name {
+  text-wrap: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+  #testimonial .slide_section,
+  #testimonial .arrow_section {
+    width: calc(100%);
+  }
+  #testimonial .arrow_section {
+    display: block;
+    text-align: center;
+  }
+  #testimonial .arrow_section p {
+    margin: 2rem 0 3rem;
+  }
+  #testimonial .slide_section .content_area {
+    margin-right: 0;
+  }
+  #testimonial .arrow {
+    display: none;
+  }
+  #testimonial .slick-dots li {
+    background-color: black;
+  }
+  #testimonial .slick-dots .slick-active {
+    background: #fff;
+    border: 1px solid #000;
+  }
+  #testimonial .slick-dots {
+    bottom: -40px;
+  }
+}

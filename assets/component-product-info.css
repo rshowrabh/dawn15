@@ -1,0 +1,134 @@
+ul.info-tab-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+li.info-tab-item {
+    cursor: pointer;
+    transition: .3s;
+    letter-spacing: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -1px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 20px;
+    margin-right: 20px;
+    opacity: .6;
+}
+
+.single-product-info {
+    margin: 30px 0;
+}
+
+.info-tab-content {
+    display: none;
+    transition: 300ms;
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+.info-tab-content.show {
+    display: block;
+}
+
+li.info-tab-item.active,
+li.info-tab-item:hover {
+    color: rgb(var(--color-button));
+    border-bottom: 2px solid rgb(var(--color-button));
+    opacity: 1;
+}
+
+.info-tab-content p {
+    letter-spacing: 0;
+}
+.info-tab-content p {
+    margin: 5px 0;
+}
+.metadescriptions-item:last-child {
+    margin-bottom: 0;
+}
+.metadescriptions-item {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.metadescriptions-media {
+    width: 50%;
+}
+
+.metadescriptions-content {
+    width: 50%;
+}
+
+.product-description-img {
+    background: #a7ddb1;
+    width: 100%;
+    display: block;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.product-description-title {
+    margin: 0;
+    margin-bottom: 20px;
+}
+.metadescriptions-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+h2.product-description-title span {
+    font-size: 36px;
+}
+.product-metadescriptions {
+    margin-top: 45px;
+}
+@media only screen and (max-width:767px) {
+    h2.product-description-title span {
+        font-size: 24px;
+    }
+    li.info-tab-item {
+        text-align: left;
+        padding: 8px 0;
+        letter-spacing: 0;
+        font-size: 16px;
+        border-bottom: 2px solid #eee;
+        margin-right: 0;
+    }
+    
+    ul.info-tab-items {
+        column-gap: 15px;
+    }
+    .single-product-info {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .info-tab-content p {
+        font-size: 14px;
+    }
+    .metadescriptions-item {
+        display: block;
+        margin-bottom: 25px;
+    }
+    
+    .metadescriptions-media, 
+    .metadescriptions-content {
+        width: 100%;
+    }
+    
+    .metadescriptions-content {
+        margin-top: 20px;
+    }
+    
+    .product-description-img {
+        height: auto;
+    }
+}
