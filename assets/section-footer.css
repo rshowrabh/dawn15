@@ -562,13 +562,8 @@
 }
 .footer__copyright.caption {
   display: flex;
-<<<<<<< HEAD
   justify-content: center;
   width: 100%;
-=======
-  justify-content: space-between;
-  width: 20%;
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
   align-items: center;
 }
 /* check for flexbox gap in older Safari versions */

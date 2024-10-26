@@ -215,13 +215,10 @@ video.slider-video {
 .slider-items .arrow-prev.slick-arrow {
     right: inherit;
 }
-<<<<<<< HEAD
 .slider-items .sliderr-buttons {
     margin-top: 15px;
 }
 
-=======
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
 @media only screen and (max-width:767px) {
     .slider-img.mobile {
         display: block;

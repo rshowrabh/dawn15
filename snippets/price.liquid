@@ -120,19 +120,8 @@
   {%- if show_badges -%}
     
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
-<<<<<<< HEAD
       -{{ compare_at_price | minus: price | times: 100 | divided_by: compare_at_price }}%
       {{ settings.aftertext }}
-=======
-      {% assign price = product.selected_or_first_available_variant.price %}
-{% assign compare_at_price = product.selected_or_first_available_variant.compare_at_price %}
-{% assign discount_percentage = compare_at_price
-| minus: price
-| times: 100.0
-| divided_by: compare_at_price
-%}
-<span class="percent-count">-{{ discount_percentage | round: 0 }}% off</span>
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
     </span>
 
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">

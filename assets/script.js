@@ -72,11 +72,7 @@ function hero_slider() {
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-<<<<<<< HEAD
       autoplay: true,
-=======
-      autoplay: false,
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
       autoplaySpeed: 4000,
       arrows:true,
       dots:true,
@@ -154,11 +150,7 @@ $('.slide_section').slick({
     slidesToScroll: 1,
     centerMode: true,
     arrows:true, 
-<<<<<<< HEAD
     autoplay:true,
-=======
-    autoplay:false,
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
     centerPadding: '0', 
     prevArrow: $('.arrow_prev'),
     nextArrow: $('.arrow_next'),
@@ -304,10 +296,6 @@ window.addEventListener('DOMContentLoaded', () => {
     heading.addEventListener('click', () => { handleCollapse(heading) })
     heading.addEventListener('keypress',  () => { handleCollapse(heading) })
   })
-<<<<<<< HEAD
-=======
-
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
 })
 
 // Read More Less Function

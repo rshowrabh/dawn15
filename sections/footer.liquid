@@ -400,14 +400,10 @@
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <small class="copyright__content"
-<<<<<<< HEAD
           >&copy; {{ 'now' | date: '%Y' }} - Copyright {{ shop.name | link_to: routes.root_url -}} 
         </small> <span class="copyright__content_developer_devider">|</span> 
         <small class="copyright__content_developer">
            Developed By <a target="_blank" href="https://www.facebook.com/webversebd">WEBVERSE</a>
-=======
-          >&copy; {{ 'now' | date: '%Y' }} - Copyright {{ shop.name | link_to: routes.root_url -}}
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
         </small>
         <div class="copyright-social">
           {%- if section.settings.show_social and has_social_icons -%}
@@ -420,16 +416,10 @@
             {%- for policy in shop.policies -%}
               {%- if policy != blank -%}
                 <li>
-<<<<<<< HEAD
                   <small class="copyright__content">
                     <a href="{{ policy.url }}">{{ policy.title }}</a> | 
                   </small
                   > 
-=======
-                  <small class="copyright__content"
-                    ><a href="{{ policy.url }}">{{ policy.title }}</a></small
-                  >
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
                 </li>
               {%- endif -%}
             {%- endfor -%}
@@ -446,10 +436,7 @@
         {% endif %}
       </div>
       
-<<<<<<< HEAD
       
-=======
->>>>>>> ff412c565d5e1558814dc03ae73e4045760934a2
     </div>
   </div>
 </footer>
